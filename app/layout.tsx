@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s · zuhoeren.academy",
   },
   description:
-    "KI-gestützte Weiterbildung für Leadership, Sales und Dialogführung. Schwesterfirma der Zuhörakademie: Analyse, Coaching, Simulationen, messbarer Fortschritt.",
+    "KI-gestützte Weiterbildung für Leadership, Sales und Dialogführung. Analyse, Coaching, Simulationen, messbarer Fortschritt.",
   openGraph: {
     type: "website",
     url: "https://zuhoeren.academy",

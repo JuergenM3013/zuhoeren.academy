@@ -13,7 +13,7 @@ export default function Page() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
-            Schwesterfirma der <b className="text-white">Zuhörakademie</b> · KI-gestützte Weiterbildung
+            KI-gestützte Weiterbildung
           </p>
 
           <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
@@ -146,10 +146,9 @@ export default function Page() {
         {/* Trust Cards */}
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 className="font-extrabold">Warum 'Schwesterfirma' wichtig ist</h3>
+            <h3 className="font-extrabold">Trainings-DNA trifft KI</h3>
             <p className="mt-3 leading-relaxed text-white/70">
-              Die <b className="text-white">Zuhörakademie</b> steht für wirksame Kommunikation & Trainingskompetenz.
-              <b className="text-white"> zuhoeren.academy</b> bringt diese DNA in eine KI-gestützte Lernwelt – ohne die Menschlichkeit zu verlieren.
+              <b className="text-white">zuhoeren.academy</b> verbindet wirksame Kommunikations- und Trainingskompetenz mit moderner KI – ohne die Menschlichkeit zu verlieren.
             </p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
