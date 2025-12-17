@@ -13,17 +13,20 @@ export default function Page() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
-            KI-gestützte Weiterbildung
+            KI-gestützte Weiterbildung für Leadership, Sales & Dialog
           </p>
 
           <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-            Gespräche verbessern – mit KI, die zuhört, analysiert und trainiert.
+            Zuhören ist Wachstum – jetzt KI-gestützt.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
-            zuhoeren.academy bringt <b>Leadership</b>, <b>Sales</b> und <b>Dialogführung</b> auf ein neues Level:
-            Mit Gesprächsanalyse, KI-Coaches und realistischen Simulationen wird aus jedem Gespräch eine Lernchance –
-            messbar, skalierbar und sympathisch in der Anwendung.
+          <p className="mt-4 max-w-2xl text-xl leading-relaxed text-white/90 md:text-2xl font-medium">
+            Lebendigere Gespräche. Stärkere Verbundenheit. Echtes Verstehen.
+          </p>
+
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
+            Pipeline-Qualität steigt, Onboarding wird schneller, Coaching skalierbar.
+            Psychologische Sicherheit & Führungsgespräche: messbar besser.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
