@@ -163,24 +163,59 @@ export default function Page() {
         </div>
       </section>
 
-      {/* NUTZEN */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight">Nutzen, der im Alltag ankommt</h2>
+      {/* USE CASES */}
+      <section id="use-cases" className="mx-auto max-w-6xl px-6 py-16">
+        <h2 className="text-3xl font-extrabold tracking-tight">Use Cases</h2>
         <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-          Ob Führung oder Vertrieb: Es geht um bessere Gespräche – und damit um bessere Ergebnisse.
+          Für wen ist zuhoeren.academy gemacht? Überall, wo Gesprächsqualität über Erfolg entscheidet.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            ["Für Mitarbeitende", "Objektives Feedback, gezieltes Training, selbstbestimmtes Lernen – ohne peinliche 'Live-Beobachtung'."],
-            ["Für Führung & Sales-Leitung", "Transparenz über Skills im Team, Standards via Playbooks, datenbasierte Coaching-Prioritäten."],
-            ["Für Unternehmen", "Skalierbare Weiterbildung, schnelleres Onboarding, messbare Entwicklung – ROI-freundlich."],
+            ["Leadership", "Führungsgespräche, Feedback, Mitarbeiterentwicklung – psychologische Sicherheit messbar verbessern."],
+            ["Sales", "Pipeline-Qualität steigern, Onboarding beschleunigen, Coaching skalierbar machen."],
+            ["HR & People", "Kulturentwicklung, Kommunikationstrainings, Onboarding-Gespräche optimieren."],
           ].map(([title, desc]) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-bold">{title}</h3>
               <p className="mt-2 leading-relaxed text-white/70">{desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ÜBER UNS */}
+      <section id="ueber-uns" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
+          <h2 className="text-3xl font-extrabold tracking-tight">Warum wir KI nutzen, ohne Menschlichkeit zu verlieren</h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-white/70">
+            Echte Gespräche brauchen echte Aufmerksamkeit. Unsere Mission: KI als Werkzeug nutzen, das Menschen dabei unterstützt,
+            besser zuzuhören – nicht es für sie zu tun. Technologie im Dienst der Verbindung, nicht als Ersatz.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-6">
+            <div>
+              <p className="font-bold text-white">Jürgen Melmuka</p>
+              <p className="text-sm text-white/60">Gründer & Entwickler</p>
+            </div>
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/juergenmelmuka/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10 transition"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://zuhoerakademie.at/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10 transition"
+              >
+                Zuhörakademie
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
