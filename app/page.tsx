@@ -13,11 +13,11 @@ export default function Page() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
-            KI-gestützte Weiterbildung für Leadership, Sales & Dialog
+            Lernen durch KI Feedback
           </p>
 
           <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-            Zuhören ist Wachstum – jetzt KI-gestützt.
+            KI-gestützte Weiterbildung für Leadership, Sales & Gesprächsführung
           </h1>
 
           <p className="mt-4 max-w-2xl text-xl leading-relaxed text-white/90 md:text-2xl font-medium">
@@ -51,10 +51,9 @@ export default function Page() {
           </div>
 
           {/* KPI Badges */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
               ["6", "spezialisierte KI-Coaches"],
-              ["4", "wissenschaftliche Kriterien"],
               ["3", "Trainingslevel"],
               ["24/7", "Training verfügbar"],
             ].map(([num, label]) => (
@@ -82,11 +81,11 @@ export default function Page() {
           <ProductCard
             name="Salesfitness.studio"
             tag="KI-Sales Coaching"
-            tagline="Analysieren. Trainieren. Abschließen."
+            tagline="Feedback. Trainieren. Abschließen."
             href="https://salesfitness.studio"
             bullets={[
-              "Transkription (Deepgram Nova-3 & Whisper)",
-              "Ampelsystem + Playbook-Abgleich",
+              "Aufnahme und Transkription deiner Sales Calls",
+              "Detailliertes Feedback zu deinem Verkaufsgespräch",
               "6 KI-Coaches (Fragen, Einwand, Klarheit, Abschluss, Preis, Rapport)",
               "Adaptive Übungen, Simulation, Gamification",
               "Team-Analytics, Rollen, Reports",
@@ -97,11 +96,11 @@ export default function Page() {
           <ProductCard
             name="Dialogfitness.studio"
             tag="Dialogtraining"
-            tagline="Aktives Zuhören realistisch trainieren."
+            tagline="Konstruktive Gesprächsführung trainieren."
             href="https://dialogfitness.studio"
             bullets={[
               "KI-Gesprächspartner per Spracheingabe",
-              "Sofort-Analyse nach 4 wissenschaftlichen Kriterien",
+              "Sofort-Feedback und Impulse",
               "Vielfältige Szenarien (Beruf, Privat, eigene Fälle)",
               "Mobile-optimiert, jederzeit verfügbar",
               "Dashboard mit Fortschrittskurven",
@@ -115,9 +114,7 @@ export default function Page() {
             tagline="Das nächste Modul ist in Vorbereitung."
             href="https://leadershipfitness.studio"
             bullets={[
-              "Führungsgespräche KI-gestützt trainieren",
               "Feedback- und Mitarbeitergespräche",
-              "Konfliktlösung & schwierige Situationen",
               "Messbare Entwicklung für Führungskräfte",
               "Early Access möglich",
             ]}
@@ -135,9 +132,9 @@ export default function Page() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            ["1) Gespräch erfassen", "Audio/Call aufnehmen oder Simulation starten. Sprache wird transkribiert und strukturiert."],
-            ["2) Analysieren & bewerten", "Metriken, Ampellogik, Stärken/Schwächen und (optional) Playbook-Abgleich."],
-            ["3) Trainieren & verbessern", "Personalisierte Übungen, Rollenspiele, Level-System und Verlauf – Fortschritt wird sichtbar."],
+            ["1) [Schritt 1]", "[Beschreibung Schritt 1]"],
+            ["2) [Schritt 2]", "[Beschreibung Schritt 2]"],
+            ["3) [Schritt 3]", "[Beschreibung Schritt 3]"],
           ].map(([title, desc]) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-bold">{title}</h3>
