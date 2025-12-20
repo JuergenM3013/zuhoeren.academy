@@ -50,6 +50,22 @@ export default function Page() {
             </span>
           </div>
 
+          {/* Trust Badges */}
+          <div className="mt-8 flex flex-wrap gap-3">
+            <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-300">
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              DSGVO-konform
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80">
+              🇦🇹 Made in Austria
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80">
+              EU-Datenverarbeitung
+            </span>
+          </div>
+
           {/* KPI Badges */}
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
@@ -81,29 +97,29 @@ export default function Page() {
           <ProductCard
             name="Salesfitness.studio"
             tag="KI-Sales Coaching"
-            tagline="Feedback. Trainieren. Abschließen."
+            tagline="Analysieren. Trainieren. Abschließen."
             href="https://salesfitness.studio"
             bullets={[
-              "Aufnahme und Transkription deiner Sales Calls",
-              "Detailliertes Feedback zu deinem Verkaufsgespräch",
-              "6 KI-Coaches (Fragen, Einwand, Klarheit, Abschluss, Preis, Rapport)",
-              "Adaptive Übungen, Simulation, Gamification",
-              "Team-Analytics, Rollen, Reports",
+              "Intelligente Gesprächsanalyse mit Deepgram Nova-3 & OpenAI Whisper",
+              "6 spezialisierte KI-Coaches: Fragen, Einwand, Klarheit, Abschluss, Preis, Rapport",
+              "Adaptives Training mit 3 Schwierigkeitsstufen & Gamification",
+              "Team-Analytics, Rollen-Management & Reports",
+              "Playbook-Abgleich für unternehmenseigene Standards",
             ]}
             ctaLabel="Demo anfragen"
           />
 
           <ProductCard
             name="Dialogfitness.studio"
-            tag="Dialogtraining"
-            tagline="Konstruktive Gesprächsführung trainieren."
+            tag="Listening Coach"
+            tagline="Aktives Zuhören trainieren. Besser verstehen."
             href="https://dialogfitness.studio"
             bullets={[
-              "KI-Gesprächspartner per Spracheingabe",
-              "Sofort-Feedback und Impulse",
-              "Vielfältige Szenarien (Beruf, Privat, eigene Fälle)",
-              "Mobile-optimiert, jederzeit verfügbar",
-              "Dashboard mit Fortschrittskurven",
+              "KI-Gesprächspartner per Spracheingabe – jederzeit verfügbar",
+              "Sofort-Feedback nach 4 wissenschaftlichen Kriterien",
+              "Vielfältige Szenarien: Beruf, Privat, eigene Fälle hochladen",
+              "Mobile-optimiert für Training unterwegs",
+              "Fortschrittskurven & messbarer Lernfortschritt",
             ]}
             ctaLabel="Demo anfragen"
           />
@@ -120,6 +136,86 @@ export default function Page() {
             ]}
             ctaLabel="Early Access"
           />
+        </div>
+      </section>
+
+      {/* PRODUKT-DETAILS */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Salesfitness.studio Details */}
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-600/10 to-transparent p-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-300">
+              Salesfitness.studio
+            </div>
+            <h3 className="mt-4 text-xl font-extrabold">Verkaufsgespräche analysieren & optimieren</h3>
+            <p className="mt-3 text-white/70 leading-relaxed">
+              Die KI-gestützte Plattform analysiert deine Sales Calls mit modernster Spracherkennung (Deepgram Nova-3 & OpenAI Whisper) und gibt dir gezieltes Feedback durch 6 spezialisierte KI-Coaches.
+            </p>
+            <div className="mt-6 space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
+                <p className="text-sm text-white/80"><b>Fragen-Coach:</b> Trainiert effektive Fragetechniken</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
+                <p className="text-sm text-white/80"><b>Einwand-Coach:</b> Übt Einwandbehandlung situativ</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
+                <p className="text-sm text-white/80"><b>Abschluss-Coach:</b> Verbessert Closing-Techniken</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Dialogfitness.studio Details */}
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-emerald-600/10 to-transparent p-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-300">
+              Dialogfitness.studio
+            </div>
+            <h3 className="mt-4 text-xl font-extrabold">Aktives Zuhören wissenschaftlich trainieren</h3>
+            <p className="mt-3 text-white/70 leading-relaxed">
+              Der Listening Coach ist ein KI-gestütztes Trainingsprogramm, das aktives Zuhören durch interaktive Gespräche mit einem KI-Gesprächspartner trainiert und nach wissenschaftlichen Kriterien bewertet.
+            </p>
+            <div className="mt-6 space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
+                <p className="text-sm text-white/80"><b>Empathische Reaktionen:</b> Gefühle erkennen & ansprechen</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
+                <p className="text-sm text-white/80"><b>Offene Fragen:</b> Gespräche vertiefen lernen</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
+                <p className="text-sm text-white/80"><b>Zusammenfassungen:</b> Verständnis sichern</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SOCIAL PROOF */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12 text-center">
+          <p className="text-sm font-medium text-white/60 uppercase tracking-wider">Vertrauen durch Qualität</p>
+          <h2 className="mt-4 text-2xl font-extrabold md:text-3xl">Entwickelt für B2B-Teams, die Gespräche ernst nehmen</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-white/70 leading-relaxed">
+            Unsere Plattformen werden bereits von Sales-Teams, Führungskräften und HR-Abteilungen genutzt, um Gesprächsqualität messbar zu verbessern.
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div className="text-3xl font-extrabold text-violet-400">100%</div>
+              <div className="mt-2 text-sm text-white/60">DSGVO-konform</div>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div className="text-3xl font-extrabold text-emerald-400">EU</div>
+              <div className="mt-2 text-sm text-white/60">Datenverarbeitung</div>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div className="text-3xl font-extrabold text-white">B2B</div>
+              <div className="mt-2 text-sm text-white/60">Enterprise-ready</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -229,6 +325,10 @@ export default function Page() {
             ["Für welche Teams ist das ideal?", "B2B-Teams (10–500), z. B. SDR/Inside Sales/Field Sales – besonders bei vielen Calls und wiederkehrenden Gesprächsmustern."],
             ["Kann ich unternehmensspezifische Playbooks nutzen?", "Ja – Playbook-Abgleich ist ein Kernbaustein. Onboarding und individuelle Anpassungen werden im Pilot geklärt."],
             ["Wie starte ich am schnellsten?", "Mit einer Demo + Pilot-Setup (1 Team, klare Ziele, 2–4 Wochen) und danach Rollout auf weitere Teams."],
+            ["Wie funktioniert das KI-Feedback?", "Deine Gespräche werden transkribiert und von KI-Coaches analysiert. Du erhältst konkrete Verbesserungsvorschläge und kannst gezielt trainieren."],
+            ["Ist die Plattform DSGVO-konform?", "Ja. Alle Daten werden in der EU verarbeitet. Wir halten uns strikt an die DSGVO und bieten Auftragsverarbeitungsverträge."],
+            ["Brauche ich technisches Vorwissen?", "Nein. Die Plattform ist intuitiv bedienbar. Onboarding und Support sind im Pilot inklusive."],
+            ["Was kostet das?", "Die Preise richten sich nach Teamgröße und Funktionsumfang. Kontaktiere uns für ein individuelles Angebot."],
           ].map(([q, a]) => (
             <details key={q} className="group rounded-2xl border border-white/10 bg-white/5 p-5">
               <summary className="cursor-pointer font-bold">{q}</summary>
