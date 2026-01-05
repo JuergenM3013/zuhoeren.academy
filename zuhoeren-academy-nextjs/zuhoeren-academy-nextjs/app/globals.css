@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-neutral-900 antialiased;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+/* Subtile Background-Pattern/Glow */
+.bg-glow {
+  background:
+    radial-gradient(900px circle at 10% 10%, rgba(59,130,246,0.12), transparent 60%),
+    radial-gradient(700px circle at 90% 20%, rgba(16,185,129,0.10), transparent 55%),
+    radial-gradient(800px circle at 60% 90%, rgba(168,85,247,0.10), transparent 55%);
+}
+
+/* nicer focus */
+:focus-visible {
+  outline: 2px solid rgba(59,130,246,0.6);
+  outline-offset: 2px;
+}

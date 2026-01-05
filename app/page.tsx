@@ -1,5 +1,14 @@
 import ProductCard from "@/components/ProductCard";
 import ContactForm from "@/components/ContactForm";
+import { platforms } from "@/content/platforms";
+
+const categoryColors: Record<string, { tag: string; gradient: string; dot: string }> = {
+  Sales: { tag: "bg-violet-500/10 border-violet-500/30 text-violet-300", gradient: "from-violet-600/10", dot: "bg-violet-400" },
+  Dialog: { tag: "bg-emerald-500/10 border-emerald-500/30 text-emerald-300", gradient: "from-emerald-600/10", dot: "bg-emerald-400" },
+  Leadership: { tag: "bg-amber-500/10 border-amber-500/30 text-amber-300", gradient: "from-amber-600/10", dot: "bg-amber-400" },
+  Resilienz: { tag: "bg-rose-500/10 border-rose-500/30 text-rose-300", gradient: "from-rose-600/10", dot: "bg-rose-400" },
+  Metakognition: { tag: "bg-cyan-500/10 border-cyan-500/30 text-cyan-300", gradient: "from-cyan-600/10", dot: "bg-cyan-400" },
+};
 
 export default function Page() {
   return (
@@ -69,8 +78,8 @@ export default function Page() {
           {/* KPI Badges */}
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              ["6", "spezialisierte KI-Coaches"],
-              ["3", "Trainingslevel"],
+              ["5", "KI-Trainingsplattformen"],
+              ["100+", "Übungsszenarien"],
               ["24/7", "Training verfügbar"],
             ].map(([num, label]) => (
               <div key={label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -86,111 +95,68 @@ export default function Page() {
       <section id="produkte" className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight">Produkte</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight">Unsere Plattformen</h2>
             <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-              Zwei Lösungen sind live – eine dritte folgt. Gemeinsames Ziel: bessere Gespräche, messbar gemacht.
+              5 spezialisierte KI-Trainingsplattformen. Gemeinsames Ziel: bessere Gespräche, messbar gemacht.
             </p>
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <ProductCard
-            name="Salesfitness.studio"
-            tag="KI-Sales Coaching"
-            tagline="Analysieren. Trainieren. Abschließen."
-            href="https://salesfitness.studio"
-            bullets={[
-              "Intelligente Gesprächsanalyse mit Deepgram Nova-3 & OpenAI Whisper",
-              "6 spezialisierte KI-Coaches: Fragen, Einwand, Klarheit, Abschluss, Preis, Rapport",
-              "Adaptives Training mit 3 Schwierigkeitsstufen & Gamification",
-              "Team-Analytics, Rollen-Management & Reports",
-              "Playbook-Abgleich für unternehmenseigene Standards",
-            ]}
-            ctaLabel="Demo anfragen"
-          />
-
-          <ProductCard
-            name="Dialogfitness.studio"
-            tag="Listening Coach"
-            tagline="Aktives Zuhören trainieren. Besser verstehen."
-            href="https://dialogfitness.studio"
-            bullets={[
-              "KI-Gesprächspartner per Spracheingabe – jederzeit verfügbar",
-              "Sofort-Feedback nach 4 wissenschaftlichen Kriterien",
-              "Vielfältige Szenarien: Beruf, Privat, eigene Fälle hochladen",
-              "Mobile-optimiert für Training unterwegs",
-              "Fortschrittskurven & messbarer Lernfortschritt",
-            ]}
-            ctaLabel="Demo anfragen"
-          />
-
-          <ProductCard
-            name="Leadershipfitness.studio"
-            tag="Coming soon"
-            tagline="Das nächste Modul ist in Vorbereitung."
-            href="https://leadershipfitness.studio"
-            bullets={[
-              "Feedback- und Mitarbeitergespräche",
-              "Messbare Entwicklung für Führungskräfte",
-              "Early Access möglich",
-            ]}
-            ctaLabel="Early Access"
-          />
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {platforms.map((platform) => (
+            <ProductCard
+              key={platform.slug}
+              name={platform.name}
+              tag={platform.category}
+              tagline={platform.tagline}
+              href={platform.website}
+              bullets={platform.bullets}
+              ctaLabel="Mehr erfahren"
+            />
+          ))}
         </div>
       </section>
 
       {/* PRODUKT-DETAILS */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-2">
-          {/* Salesfitness.studio Details */}
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-600/10 to-transparent p-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-300">
-              Salesfitness.studio
-            </div>
-            <h3 className="mt-4 text-xl font-extrabold">Verkaufsgespräche analysieren & optimieren</h3>
-            <p className="mt-3 text-white/70 leading-relaxed">
-              Die KI-gestützte Plattform analysiert deine Sales Calls mit modernster Spracherkennung (Deepgram Nova-3 & OpenAI Whisper) und gibt dir gezieltes Feedback durch 6 spezialisierte KI-Coaches.
-            </p>
-            <div className="mt-6 space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
-                <p className="text-sm text-white/80"><b>Fragen-Coach:</b> Trainiert effektive Fragetechniken</p>
+        <h2 className="text-3xl font-extrabold tracking-tight mb-4">Plattform-Details</h2>
+        <p className="max-w-2xl leading-relaxed text-white/70 mb-10">
+          Jede Plattform mit spezialisierten Trainingsstationen und KI-Feedback.
+        </p>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {platforms.map((platform) => {
+            const colors = categoryColors[platform.category];
+            return (
+              <div key={platform.slug} className={`rounded-3xl border border-white/10 bg-gradient-to-br ${colors.gradient} to-transparent p-8`}>
+                <div className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium ${colors.tag}`}>
+                  {platform.name}
+                </div>
+                <h3 className="mt-4 text-xl font-extrabold">{platform.tagline}</h3>
+                <p className="mt-3 text-white/70 leading-relaxed text-sm">
+                  {platform.description}
+                </p>
+                {platform.sections[0] && (
+                  <div className="mt-6 space-y-3">
+                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider">{platform.sections[0].title}</p>
+                    {platform.sections[0].items?.slice(0, 3).map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <span className={`mt-1 h-2 w-2 rounded-full ${colors.dot}`} />
+                        <p className="text-sm text-white/80">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                <a
+                  href={platform.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
+                >
+                  {platform.name} besuchen →
+                </a>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
-                <p className="text-sm text-white/80"><b>Einwand-Coach:</b> Übt Einwandbehandlung situativ</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-violet-400" />
-                <p className="text-sm text-white/80"><b>Abschluss-Coach:</b> Verbessert Closing-Techniken</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Dialogfitness.studio Details */}
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-emerald-600/10 to-transparent p-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-300">
-              Dialogfitness.studio
-            </div>
-            <h3 className="mt-4 text-xl font-extrabold">Aktives Zuhören wissenschaftlich trainieren</h3>
-            <p className="mt-3 text-white/70 leading-relaxed">
-              Der Listening Coach ist ein KI-gestütztes Trainingsprogramm, das aktives Zuhören durch interaktive Gespräche mit einem KI-Gesprächspartner trainiert und nach wissenschaftlichen Kriterien bewertet.
-            </p>
-            <div className="mt-6 space-y-3">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                <p className="text-sm text-white/80"><b>Empathische Reaktionen:</b> Gefühle erkennen & ansprechen</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                <p className="text-sm text-white/80"><b>Offene Fragen:</b> Gespräche vertiefen lernen</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" />
-                <p className="text-sm text-white/80"><b>Zusammenfassungen:</b> Verständnis sichern</p>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </section>
 
@@ -263,15 +229,19 @@ export default function Page() {
           Für wen ist zuhoeren.academy gemacht? Überall, wo Gesprächsqualität über Erfolg entscheidet.
         </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
-            ["Leadership", "Führungsgespräche, Feedback, Mitarbeiterentwicklung – psychologische Sicherheit messbar verbessern."],
-            ["Sales", "Pipeline-Qualität steigern, Onboarding beschleunigen, Coaching skalierbar machen."],
-            ["HR & People", "Kulturentwicklung, Kommunikationstrainings, Onboarding-Gespräche optimieren."],
-          ].map(([title, desc]) => (
+            ["Sales & Vertrieb", "Pipeline-Qualität steigern, Onboarding beschleunigen, Coaching skalierbar machen.", "SalesFitness"],
+            ["Führungskräfte", "Führungsgespräche, Feedback, Mitarbeiterentwicklung – psychologische Sicherheit messbar verbessern.", "LeadershipFitness"],
+            ["HR & People", "Kulturentwicklung, Kommunikationstrainings, Onboarding-Gespräche optimieren.", "DialogFitness"],
+            ["Kundenservice", "Kundengespräche verbessern, Konflikte lösen, Empathie trainieren.", "DialogFitness"],
+            ["Coaches & Trainer", "Skalierbare Trainingsformate, Fortschritt messen, Transfer sichern.", "Alle Plattformen"],
+            ["Wissensarbeiter", "Bessere Entscheidungen, Denkfallen vermeiden, Reflexion stärken.", "Metakognitionen.at"],
+          ].map(([title, desc, platform]) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="font-bold">{title}</h3>
-              <p className="mt-2 leading-relaxed text-white/70">{desc}</p>
+              <p className="mt-2 leading-relaxed text-white/70 text-sm">{desc}</p>
+              <p className="mt-3 text-xs text-white/50">→ {platform}</p>
             </div>
           ))}
         </div>
