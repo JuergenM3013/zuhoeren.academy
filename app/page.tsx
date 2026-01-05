@@ -22,40 +22,46 @@ export default function Page() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
-            Lernen durch KI Feedback
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            Dein Fitnessstudio für Kommunikation
           </p>
 
           <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-            KI-gestützte Weiterbildung für Leadership, Sales & Gesprächsführung
+            Trainiere Gespräche wie Muskeln – mit KI als Personal Coach
           </h1>
 
           <p className="mt-4 max-w-2xl text-xl leading-relaxed text-white/90 md:text-2xl font-medium">
-            Lebendigere Gespräche. Stärkere Verbundenheit. Echtes Verstehen.
+            Sales. Leadership. Dialog. Resilienz. Denken. – Alles trainierbar.
           </p>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
-            Pipeline-Qualität steigt, Onboarding wird schneller, Coaching skalierbar.
-            Psychologische Sicherheit & Führungsgespräche: messbar besser.
+            Wie im Fitnessstudio: Übung macht den Meister. Unsere KI-Trainingsgeräte geben dir
+            sofortiges Feedback, messen deinen Fortschritt und machen Soft Skills messbar.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#produkte" className="rounded-xl bg-violet-600 px-5 py-3 font-semibold transition hover:bg-violet-500">
-              Produkte entdecken
+            <a href="#produkte" className="rounded-xl bg-violet-600 px-5 py-3 font-semibold transition hover:bg-violet-500 inline-flex items-center gap-2">
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+              Trainingsgeräte entdecken
             </a>
             <a href="#wie" className="rounded-xl border border-white/15 bg-white/5 px-5 py-3 font-semibold transition hover:bg-white/10">
-              So funktioniert's
+              Trainingsplan ansehen
             </a>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/70">
             <span className="inline-flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Feedback in Minuten
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Sofort-Feedback nach jeder Übung
             </span>
             <span className="inline-flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Training ohne Risiko
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Risikofreies Training
             </span>
             <span className="inline-flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Team-Standards via Playbooks
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(34,197,94,0.5)]" /> Fortschritt messbar machen
             </span>
           </div>
 
@@ -75,14 +81,15 @@ export default function Page() {
             </span>
           </div>
 
-          {/* KPI Badges */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-3">
+          {/* KPI Badges - Fitness Stats */}
+          <div className="mt-12 grid gap-4 sm:grid-cols-4">
             {[
-              ["5", "KI-Trainingsplattformen"],
-              ["100+", "Übungsszenarien"],
-              ["24/7", "Training verfügbar"],
+              ["5", "Trainingsgeräte", "fitness-icon"],
+              ["100+", "Übungen", "reps-icon"],
+              ["3", "Level pro Skill", "level-icon"],
+              ["24/7", "Gym geöffnet", "clock-icon"],
             ].map(([num, label]) => (
-              <div key={label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div key={label} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
                 <div className="text-2xl font-extrabold">{num}</div>
                 <div className="mt-1 text-sm text-white/60">{label}</div>
               </div>
@@ -91,13 +98,14 @@ export default function Page() {
         </div>
       </section>
 
-      {/* PRODUKTE */}
+      {/* TRAININGSGERÄTE */}
       <section id="produkte" className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight">Unsere Plattformen</h2>
+            <p className="text-sm font-medium text-violet-400 uppercase tracking-wider mb-2">Unser Gerätepark</p>
+            <h2 className="text-3xl font-extrabold tracking-tight">5 spezialisierte Trainingsgeräte</h2>
             <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-              5 spezialisierte KI-Trainingsplattformen. Gemeinsames Ziel: bessere Gespräche, messbar gemacht.
+              Jedes Gerät trainiert einen anderen Muskel deiner Kommunikation. Wähle dein Workout.
             </p>
           </div>
         </div>
@@ -117,11 +125,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* PRODUKT-DETAILS */}
+      {/* TRAININGSSTATIONEN */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight mb-4">Plattform-Details</h2>
+        <p className="text-sm font-medium text-emerald-400 uppercase tracking-wider mb-2">Deep Dive</p>
+        <h2 className="text-3xl font-extrabold tracking-tight mb-4">Trainingsstationen im Detail</h2>
         <p className="max-w-2xl leading-relaxed text-white/70 mb-10">
-          Jede Plattform mit spezialisierten Trainingsstationen und KI-Feedback.
+          Jedes Gerät hat spezialisierte Übungsstationen. Trainiere gezielt – wie im echten Gym.
         </p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {platforms.map((platform) => {
@@ -160,105 +169,127 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
+      {/* GYM STANDARDS */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12 text-center">
-          <p className="text-sm font-medium text-white/60 uppercase tracking-wider">Vertrauen durch Qualität</p>
-          <h2 className="mt-4 text-2xl font-extrabold md:text-3xl">Entwickelt für B2B-Teams, die Gespräche ernst nehmen</h2>
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-600/5 to-emerald-600/5 p-8 md:p-12 text-center">
+          <p className="text-sm font-medium text-white/60 uppercase tracking-wider">Gym-Standards</p>
+          <h2 className="mt-4 text-2xl font-extrabold md:text-3xl">Professionelle Ausstattung für professionelle Teams</h2>
           <p className="mt-4 max-w-2xl mx-auto text-white/70 leading-relaxed">
-            Unsere Plattformen werden bereits von Sales-Teams, Führungskräften und HR-Abteilungen genutzt, um Gesprächsqualität messbar zu verbessern.
+            Unser Gym erfüllt höchste Standards – bei Datenschutz, Qualität und Verfügbarkeit.
           </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-4">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="text-3xl font-extrabold text-violet-400">100%</div>
-              <div className="mt-2 text-sm text-white/60">DSGVO-konform</div>
+              <div className="text-3xl mb-2">🔒</div>
+              <div className="text-xl font-extrabold text-violet-400">DSGVO</div>
+              <div className="mt-2 text-sm text-white/60">100% konform</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="text-3xl font-extrabold text-emerald-400">EU</div>
-              <div className="mt-2 text-sm text-white/60">Datenverarbeitung</div>
+              <div className="text-3xl mb-2">🇪🇺</div>
+              <div className="text-xl font-extrabold text-emerald-400">EU-Server</div>
+              <div className="mt-2 text-sm text-white/60">Deine Daten bleiben hier</div>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="text-3xl font-extrabold text-white">B2B</div>
-              <div className="mt-2 text-sm text-white/60">Enterprise-ready</div>
+              <div className="text-3xl mb-2">🏢</div>
+              <div className="text-xl font-extrabold text-amber-400">B2B-Ready</div>
+              <div className="mt-2 text-sm text-white/60">Enterprise-Features</div>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div className="text-3xl mb-2">⏰</div>
+              <div className="text-xl font-extrabold text-rose-400">24/7</div>
+              <div className="mt-2 text-sm text-white/60">Immer geöffnet</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* WIE ES FUNKTIONIERT */}
+      {/* TRAININGSPLAN */}
       <section id="wie" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight">Wie es funktioniert</h2>
+        <p className="text-sm font-medium text-amber-400 uppercase tracking-wider mb-2">Dein Trainingsplan</p>
+        <h2 className="text-3xl font-extrabold tracking-tight">So läuft dein Workout ab</h2>
         <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-          Ein klarer Ablauf – verständlich, konkret, ohne Buzzword-Overload.
+          Strukturiert wie im Gym: Warm-up, Workout, Cool-down. Jede Session bringt dich weiter.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            ["1) [Schritt 1]", "[Beschreibung Schritt 1]"],
-            ["2) [Schritt 2]", "[Beschreibung Schritt 2]"],
-            ["3) [Schritt 3]", "[Beschreibung Schritt 3]"],
-          ].map(([title, desc]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <h3 className="font-bold">{title}</h3>
-              <p className="mt-2 leading-relaxed text-white/70">{desc}</p>
+            ["Warm-up", "Wähle dein Trainingsgerät und Szenario. Die KI stellt sich auf dein Level ein.", "🎯", "bg-amber-500/10 border-amber-500/30"],
+            ["Workout", "Trainiere im Dialog mit dem KI-Partner. Sprich, reagiere, verbessere – in Echtzeit.", "💪", "bg-violet-500/10 border-violet-500/30"],
+            ["Cool-down", "Erhalte detailliertes Feedback, tracke deinen Score und plane die nächste Session.", "📊", "bg-emerald-500/10 border-emerald-500/30"],
+          ].map(([title, desc, emoji, colorClass]) => (
+            <div key={title} className={`rounded-2xl border ${colorClass} p-6`}>
+              <div className="text-3xl mb-3">{emoji}</div>
+              <h3 className="font-bold text-lg">{title}</h3>
+              <p className="mt-2 leading-relaxed text-white/70 text-sm">{desc}</p>
             </div>
           ))}
         </div>
 
-        {/* Trust Cards */}
+        {/* Fitness Philosophy */}
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 className="font-extrabold">Trainings-DNA trifft KI</h3>
+          <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-violet-600/10 to-transparent p-6">
+            <div className="text-2xl mb-3">🏋️</div>
+            <h3 className="font-extrabold">Gym-Philosophie trifft KI</h3>
             <p className="mt-3 leading-relaxed text-white/70">
-              <b className="text-white">zuhoeren.academy</b> verbindet wirksame Kommunikations- und Trainingskompetenz mit moderner KI – ohne die Menschlichkeit zu verlieren.
+              Wie beim Sport gilt: Wiederholung schafft Meisterschaft. Unsere KI ist dein Personal Trainer –
+              sie korrigiert, motiviert und misst deinen Fortschritt.
             </p>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 className="font-extrabold">Datenschutz & Vertrauen</h3>
+          <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-emerald-600/10 to-transparent p-6">
+            <div className="text-2xl mb-3">📈</div>
+            <h3 className="font-extrabold">Messbare Gains</h3>
             <p className="mt-3 leading-relaxed text-white/70">
-              Für B2B entscheidend: klare Prozesse, Rollen & Standards. Datenverarbeitung erfolgt DSGVO-konform in der EU.
+              Scores, Level, Fortschrittskurven: Du siehst genau, wo du stehst und wie du dich verbesserst.
+              Keine vagen Gefühle – sondern echte Daten.
             </p>
           </div>
         </div>
       </section>
 
-      {/* USE CASES */}
+      {/* TRAININGSZIELE */}
       <section id="use-cases" className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight">Use Cases</h2>
+        <p className="text-sm font-medium text-rose-400 uppercase tracking-wider mb-2">Für wen trainieren wir?</p>
+        <h2 className="text-3xl font-extrabold tracking-tight">Dein Trainingsziel bestimmt das Gerät</h2>
         <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-          Für wen ist zuhoeren.academy gemacht? Überall, wo Gesprächsqualität über Erfolg entscheidet.
+          Verschiedene Rollen, verschiedene Muskeln. Finde dein optimales Workout.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
-            ["Sales & Vertrieb", "Pipeline-Qualität steigern, Onboarding beschleunigen, Coaching skalierbar machen.", "SalesFitness"],
-            ["Führungskräfte", "Führungsgespräche, Feedback, Mitarbeiterentwicklung – psychologische Sicherheit messbar verbessern.", "LeadershipFitness"],
-            ["HR & People", "Kulturentwicklung, Kommunikationstrainings, Onboarding-Gespräche optimieren.", "DialogFitness"],
-            ["Kundenservice", "Kundengespräche verbessern, Konflikte lösen, Empathie trainieren.", "DialogFitness"],
-            ["Coaches & Trainer", "Skalierbare Trainingsformate, Fortschritt messen, Transfer sichern.", "Alle Plattformen"],
-            ["Wissensarbeiter", "Bessere Entscheidungen, Denkfallen vermeiden, Reflexion stärken.", "Metakognitionen.at"],
-          ].map(([title, desc, platform]) => (
-            <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
+            ["Sales & Vertrieb", "Abschluss-Muskeln aufbauen: Pipeline, Einwände, Closing.", "SalesFitness", "🎯"],
+            ["Führungskräfte", "Leadership-Kraft entwickeln: Feedback, Sicherheit, Klarheit.", "LeadershipFitness", "👔"],
+            ["HR & People", "Dialog-Ausdauer trainieren: Onboarding, Kultur, Konflikte.", "DialogFitness", "🤝"],
+            ["Kundenservice", "Empathie-Flexibilität steigern: Zuhören, Lösen, Deeskalieren.", "DialogFitness", "💬"],
+            ["Coaches & Trainer", "Skalierbare Workouts designen: Messen, Begleiten, Transferieren.", "Alle Geräte", "🎓"],
+            ["Wissensarbeiter", "Denk-Fitness boosten: Bias vermeiden, klar entscheiden.", "Metakognitionen.at", "🧠"],
+          ].map(([title, desc, platform, emoji]) => (
+            <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition">
+              <div className="text-2xl mb-3">{emoji}</div>
               <h3 className="font-bold">{title}</h3>
               <p className="mt-2 leading-relaxed text-white/70 text-sm">{desc}</p>
-              <p className="mt-3 text-xs text-white/50">→ {platform}</p>
+              <p className="mt-3 text-xs text-violet-400 font-medium">→ {platform}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ÜBER UNS */}
+      {/* DER TRAINER */}
       <section id="ueber-uns" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
-          <h2 className="text-3xl font-extrabold tracking-tight">Warum wir KI nutzen, ohne Menschlichkeit zu verlieren</h2>
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-emerald-600/5 to-violet-600/5 p-8 md:p-12">
+          <p className="text-sm font-medium text-emerald-400 uppercase tracking-wider mb-2">Der Gym-Gründer</p>
+          <h2 className="text-3xl font-extrabold tracking-tight">KI als Personal Trainer – nicht als Ersatz für Menschen</h2>
           <p className="mt-4 max-w-3xl leading-relaxed text-white/70">
-            Echte Gespräche brauchen echte Aufmerksamkeit. Unsere Mission: KI als Werkzeug nutzen, das Menschen dabei unterstützt,
-            besser zuzuhören – nicht es für sie zu tun. Technologie im Dienst der Verbindung, nicht als Ersatz.
+            Wie beim echten Fitnesstraining: Die Geräte und der Trainer unterstützen dich – aber die Arbeit machst du.
+            Unsere KI korrigiert, motiviert und misst. Aber echte Gespräche führst du selbst.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-6">
-            <div>
-              <p className="font-bold text-white">Jürgen Melmuka</p>
-              <p className="text-sm text-white/60">Gründer & Entwickler</p>
+            <div className="flex items-center gap-4">
+              <div className="h-14 w-14 rounded-full bg-gradient-to-br from-violet-500 to-emerald-500 flex items-center justify-center text-2xl">
+                🏋️
+              </div>
+              <div>
+                <p className="font-bold text-white">Jürgen Melmuka</p>
+                <p className="text-sm text-white/60">Gym-Gründer & Head Coach</p>
+              </div>
             </div>
             <div className="flex gap-3">
               <a
@@ -284,23 +315,24 @@ export default function Page() {
 
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-3xl font-extrabold tracking-tight">FAQ</h2>
+        <p className="text-sm font-medium text-cyan-400 uppercase tracking-wider mb-2">Häufige Fragen</p>
+        <h2 className="text-3xl font-extrabold tracking-tight">Gym-Guide für Einsteiger</h2>
         <p className="mt-2 max-w-2xl leading-relaxed text-white/70">
-          Die wichtigsten Fragen – kurz, ehrlich, B2B-tauglich.
+          Alles, was du vor dem ersten Training wissen solltest.
         </p>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            ["Ist das eher Training oder eher Software?", "Beides: Trainingslogik (Übungen, Simulationen, Coaching) + Software (Analyse, Metriken, Reporting) in einem Workflow."],
-            ["Für welche Teams ist das ideal?", "B2B-Teams (10–500), z. B. SDR/Inside Sales/Field Sales – besonders bei vielen Calls und wiederkehrenden Gesprächsmustern."],
-            ["Kann ich unternehmensspezifische Playbooks nutzen?", "Ja – Playbook-Abgleich ist ein Kernbaustein. Onboarding und individuelle Anpassungen werden im Pilot geklärt."],
-            ["Wie starte ich am schnellsten?", "Mit einer Demo + Pilot-Setup (1 Team, klare Ziele, 2–4 Wochen) und danach Rollout auf weitere Teams."],
-            ["Wie funktioniert das KI-Feedback?", "Deine Gespräche werden transkribiert und von KI-Coaches analysiert. Du erhältst konkrete Verbesserungsvorschläge und kannst gezielt trainieren."],
-            ["Ist die Plattform DSGVO-konform?", "Ja. Alle Daten werden in der EU verarbeitet. Wir halten uns strikt an die DSGVO und bieten Auftragsverarbeitungsverträge."],
-            ["Brauche ich technisches Vorwissen?", "Nein. Die Plattform ist intuitiv bedienbar. Onboarding und Support sind im Pilot inklusive."],
-            ["Was kostet das?", "Die Preise richten sich nach Teamgröße und Funktionsumfang. Kontaktiere uns für ein individuelles Angebot."],
+            ["Ist das ein Fitnessstudio oder Software?", "Beides in einem: Trainingsgeräte (Übungen, Simulationen) + Tracking-Software (Scores, Fortschritt, Reports). Wie ein modernes Gym mit App."],
+            ["Für welche Teams ist das Gym gemacht?", "B2B-Teams (10–500 Personen). Ideal für Sales, Leadership, HR – überall wo viele Gespräche geführt werden."],
+            ["Kann ich eigene Trainingspläne erstellen?", "Ja – Playbook-Abgleich und individuelle Szenarien sind Kernfeatures. Im Probetraining klären wir deine Anforderungen."],
+            ["Wie starte ich am schnellsten?", "Mit einem Probetraining: Demo ansehen, 2-4 Wochen testen, dann entscheiden. Kein Abo-Zwang."],
+            ["Wie funktioniert der KI-Coach?", "Er analysiert deine Gespräche, gibt Echtzeit-Feedback und schlägt konkrete Verbesserungen vor. Wie ein Personal Trainer, der jede Rep beobachtet."],
+            ["Ist das Gym DSGVO-konform?", "100%. Alle Daten bleiben in der EU. Wir bieten AVVs und erfüllen Enterprise-Anforderungen."],
+            ["Brauche ich Vorkenntnisse?", "Nein. Die Geräte sind selbsterklärend. Einweisung und Support sind im Probetraining inklusive."],
+            ["Was kostet die Mitgliedschaft?", "Abhängig von Teamgröße und gewünschten Geräten. Kontaktiere uns für dein individuelles Angebot."],
           ].map(([q, a]) => (
-            <details key={q} className="group rounded-2xl border border-white/10 bg-white/5 p-5">
+            <details key={q} className="group rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
               <summary className="cursor-pointer font-bold">{q}</summary>
               <p className="mt-3 leading-relaxed text-white/70">{a}</p>
             </details>
@@ -308,13 +340,14 @@ export default function Page() {
         </div>
       </section>
 
-      {/* KONTAKT */}
+      {/* PROBETRAINING */}
       <section id="kontakt" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-3xl font-extrabold tracking-tight">Kontakt</h2>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-600/10 to-transparent p-8">
+            <p className="text-sm font-medium text-violet-400 uppercase tracking-wider mb-2">Starte jetzt</p>
+            <h2 className="text-3xl font-extrabold tracking-tight">Probetraining buchen</h2>
             <p className="mt-3 leading-relaxed text-white/70">
-              Schreib uns – wir melden uns mit einem konkreten Vorschlag (Demo, Pilot oder Workshop-Format).
+              Wie im Fitnessstudio: Erst testen, dann entscheiden. Wir zeigen dir die Geräte.
             </p>
 
             <div className="mt-8 space-y-3 text-white/80">
@@ -332,10 +365,13 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-8 rounded-xl border border-white/10 bg-white/5 p-4">
-              <p className="text-sm font-semibold">Pilot-Angebot</p>
-              <p className="mt-1 text-sm leading-relaxed text-white/70">
-                2–4 Wochen mit 1 Team, klare Ziele, messbarer Erfolg. Ideal zum Kennenlernen und Validieren.
+            <div className="mt-8 rounded-xl border border-violet-500/30 bg-violet-500/10 p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xl">🎟️</span>
+                <p className="text-sm font-semibold text-violet-300">Probe-Abo</p>
+              </div>
+              <p className="text-sm leading-relaxed text-white/70">
+                2–4 Wochen Probetraining mit einem Team. Alle Geräte testen, Fortschritt messen, dann entscheiden.
               </p>
             </div>
           </div>
