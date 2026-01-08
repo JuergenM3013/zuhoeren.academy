@@ -93,17 +93,24 @@ export default function Page() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {platforms.map((platform) => (
-            <ProductCard
-              key={platform.slug}
-              name={platform.name}
-              tag={platform.category}
-              tagline={platform.tagline}
-              href={platform.website}
-              bullets={platform.bullets}
-              ctaLabel={texts.products.ctaLabel}
-            />
-          ))}
+          {platforms.map((platform) => {
+            const catColors = colors.categories[platform.category as keyof typeof colors.categories];
+            return (
+              <ProductCard
+                key={platform.slug}
+                name={platform.name}
+                tag={platform.category}
+                tagline={platform.tagline}
+                href={platform.website}
+                bullets={platform.bullets}
+                ctaLabel={texts.products.ctaLabel}
+                status={platform.status}
+                statusLabel={platform.statusLabel}
+                tagColor={catColors.tag}
+                dotColor={catColors.dot}
+              />
+            );
+          })}
         </div>
       </section>
 
@@ -119,8 +126,17 @@ export default function Page() {
             const catColors = colors.categories[platform.category as keyof typeof colors.categories];
             return (
               <div key={platform.slug} className={`rounded-3xl border ${colors.ui.cardBorder} bg-gradient-to-br ${catColors.gradient} to-transparent p-8`}>
-                <div className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium ${catColors.tag}`}>
-                  {platform.name}
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium ${catColors.tag}`}>
+                    {platform.name}
+                  </span>
+                  <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
+                    platform.status === "live"
+                      ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                      : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+                  }`}>
+                    {platform.statusLabel}
+                  </span>
                 </div>
                 <h3 className="mt-4 text-xl font-extrabold">{platform.tagline}</h3>
                 <p className={`mt-3 ${colors.ui.textSecondary} leading-relaxed text-sm`}>

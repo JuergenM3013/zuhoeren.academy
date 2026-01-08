@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,10 +16,10 @@ export default function Footer() {
               <span>zuhoeren.academy</span>
             </div>
             <p className="mt-3 text-sm text-white/60 max-w-xs">
-              KI-gestützte Weiterbildung für bessere Gespräche in Leadership, Sales und HR.
+              KI-gestÃ¼tzte Weiterbildung fÃ¼r bessere GesprÃ¤che in Leadership, Sales und HR.
             </p>
             <div className="mt-6">
-              <p className="text-sm font-semibold text-white/80">Newsletter: KI + Zuhören im Alltag</p>
+              <p className="text-sm font-semibold text-white/80">Newsletter: KI + ZuhÃ¶ren im Alltag</p>
               <form className="mt-2 flex gap-2">
                 <input
                   type="email"
@@ -46,14 +46,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://dialogfitness.studio" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                  Dialogfitness.studio
-                </a>
+                <span className="text-white/50">Dialogfitness.studio (coming soon)</span>
               </li>
               <li>
-                <a href="https://leadershipfitness.studio" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                  Leadershipfitness.studio
-                </a>
+                <span className="text-white/50">Leadershipfitness.studio (coming soon)</span>
               </li>
             </ul>
           </div>
@@ -84,7 +80,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
           <p className="text-sm text-white/50">
-            © {year} zuhoeren.academy
+            Â© {year} zuhoeren.academy
           </p>
           <a
             href="https://zuhoerakademie.at/"
@@ -92,10 +88,11 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-sm text-white/50 hover:text-white transition"
           >
-            Ein Projekt der Zuhörakademie
+            Ein Projekt der ZuhÃ¶rakademie
           </a>
         </div>
       </div>
     </footer>
   );
 }
+

@@ -76,7 +76,7 @@ export const colors = {
     cooldown: "bg-emerald-500/10 border-emerald-500/30",
   },
 
-  // Gym-Standards Badges
+  // Standards Badges
   badges: {
     dsgvo: "text-violet-400",
     euServer: "text-emerald-400",
@@ -102,15 +102,15 @@ export const texts = {
   // HERO SECTION
   // ============================================
   hero: {
-    pill: "Dein Fitnessstudio für Kommunikation",
-    headline: "Trainiere Gespräche wie Muskeln – mit KI als Personal Coach",
+    pill: "KI-gestütztes Kommunikationstraining",
+    headline: "Verbessere Gespräche mit KI-gestütztem Training",
     subheadline: "Sales. Leadership. Dialog. Resilienz. Denken. – Alles trainierbar.",
-    description: "Wie im Fitnessstudio: Übung macht den Meister. Unsere KI-Trainingsgeräte geben dir sofortiges Feedback, messen deinen Fortschritt und machen Soft Skills messbar.",
-    ctaPrimary: "Trainingsgeräte entdecken",
-    ctaSecondary: "Trainingsplan ansehen",
+    description: "Praxisnahe Übungen mit KI-Feedback machen Soft Skills messbar. Starte jetzt mit SalesFitness – weitere Plattformen folgen.",
+    ctaPrimary: "Plattformen entdecken",
+    ctaSecondary: "So funktioniert's",
     features: [
       "Sofort-Feedback nach jeder Übung",
-      "Risikofreies Training",
+      "Risikofrei üben",
       "Fortschritt messbar machen",
     ],
     trustBadges: [
@@ -119,144 +119,144 @@ export const texts = {
       "EU-Datenverarbeitung",
     ],
     stats: [
-      { value: "5", label: "Trainingsgeräte" },
+      { value: "5", label: "Plattformen" },
       { value: "100+", label: "Übungen" },
       { value: "3", label: "Level pro Skill" },
-      { value: "24/7", label: "Gym geöffnet" },
+      { value: "24/7", label: "Verfügbar" },
     ],
   },
 
   // ============================================
-  // TRAININGSGERÄTE (Produkte)
+  // PLATTFORMEN (Produkte)
   // ============================================
   products: {
-    sectionLabel: "Unser Gerätepark",
-    headline: "5 spezialisierte Trainingsgeräte",
-    description: "Jedes Gerät trainiert einen anderen Muskel deiner Kommunikation. Wähle dein Workout.",
+    sectionLabel: "Unsere Plattformen",
+    headline: "5 spezialisierte Trainingsplattformen",
+    description: "Jede Plattform fokussiert einen Bereich der Kommunikation. SalesFitness ist live – weitere folgen.",
     ctaLabel: "Mehr erfahren",
   },
 
   // ============================================
-  // TRAININGSSTATIONEN (Produkt-Details)
+  // MODULE (Produkt-Details)
   // ============================================
   stations: {
     sectionLabel: "Deep Dive",
-    headline: "Trainingsstationen im Detail",
-    description: "Jedes Gerät hat spezialisierte Übungsstationen. Trainiere gezielt – wie im echten Gym.",
+    headline: "Module im Detail",
+    description: "Jede Plattform bietet spezialisierte Übungsmodule mit KI-Feedback.",
     visitLabel: "besuchen →",
   },
 
   // ============================================
-  // GYM STANDARDS (Social Proof)
+  // STANDARDS (Social Proof)
   // ============================================
   gymStandards: {
-    sectionLabel: "Gym-Standards",
-    headline: "Professionelle Ausstattung für professionelle Teams",
-    description: "Unser Gym erfüllt höchste Standards – bei Datenschutz, Qualität und Verfügbarkeit.",
+    sectionLabel: "Standards",
+    headline: "Professionelle Infrastruktur für professionelle Teams",
+    description: "Unsere Plattformen erfüllen höchste Standards – bei Datenschutz, Qualität und Verfügbarkeit.",
     badges: [
       { emoji: "🔒", title: "DSGVO", subtitle: "100% konform" },
       { emoji: "🇪🇺", title: "EU-Server", subtitle: "Deine Daten bleiben hier" },
       { emoji: "🏢", title: "B2B-Ready", subtitle: "Enterprise-Features" },
-      { emoji: "⏰", title: "24/7", subtitle: "Immer geöffnet" },
+      { emoji: "⏰", title: "24/7", subtitle: "Immer verfügbar" },
     ],
   },
 
   // ============================================
-  // TRAININGSPLAN (Wie es funktioniert)
+  // ABLAUF (Wie es funktioniert)
   // ============================================
   trainingPlan: {
-    sectionLabel: "Dein Trainingsplan",
-    headline: "So läuft dein Workout ab",
-    description: "Strukturiert wie im Gym: Warm-up, Workout, Cool-down. Jede Session bringt dich weiter.",
+    sectionLabel: "So funktioniert es",
+    headline: "Der Trainingsablauf",
+    description: "Strukturiert in Einstieg, Simulation und Feedback. Jede Session bringt dich weiter.",
     steps: [
       {
-        title: "Warm-up",
-        description: "Wähle dein Trainingsgerät und Szenario. Die KI stellt sich auf dein Level ein.",
+        title: "Einstieg",
+        description: "Wähle Plattform und Szenario. Die KI passt sich deinem Level an.",
         emoji: "🎯",
       },
       {
-        title: "Workout",
-        description: "Trainiere im Dialog mit dem KI-Partner. Sprich, reagiere, verbessere – in Echtzeit.",
-        emoji: "💪",
+        title: "Simulation",
+        description: "Übe im Dialog mit dem KI-Partner. Sprich, reagiere, verbessere – in Echtzeit.",
+        emoji: "💬",
       },
       {
-        title: "Cool-down",
+        title: "Feedback",
         description: "Erhalte detailliertes Feedback, tracke deinen Score und plane die nächste Session.",
         emoji: "📊",
       },
     ],
     philosophy: [
       {
-        emoji: "🏋️",
-        title: "Gym-Philosophie trifft KI",
-        description: "Wie beim Sport gilt: Wiederholung schafft Meisterschaft. Unsere KI ist dein Personal Trainer – sie korrigiert, motiviert und misst deinen Fortschritt.",
+        emoji: "🎓",
+        title: "Lernphilosophie trifft KI",
+        description: "Wiederholung schafft Meisterschaft. Unsere KI begleitet dich als Coach – sie korrigiert, motiviert und misst deinen Fortschritt.",
       },
       {
         emoji: "📈",
-        title: "Messbare Gains",
-        description: "Scores, Level, Fortschrittskurven: Du siehst genau, wo du stehst und wie du dich verbesserst. Keine vagen Gefühle – sondern echte Daten.",
+        title: "Messbare Fortschritte",
+        description: "Scores, Level, Fortschrittskurven: Du siehst genau, wo du stehst und wie du dich verbesserst. Keine vagen Gefühle – sondern klare Daten.",
       },
     ],
   },
 
   // ============================================
-  // TRAININGSZIELE (Use Cases)
+  // ZIELGRUPPEN (Use Cases)
   // ============================================
   useCases: {
-    sectionLabel: "Für wen trainieren wir?",
-    headline: "Dein Trainingsziel bestimmt das Gerät",
-    description: "Verschiedene Rollen, verschiedene Muskeln. Finde dein optimales Workout.",
+    sectionLabel: "Für wen?",
+    headline: "Dein Ziel bestimmt die Plattform",
+    description: "Verschiedene Rollen, unterschiedliche Gesprächsziele. Finde deine Plattform.",
     cases: [
       {
         title: "Sales & Vertrieb",
-        description: "Abschluss-Muskeln aufbauen: Pipeline, Einwände, Closing.",
-        platform: "SalesFitness",
+        description: "Abschlusskompetenz ausbauen: Pipeline, Einwände, Closing.",
+        platform: "SalesFitness (Live)",
         emoji: "🎯",
       },
       {
         title: "Führungskräfte",
-        description: "Leadership-Kraft entwickeln: Feedback, Sicherheit, Klarheit.",
-        platform: "LeadershipFitness",
+        description: "Leadership-Kompetenz entwickeln: Feedback, Sicherheit, Klarheit.",
+        platform: "LeadershipFitness (Coming soon)",
         emoji: "👔",
       },
       {
         title: "HR & People",
-        description: "Dialog-Ausdauer trainieren: Onboarding, Kultur, Konflikte.",
-        platform: "DialogFitness",
+        description: "Dialogkompetenz stärken: Onboarding, Kultur, Konflikte.",
+        platform: "DialogFitness (Coming soon)",
         emoji: "🤝",
       },
       {
         title: "Kundenservice",
-        description: "Empathie-Flexibilität steigern: Zuhören, Lösen, Deeskalieren.",
-        platform: "DialogFitness",
+        description: "Empathie und Souveränität stärken: Zuhören, Lösen, Deeskalieren.",
+        platform: "DialogFitness (Coming soon)",
         emoji: "💬",
       },
       {
         title: "Coaches & Trainer",
-        description: "Skalierbare Workouts designen: Messen, Begleiten, Transferieren.",
-        platform: "Alle Geräte",
+        description: "Skalierbare Trainingsformate entwickeln: Messen, Begleiten, Transferieren.",
+        platform: "Alle Plattformen",
         emoji: "🎓",
       },
       {
         title: "Wissensarbeiter",
-        description: "Denk-Fitness boosten: Bias vermeiden, klar entscheiden.",
-        platform: "Metakognitionen.at",
+        description: "Denkkompetenz stärken: Bias vermeiden, klar entscheiden.",
+        platform: "Metakognitionen.at (Coming soon)",
         emoji: "🧠",
       },
     ],
   },
 
   // ============================================
-  // DER TRAINER (Über uns)
+  // ÜBER UNS
   // ============================================
   about: {
-    sectionLabel: "Der Gym-Gründer",
-    headline: "KI als Personal Trainer – nicht als Ersatz für Menschen",
-    description: "Wie beim echten Fitnesstraining: Die Geräte und der Trainer unterstützen dich – aber die Arbeit machst du. Unsere KI korrigiert, motiviert und misst. Aber echte Gespräche führst du selbst.",
+    sectionLabel: "Der Gründer",
+    headline: "KI als Coach – nicht als Ersatz für Menschen",
+    description: "Die Plattform und der KI-Coach unterstützen dich – aber die Arbeit machst du. Unsere KI korrigiert, motiviert und misst. Echte Gespräche führst du selbst.",
     founder: {
       name: "Jürgen Melmuka",
-      role: "Gym-Gründer & Head Coach",
-      emoji: "🏋️",
+      role: "Gründer & Head of Training",
+      emoji: "🎓",
       linkedin: "https://www.linkedin.com/in/juergenmelmuka/",
       website: "https://zuhoerakademie.at/",
     },
@@ -267,57 +267,57 @@ export const texts = {
   // ============================================
   faq: {
     sectionLabel: "Häufige Fragen",
-    headline: "Gym-Guide für Einsteiger",
-    description: "Alles, was du vor dem ersten Training wissen solltest.",
+    headline: "Guide für Einsteiger",
+    description: "Alles, was du vor dem Start wissen solltest.",
     questions: [
       {
-        q: "Ist das ein Fitnessstudio oder Software?",
-        a: "Beides in einem: Trainingsgeräte (Übungen, Simulationen) + Tracking-Software (Scores, Fortschritt, Reports). Wie ein modernes Gym mit App.",
+        q: "Ist das eine Trainingsplattform oder Software?",
+        a: "Beides in einem: Trainingsmodule (Übungen, Simulationen) + Tracking-Software (Scores, Fortschritt, Reports). Eine moderne Lernplattform mit KI-Unterstützung.",
       },
       {
-        q: "Für welche Teams ist das Gym gemacht?",
+        q: "Für welche Teams ist die Plattform gemacht?",
         a: "B2B-Teams (10–500 Personen). Ideal für Sales, Leadership, HR – überall wo viele Gespräche geführt werden.",
       },
       {
         q: "Kann ich eigene Trainingspläne erstellen?",
-        a: "Ja – Playbook-Abgleich und individuelle Szenarien sind Kernfeatures. Im Probetraining klären wir deine Anforderungen.",
+        a: "Ja – Playbook-Abgleich und individuelle Szenarien sind Kernfeatures. Im Pilotprojekt klären wir deine Anforderungen.",
       },
       {
         q: "Wie starte ich am schnellsten?",
-        a: "Mit einem Probetraining: Demo ansehen, 2-4 Wochen testen, dann entscheiden. Kein Abo-Zwang.",
+        a: "Mit einem Pilotprojekt: Demo ansehen, 2–4 Wochen testen, dann entscheiden. Kein Abo-Zwang.",
       },
       {
         q: "Wie funktioniert der KI-Coach?",
-        a: "Er analysiert deine Gespräche, gibt Echtzeit-Feedback und schlägt konkrete Verbesserungen vor. Wie ein Personal Trainer, der jede Rep beobachtet.",
+        a: "Er analysiert deine Gespräche, gibt Echtzeit-Feedback und schlägt konkrete Verbesserungen vor. Wie ein Personal Trainer für Kommunikation.",
       },
       {
-        q: "Ist das Gym DSGVO-konform?",
+        q: "Ist die Plattform DSGVO-konform?",
         a: "100%. Alle Daten bleiben in der EU. Wir bieten AVVs und erfüllen Enterprise-Anforderungen.",
       },
       {
         q: "Brauche ich Vorkenntnisse?",
-        a: "Nein. Die Geräte sind selbsterklärend. Einweisung und Support sind im Probetraining inklusive.",
+        a: "Nein. Die Module sind selbsterklärend. Einweisung und Support sind im Pilotprojekt inklusive.",
       },
       {
-        q: "Was kostet die Mitgliedschaft?",
-        a: "Abhängig von Teamgröße und gewünschten Geräten. Kontaktiere uns für dein individuelles Angebot.",
+        q: "Was kostet die Nutzung?",
+        a: "Abhängig von Teamgröße und gewünschten Plattformen. Kontaktiere uns für dein individuelles Angebot.",
       },
     ],
   },
 
   // ============================================
-  // PROBETRAINING (Kontakt)
+  // KONTAKT
   // ============================================
   contact: {
     sectionLabel: "Starte jetzt",
-    headline: "Probetraining buchen",
-    description: "Wie im Fitnessstudio: Erst testen, dann entscheiden. Wir zeigen dir die Geräte.",
+    headline: "Pilotprojekt starten",
+    description: "Teste die Plattform mit deinem Team. Wir begleiten dich beim Einstieg.",
     email: "hallo@zuhoeren.academy",
     phone: "+43 664 397 8684",
     probeAbo: {
-      emoji: "🎟️",
-      title: "Probe-Abo",
-      description: "2–4 Wochen Probetraining mit einem Team. Alle Geräte testen, Fortschritt messen, dann entscheiden.",
+      emoji: "🚀",
+      title: "Pilot-Angebot",
+      description: "2–4 Wochen Pilotprojekt mit einem Team. Module testen, Fortschritt messen, dann entscheiden.",
     },
   },
 
@@ -325,7 +325,7 @@ export const texts = {
   // FOOTER & NAVIGATION
   // ============================================
   navigation: {
-    produkte: "Produkte",
+    produkte: "Plattformen",
     useCases: "Use Cases",
     ueberUns: "Über uns",
     kontakt: "Kontakt",
@@ -333,7 +333,7 @@ export const texts = {
 
   footer: {
     companyName: "zuhoeren.academy",
-    tagline: "Das Fitnessstudio für Kommunikation",
+    tagline: "KI-gestütztes Kommunikationstraining",
     copyright: "© 2024 zuhoeren.academy. Alle Rechte vorbehalten.",
     links: {
       impressum: "Impressum",
@@ -345,8 +345,8 @@ export const texts = {
   // META & SEO
   // ============================================
   meta: {
-    title: "zuhoeren.academy – Das Fitnessstudio für Kommunikation",
-    description: "KI-gestützte Trainingsplattformen für Sales, Leadership, Dialog, Resilienz und Metakognition. Trainiere Gespräche wie Muskeln – mit messbarem Fortschritt.",
+    title: "zuhoeren.academy – KI-gestütztes Kommunikationstraining",
+    description: "KI-gestützte Trainingsplattformen für Sales, Leadership, Dialog, Resilienz und Metakognition. Verbessere Gespräche systematisch – mit messbarem Fortschritt.",
     keywords: [
       "KI Training",
       "Sales Coaching",

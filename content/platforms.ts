@@ -38,7 +38,7 @@ export const platforms: Platform[] = [
     statusLabel: "Live",
     tagline: "Analysieren. Trainieren. Abschließen.",
     description:
-      "SalesFitness unterstützt Vertriebsteams dabei, Gesprächsführung entlang klarer Phasen zu trainieren, Einwände souverän zu behandeln und Abschlüsse zu verbessern — mit Scores, Playbooks und Team-Analytics.",
+      "SalesFitness unterstützt Vertriebsteams dabei, Gesprächsführung entlang klarer Phasen zu trainieren, Einwände souverän zu behandeln und Abschlüsse zu verbessern – mit Scores, Playbooks und Team-Analytics.",
     bullets: [
       "Phasen-Training (Discovery → Angebot → Einwand → Abschluss) mit Standards",
       "KI-Feedback mit konkreten Formulierungen & Verbesserungsvorschlägen",
@@ -67,8 +67,8 @@ export const platforms: Platform[] = [
     name: "DialogFitness",
     website: "https://dialogfitness.studio",
     category: "Dialog",
-    status: "live",
-    statusLabel: "Live",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
     tagline: "Aktives Zuhören trainieren. Besser verstehen.",
     description:
       "DialogFitness ist eine KI-Trainingsplattform für praxisnahe Gesprächsmodelle mit Echtzeit-Dialogpartnern. Fokus: Struktur, Empathie, klare Fragen und souveräne Reaktionen in herausfordernden Situationen.",
@@ -81,12 +81,12 @@ export const platforms: Platform[] = [
     sections: [
       {
         title: "Dialog-Labs & Szenarien",
-        lead: "Realistische Gesprächssituationen — üben statt nur lesen.",
+        lead: "Realistische Gesprächssituationen – üben statt nur lesen.",
         items: ["Feedbackgespräche", "Kritische Kundensituationen", "Konflikt- & Klärungsgespräche", "Team-Abstimmungen"],
       },
       {
         title: "Modelle & Kriterien",
-        lead: "Trainieren entlang klarer Strukturen — und sehen, was besser wird.",
+        lead: "Trainieren entlang klarer Strukturen – und sehen, was besser wird.",
         items: ["SBI, AID, Pendleton", "Klarheit, Empathie, Sicherheit", "Lösungs- und Zielorientierung"],
       },
     ],
@@ -100,11 +100,11 @@ export const platforms: Platform[] = [
     name: "Metakognitionen.at",
     website: "https://metakognitionen.at",
     category: "Metakognition",
-    status: "live",
-    statusLabel: "Live",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
     tagline: "Besser denken, besser entscheiden.",
     description:
-      "Metakognitionen.at ist eine Lernplattform, die metakognitive Kompetenzen stärkt: Reflexion, Denkfehler vermeiden und Entscheidungen verbessern — mit interaktiven KI-Labs und strukturierten Modulen.",
+      "Metakognitionen.at ist eine Lernplattform, die metakognitive Kompetenzen stärkt: Reflexion, Denkfehler vermeiden und Entscheidungen verbessern – mit interaktiven KI-Labs und strukturierten Modulen.",
     bullets: [
       "Interaktive Labs zu Denkfallen, Perspektivenwechsel und Entscheidungsqualität",
       "Strukturierte Lernmodule statt lose Tipps",
@@ -114,7 +114,7 @@ export const platforms: Platform[] = [
     sections: [
       {
         title: "KI-Labs",
-        lead: "Interaktive Übungen mit Leitfragen — für echte Aha-Momente und klarere Entscheidungen.",
+        lead: "Interaktive Übungen mit Leitfragen – für echte Aha-Momente und klarere Entscheidungen.",
         items: ["Denkfehler & Bias", "Reframing", "Priorisierung", "Entscheidungslogik"],
       },
       {
@@ -133,11 +133,11 @@ export const platforms: Platform[] = [
     name: "ResilienzFitness",
     website: "https://resilienzfitness.studio",
     category: "Resilienz",
-    status: "live",
-    statusLabel: "Live",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
     tagline: "Resilienz im Arbeitsalltag stärken.",
     description:
-      "ResilienzFitness bietet Resilienz-Training mit Modulen, Übungen, KI-Coaching-Tools und Assessments. Fokus: Selbstregulation, mentale Flexibilität, gesunde Routinen — mit klarer Safety-Abgrenzung.",
+      "ResilienzFitness bietet Resilienz-Training mit Modulen, Übungen, KI-Coaching-Tools und Assessments. Fokus: Selbstregulation, mentale Flexibilität, gesunde Routinen – mit klarer Safety-Abgrenzung.",
     bullets: [
       "Module & Übungen (z. B. Stressregulation, Ressourcen, Routinen)",
       "Validierte Assessments & Fortschrittslogik",
@@ -147,7 +147,7 @@ export const platforms: Platform[] = [
     sections: [
       {
         title: "Module & Übungen",
-        lead: "Kompakte Einheiten — ideal für den Arbeitsalltag.",
+        lead: "Kompakte Einheiten – ideal für den Arbeitsalltag.",
         items: ["Grundlagen der Resilienz", "Stress & Regulation", "Ressourcenarbeit", "Routinen & Schlaf", "Umgang mit Rückschlägen"],
       },
       {
@@ -158,7 +158,7 @@ export const platforms: Platform[] = [
     ],
     seo: {
       title: "ResilienzFitness",
-      description: "Resilienz-Trainingsplattform mit Übungen, Modulen, KI-Tools und Assessments — für Stressregulation und mentale Stärke im Arbeitsalltag.",
+      description: "Resilienz-Trainingsplattform mit Übungen, Modulen, KI-Tools und Assessments – für Stressregulation und mentale Stärke im Arbeitsalltag.",
     },
   },
   {
@@ -166,11 +166,11 @@ export const platforms: Platform[] = [
     name: "LeadershipFitness",
     website: "https://leadershipfitness.studio",
     category: "Leadership",
-    status: "live",
-    statusLabel: "Live",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
     tagline: "Leadership als Skill trainieren.",
     description:
-      "LeadershipFitness fokussiert auf moderne Führungskompetenzen: System 1/2, Emotionale Intelligenz, psychologische Sicherheit und praxistaugliche Gesprächs- & Entscheidungsroutinen — personalisiert und messbar.",
+      "LeadershipFitness fokussiert auf moderne Führungskompetenzen: System 1/2, Emotionale Intelligenz, psychologische Sicherheit und praxistaugliche Gesprächs- & Entscheidungsroutinen – personalisiert und messbar.",
     bullets: [
       "Wissenschaftlich fundiert (Kahneman, Goleman, Edmondson, Transaktionsanalyse)",
       "Transfer-fokussiert: 48h-Challenges sichern Umsetzung im Alltag",
@@ -185,7 +185,7 @@ export const platforms: Platform[] = [
       },
       {
         title: "Assessments",
-        lead: "Selbsteinschätzungen als Startpunkt — und zur Fortschrittsmessung.",
+        lead: "Selbsteinschätzungen als Startpunkt – und zur Fortschrittsmessung.",
         items: ["Führungsstil", "Sicherheitsklima", "Entscheidungsroutinen"],
       },
     ],
