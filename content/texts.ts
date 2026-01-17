@@ -102,16 +102,16 @@ export const texts = {
   // HERO SECTION
   // ============================================
   hero: {
-    pill: "KI-gestütztes Kommunikationstraining",
-    headline: "Verbessere Gespräche mit KI-gestütztem Training",
-    subheadline: "Sales. Leadership. Dialog. Resilienz. Denken. – Alles trainierbar.",
-    description: "Praxisnahe Übungen mit KI-Feedback machen Soft Skills messbar. Starte jetzt mit SalesFitness – weitere Plattformen folgen.",
-    ctaPrimary: "Plattformen entdecken",
+    pill: "KI-gestützte Lernsysteme",
+    headline: "KI-Lernsysteme für Gesprächsführung, Resilienz und Metakognition",
+    subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI messbar machen.",
+    description: "Wir entwickeln spezialisierte KI-Plattformen: Von Echtzeit-Feedback im Vertrieb über Assessment im Kundenkontakt bis zu Reflexionssystemen für Führungskräfte.",
+    ctaPrimary: "Lösungen entdecken",
     ctaSecondary: "So funktioniert's",
     features: [
-      "Sofort-Feedback nach jeder Übung",
-      "Risikofrei üben",
-      "Fortschritt messbar machen",
+      "KI-Feedback in Echtzeit",
+      "Assessment & Analyse",
+      "Reflexion & Lernen",
     ],
     trustBadges: [
       "DSGVO-konform",
@@ -120,8 +120,8 @@ export const texts = {
     ],
     stats: [
       { value: "5", label: "Plattformen" },
-      { value: "100+", label: "Übungen" },
-      { value: "3", label: "Level pro Skill" },
+      { value: "100+", label: "Szenarien" },
+      { value: "B2B", label: "Enterprise-ready" },
       { value: "24/7", label: "Verfügbar" },
     ],
   },
@@ -130,9 +130,9 @@ export const texts = {
   // PLATTFORMEN (Produkte)
   // ============================================
   products: {
-    sectionLabel: "Unsere Plattformen",
-    headline: "5 spezialisierte Trainingsplattformen",
-    description: "Jede Plattform fokussiert einen Bereich der Kommunikation. SalesFitness ist live – weitere folgen.",
+    sectionLabel: "Unsere Lösungen",
+    headline: "Spezialisierte KI-Lernsysteme",
+    description: "Jede Plattform adressiert einen spezifischen Anwendungsbereich. SalesFitness ist live – weitere Systeme folgen.",
     ctaLabel: "Mehr erfahren",
   },
 
@@ -140,9 +140,9 @@ export const texts = {
   // MODULE (Produkt-Details)
   // ============================================
   stations: {
-    sectionLabel: "Deep Dive",
-    headline: "Module im Detail",
-    description: "Jede Plattform bietet spezialisierte Übungsmodule mit KI-Feedback.",
+    sectionLabel: "Plattformen im Detail",
+    headline: "Spezialisierte Lernsysteme",
+    description: "Jede Plattform ist auf einen Anwendungsbereich optimiert – mit spezifischen Modulen, Szenarien und Analysen.",
     visitLabel: "besuchen →",
   },
 
@@ -166,35 +166,35 @@ export const texts = {
   // ============================================
   trainingPlan: {
     sectionLabel: "So funktioniert es",
-    headline: "Der Trainingsablauf",
-    description: "Strukturiert in Einstieg, Simulation und Feedback. Jede Session bringt dich weiter.",
+    headline: "Der Lernprozess",
+    description: "Drei Phasen für nachhaltiges Lernen: Szenario wählen, mit KI üben, Feedback analysieren.",
     steps: [
       {
-        title: "Einstieg",
-        description: "Wähle Plattform und Szenario. Die KI passt sich deinem Level an.",
+        title: "Szenario wählen",
+        description: "Wähle dein Lernziel und Szenario. Das System passt sich deinem Kenntnisstand an.",
         emoji: "🎯",
       },
       {
-        title: "Simulation",
-        description: "Übe im Dialog mit dem KI-Partner. Sprich, reagiere, verbessere – in Echtzeit.",
+        title: "Mit KI üben",
+        description: "Simuliere Gespräche mit dem KI-Partner. Reagiere, experimentiere, verbessere – in sicherer Umgebung.",
         emoji: "💬",
       },
       {
-        title: "Feedback",
-        description: "Erhalte detailliertes Feedback, tracke deinen Score und plane die nächste Session.",
+        title: "Feedback analysieren",
+        description: "Erhalte detaillierte Analyse, erkenne Muster und plane gezielt deine Weiterentwicklung.",
         emoji: "📊",
       },
     ],
     philosophy: [
       {
         emoji: "🎓",
-        title: "Lernphilosophie trifft KI",
-        description: "Wiederholung schafft Meisterschaft. Unsere KI begleitet dich als Coach – sie korrigiert, motiviert und misst deinen Fortschritt.",
+        title: "Wissenschaftlich fundiert",
+        description: "Unsere Lernsysteme basieren auf bewährten Methoden: Deliberate Practice, Reflexionszyklen und kontinuierliches Feedback.",
       },
       {
         emoji: "📈",
-        title: "Messbare Fortschritte",
-        description: "Scores, Level, Fortschrittskurven: Du siehst genau, wo du stehst und wie du dich verbesserst. Keine vagen Gefühle – sondern klare Daten.",
+        title: "Datenbasierte Entwicklung",
+        description: "Analysen, Trends, Fortschrittskurven: Du siehst genau, wo du stehst und welche Bereiche Aufmerksamkeit brauchen.",
       },
     ],
   },
@@ -203,43 +203,43 @@ export const texts = {
   // ZIELGRUPPEN (Use Cases)
   // ============================================
   useCases: {
-    sectionLabel: "Für wen?",
-    headline: "Dein Ziel bestimmt die Plattform",
-    description: "Verschiedene Rollen, unterschiedliche Gesprächsziele. Finde deine Plattform.",
+    sectionLabel: "Anwendungsbereiche",
+    headline: "Vier Kernbereiche der KI-Unterstützung",
+    description: "Unsere Lernsysteme adressieren unterschiedliche Anforderungen – vom Echtzeit-Feedback bis zur tiefgreifenden Reflexion.",
     cases: [
       {
-        title: "Sales & Vertrieb",
-        description: "Abschlusskompetenz ausbauen: Pipeline, Einwände, Closing.",
-        platform: "SalesFitness (Live)",
+        title: "KI-Feedbacksysteme",
+        description: "Echtzeit-Feedback für Verkaufsgespräche: Gesprächsanalyse, Einwandbehandlung, Abschlusstechnik – messbar und sofort.",
+        platform: "SalesFitness.studio (Live)",
+        emoji: "📊",
+      },
+      {
+        title: "Assessment für Kundenkontakt",
+        description: "Strukturierte Analyse von Telefonaten: Gesprächsqualität messen, Stärken identifizieren, Entwicklungspotenziale aufzeigen.",
+        platform: "SalesFitness & DialogFitness",
+        emoji: "📞",
+      },
+      {
+        title: "Reflexionssysteme für Führungskräfte",
+        description: "KI-gestützte Selbstreflexion: Führungsverhalten analysieren, blinde Flecken erkennen, systematisch weiterentwickeln.",
+        platform: "LeadershipFitness (Coming soon)",
         emoji: "🎯",
       },
       {
-        title: "Führungskräfte",
-        description: "Leadership-Kompetenz entwickeln: Feedback, Sicherheit, Klarheit.",
-        platform: "LeadershipFitness (Coming soon)",
-        emoji: "👔",
-      },
-      {
-        title: "HR & People",
-        description: "Dialogkompetenz stärken: Onboarding, Kultur, Konflikte.",
-        platform: "DialogFitness (Coming soon)",
+        title: "Konfliktlösung mit KI",
+        description: "Konfliktsituationen simulieren und trainieren: Deeskalation üben, Lösungsstrategien entwickeln, Resilienz aufbauen.",
+        platform: "ResilienzFitness (Coming soon)",
         emoji: "🤝",
       },
       {
-        title: "Kundenservice",
-        description: "Empathie und Souveränität stärken: Zuhören, Lösen, Deeskalieren.",
-        platform: "DialogFitness (Coming soon)",
-        emoji: "💬",
+        title: "Vertriebstraining",
+        description: "Systematisches Verkaufstraining: Cold Calls, Discovery, Closing – mit KI-Sparringspartner und detailliertem Feedback.",
+        platform: "SalesFitness.studio (Live)",
+        emoji: "💼",
       },
       {
-        title: "Coaches & Trainer",
-        description: "Skalierbare Trainingsformate entwickeln: Messen, Begleiten, Transferieren.",
-        platform: "Alle Plattformen",
-        emoji: "🎓",
-      },
-      {
-        title: "Wissensarbeiter",
-        description: "Denkkompetenz stärken: Bias vermeiden, klar entscheiden.",
+        title: "Metakognition & Denken",
+        description: "Denkprozesse verbessern: Kognitive Verzerrungen erkennen, Entscheidungsqualität steigern, kritisches Denken schärfen.",
         platform: "Metakognitionen.at (Coming soon)",
         emoji: "🧠",
       },
@@ -251,11 +251,11 @@ export const texts = {
   // ============================================
   about: {
     sectionLabel: "Der Gründer",
-    headline: "KI als Coach – nicht als Ersatz für Menschen",
-    description: "Die Plattform und der KI-Coach unterstützen dich – aber die Arbeit machst du. Unsere KI korrigiert, motiviert und misst. Echte Gespräche führst du selbst.",
+    headline: "KI als Lernsystem – nicht als Ersatz",
+    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback und zeigt Muster auf. Die eigentliche Arbeit – das Anwenden im echten Gespräch – machst du selbst.",
     founder: {
       name: "Jürgen Melmuka",
-      role: "Gründer & Head of Training",
+      role: "Gründer & Entwickler",
       emoji: "🎓",
       linkedin: "https://www.linkedin.com/in/juergenmelmuka/",
       website: "https://zuhoerakademie.at/",
@@ -267,40 +267,40 @@ export const texts = {
   // ============================================
   faq: {
     sectionLabel: "Häufige Fragen",
-    headline: "Guide für Einsteiger",
-    description: "Alles, was du vor dem Start wissen solltest.",
+    headline: "Wichtige Informationen",
+    description: "Antworten auf die häufigsten Fragen zu unseren KI-Lernsystemen.",
     questions: [
       {
-        q: "Ist das eine Trainingsplattform oder Software?",
-        a: "Beides in einem: Trainingsmodule (Übungen, Simulationen) + Tracking-Software (Scores, Fortschritt, Reports). Eine moderne Lernplattform mit KI-Unterstützung.",
+        q: "Was genau sind KI-Lernsysteme?",
+        a: "Kombinierte Lösungen aus Übungsmodulen, Gesprächssimulation und KI-gestützter Analyse. Du übst, das System gibt Feedback und trackt deinen Fortschritt.",
       },
       {
-        q: "Für welche Teams ist die Plattform gemacht?",
-        a: "B2B-Teams (10–500 Personen). Ideal für Sales, Leadership, HR – überall wo viele Gespräche geführt werden.",
+        q: "Für welche Unternehmen sind die Systeme gedacht?",
+        a: "B2B-Teams (10–500 Personen). Ideal für Vertrieb, Führungskräfte, Kundenservice – überall wo Gesprächsqualität zählt.",
       },
       {
-        q: "Kann ich eigene Trainingspläne erstellen?",
-        a: "Ja – Playbook-Abgleich und individuelle Szenarien sind Kernfeatures. Im Pilotprojekt klären wir deine Anforderungen.",
+        q: "Können eigene Szenarien erstellt werden?",
+        a: "Ja – individuelle Szenarien und Playbook-Abgleich sind Kernfunktionen. Details klären wir im Pilotprojekt.",
       },
       {
-        q: "Wie starte ich am schnellsten?",
-        a: "Mit einem Pilotprojekt: Demo ansehen, 2–4 Wochen testen, dann entscheiden. Kein Abo-Zwang.",
+        q: "Wie funktioniert das Assessment?",
+        a: "Die KI analysiert Gespräche nach definierten Kriterien, identifiziert Stärken und Entwicklungspotenziale und erstellt detaillierte Reports.",
       },
       {
-        q: "Wie funktioniert der KI-Coach?",
-        a: "Er analysiert deine Gespräche, gibt Echtzeit-Feedback und schlägt konkrete Verbesserungen vor. Wie ein Personal Trainer für Kommunikation.",
+        q: "Wie unterstützt die KI bei Konfliktlösung?",
+        a: "Durch Simulation von Konfliktsituationen: Du übst Deeskalation und Lösungsstrategien in sicherer Umgebung mit sofortigem Feedback.",
       },
       {
-        q: "Ist die Plattform DSGVO-konform?",
-        a: "100%. Alle Daten bleiben in der EU. Wir bieten AVVs und erfüllen Enterprise-Anforderungen.",
+        q: "Sind die Systeme DSGVO-konform?",
+        a: "100%. Alle Daten bleiben in der EU. Wir bieten AVVs und erfüllen Enterprise-Sicherheitsanforderungen.",
       },
       {
-        q: "Brauche ich Vorkenntnisse?",
-        a: "Nein. Die Module sind selbsterklärend. Einweisung und Support sind im Pilotprojekt inklusive.",
+        q: "Wie starte ich am besten?",
+        a: "Mit einem Pilotprojekt: Demo ansehen, 2–4 Wochen mit einem Team testen, dann entscheiden.",
       },
       {
         q: "Was kostet die Nutzung?",
-        a: "Abhängig von Teamgröße und gewünschten Plattformen. Kontaktiere uns für dein individuelles Angebot.",
+        a: "Abhängig von Teamgröße und gewählten Modulen. Kontaktiere uns für ein individuelles Angebot.",
       },
     ],
   },
@@ -309,15 +309,15 @@ export const texts = {
   // KONTAKT
   // ============================================
   contact: {
-    sectionLabel: "Starte jetzt",
+    sectionLabel: "Kontakt",
     headline: "Pilotprojekt starten",
-    description: "Teste die Plattform mit deinem Team. Wir begleiten dich beim Einstieg.",
+    description: "Teste ein Lernsystem mit deinem Team. Wir begleiten dich von der Demo bis zur Auswertung.",
     email: "hallo@zuhoeren.academy",
     phone: "+43 664 397 8684",
     probeAbo: {
       emoji: "🚀",
       title: "Pilot-Angebot",
-      description: "2–4 Wochen Pilotprojekt mit einem Team. Module testen, Fortschritt messen, dann entscheiden.",
+      description: "2–4 Wochen Pilotphase: System kennenlernen, mit echtem Team testen, Ergebnisse auswerten.",
     },
   },
 
@@ -325,15 +325,15 @@ export const texts = {
   // FOOTER & NAVIGATION
   // ============================================
   navigation: {
-    produkte: "Plattformen",
-    useCases: "Use Cases",
+    produkte: "Lösungen",
+    useCases: "Anwendungen",
     ueberUns: "Über uns",
     kontakt: "Kontakt",
   },
 
   footer: {
     companyName: "zuhoeren.academy",
-    tagline: "KI-gestütztes Kommunikationstraining",
+    tagline: "KI-gestützte Lernsysteme",
     copyright: "© 2024 zuhoeren.academy. Alle Rechte vorbehalten.",
     links: {
       impressum: "Impressum",
@@ -345,17 +345,17 @@ export const texts = {
   // META & SEO
   // ============================================
   meta: {
-    title: "zuhoeren.academy – KI-gestütztes Kommunikationstraining",
-    description: "KI-gestützte Trainingsplattformen für Sales, Leadership, Dialog, Resilienz und Metakognition. Verbessere Gespräche systematisch – mit messbarem Fortschritt.",
+    title: "zuhoeren.academy – KI-Lernsysteme für Gesprächsführung & Reflexion",
+    description: "KI-gestützte Lernsysteme für Gesprächsführung, Assessment, Konfliktlösung und Metakognition. Feedbacksysteme für Vertrieb, Reflexionssysteme für Führungskräfte.",
     keywords: [
-      "KI Training",
-      "Sales Coaching",
-      "Leadership Training",
-      "Kommunikationstraining",
-      "Soft Skills",
+      "KI Lernsystem",
+      "KI Feedbacksystem",
+      "Sales Assessment",
+      "Führungskräfte Reflexion",
+      "Konfliktlösung KI",
+      "Gesprächsführung Training",
+      "Metakognition",
       "B2B Training",
-      "KI Coach",
-      "Gesprächstraining",
     ],
   },
 };
