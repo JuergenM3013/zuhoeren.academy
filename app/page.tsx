@@ -11,6 +11,8 @@ export default function Page() {
         <div className="pointer-events-none absolute inset-0 opacity-70">
           <div className="absolute -top-24 left-10 h-80 w-80 rounded-full bg-violet-600/25 blur-3xl" />
           <div className="absolute right-10 top-10 h-80 w-80 rounded-full bg-emerald-500/15 blur-3xl" />
+          <div className="absolute bottom-0 left-1/3 h-60 w-60 rounded-full bg-amber-500/10 blur-3xl" />
+          <div className="absolute -bottom-20 right-1/4 h-72 w-72 rounded-full bg-rose-500/10 blur-3xl" />
         </div>
 
         <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
@@ -80,8 +82,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TRAININGSGERÄTE */}
-      <section id="produkte" className="mx-auto max-w-6xl px-6 py-16">
+      {/* LÖSUNGEN */}
+      <section id="produkte" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-violet-600/5 via-transparent to-transparent" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className={`text-sm font-medium ${colors.sections.products} uppercase tracking-wider mb-2`}>{texts.products.sectionLabel}</p>
@@ -112,9 +118,10 @@ export default function Page() {
             );
           })}
         </div>
+        </div>
       </section>
 
-      {/* TRAININGSSTATIONEN */}
+      {/* PLATTFORMEN IM DETAIL */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.stations} uppercase tracking-wider mb-2`}>{texts.stations.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight mb-4">{texts.stations.headline}</h2>
@@ -187,8 +194,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TRAININGSPLAN */}
-      <section id="wie" className="mx-auto max-w-6xl px-6 py-16">
+      {/* LERNPROZESS */}
+      <section id="wie" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 right-0 h-full w-full bg-gradient-to-bl from-amber-600/5 via-transparent to-transparent" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.trainingPlan} uppercase tracking-wider mb-2`}>{texts.trainingPlan.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight">{texts.trainingPlan.headline}</h2>
         <p className={`mt-2 max-w-2xl leading-relaxed ${colors.ui.textSecondary}`}>
@@ -220,10 +231,15 @@ export default function Page() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ZIELGRUPPEN-MATRIX */}
-      <section id="zielgruppen" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="zielgruppen" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-violet-600/5 via-transparent to-cyan-600/5" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.targetAudiences} uppercase tracking-wider mb-2`}>{texts.targetAudiences.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight">{texts.targetAudiences.headline}</h2>
         <p className={`mt-2 max-w-2xl leading-relaxed ${colors.ui.textSecondary}`}>
@@ -269,10 +285,15 @@ export default function Page() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ANWENDUNGSFÄLLE */}
-      <section id="use-cases" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="use-cases" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 right-0 h-full w-full bg-gradient-to-bl from-rose-600/5 via-transparent to-transparent" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.useCases} uppercase tracking-wider mb-2`}>{texts.useCases.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight">{texts.useCases.headline}</h2>
         <p className={`mt-2 max-w-2xl leading-relaxed ${colors.ui.textSecondary}`}>
@@ -289,9 +310,10 @@ export default function Page() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
-      {/* DER TRAINER */}
+      {/* DER GRÜNDER */}
       <section id="ueber-uns" className="mx-auto max-w-6xl px-6 py-16">
         <div className={`rounded-3xl border ${colors.ui.cardBorder} bg-gradient-to-br from-emerald-600/5 to-violet-600/5 p-8 md:p-12`}>
           <p className={`text-sm font-medium ${colors.sections.about} uppercase tracking-wider mb-2`}>{texts.about.sectionLabel}</p>
@@ -332,7 +354,11 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-cyan-600/5 via-transparent to-transparent" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.faq} uppercase tracking-wider mb-2`}>{texts.faq.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight">{texts.faq.headline}</h2>
         <p className={`mt-2 max-w-2xl leading-relaxed ${colors.ui.textSecondary}`}>
@@ -347,9 +373,10 @@ export default function Page() {
             </details>
           ))}
         </div>
+        </div>
       </section>
 
-      {/* PROBETRAINING */}
+      {/* KONTAKT */}
       <section id="kontakt" className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-8 md:grid-cols-2">
           <div className={`rounded-3xl border ${colors.ui.cardBorder} bg-gradient-to-br from-violet-600/10 to-transparent p-8`}>
