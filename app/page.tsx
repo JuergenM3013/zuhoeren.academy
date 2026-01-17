@@ -222,7 +222,56 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TRAININGSZIELE */}
+      {/* ZIELGRUPPEN-MATRIX */}
+      <section id="zielgruppen" className="mx-auto max-w-6xl px-6 py-16">
+        <p className={`text-sm font-medium ${colors.sections.targetAudiences} uppercase tracking-wider mb-2`}>{texts.targetAudiences.sectionLabel}</p>
+        <h2 className="text-3xl font-extrabold tracking-tight">{texts.targetAudiences.headline}</h2>
+        <p className={`mt-2 max-w-2xl leading-relaxed ${colors.ui.textSecondary}`}>
+          {texts.targetAudiences.description}
+        </p>
+
+        <div className="mt-10 space-y-6">
+          {texts.targetAudiences.audiences.map((audience) => (
+            <div key={audience.role} className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
+              <div className="flex flex-col md:flex-row md:items-start gap-4">
+                {/* Zielgruppe Header */}
+                <div className="md:w-1/3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">{audience.emoji}</span>
+                    <div>
+                      <h3 className="font-extrabold text-lg">{audience.role}</h3>
+                      <p className={`text-sm ${colors.ui.textSecondary}`}>{audience.benefit}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Plattformen */}
+                <div className="md:w-2/3">
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {audience.platforms.map((platform) => (
+                      <div key={platform.name} className={`rounded-xl border ${colors.ui.cardBorder} bg-white/5 p-4`}>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="font-semibold text-sm">{platform.name}</span>
+                          <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${
+                            platform.status === "live"
+                              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                              : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+                          }`}>
+                            {platform.status === "live" ? "Live" : "Coming soon"}
+                          </span>
+                        </div>
+                        <p className={`text-xs ${colors.ui.textMuted}`}>{platform.use}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ANWENDUNGSFÄLLE */}
       <section id="use-cases" className="mx-auto max-w-6xl px-6 py-16">
         <p className={`text-sm font-medium ${colors.sections.useCases} uppercase tracking-wider mb-2`}>{texts.useCases.sectionLabel}</p>
         <h2 className="text-3xl font-extrabold tracking-tight">{texts.useCases.headline}</h2>

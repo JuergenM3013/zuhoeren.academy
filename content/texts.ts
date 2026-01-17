@@ -63,6 +63,7 @@ export const colors = {
     stations: "text-emerald-400",
     gymStandards: "text-white/60",
     trainingPlan: "text-amber-400",
+    targetAudiences: "text-violet-400",
     useCases: "text-rose-400",
     about: "text-emerald-400",
     faq: "text-cyan-400",
@@ -200,47 +201,102 @@ export const texts = {
   },
 
   // ============================================
-  // ZIELGRUPPEN (Use Cases)
+  // ZIELGRUPPEN-MATRIX
+  // ============================================
+  targetAudiences: {
+    sectionLabel: "Zielgruppen & Nutzen",
+    headline: "Wer profitiert von welcher Plattform?",
+    description: "Finde die passende Lösung für deine Rolle und Herausforderung.",
+    audiences: [
+      {
+        role: "Vertrieb",
+        emoji: "💼",
+        benefit: "Verkaufsgespräche trainieren und optimieren",
+        platforms: [
+          { name: "SalesFitness.studio", status: "live", use: "Cold Calls, Discovery, Closing üben" },
+        ],
+      },
+      {
+        role: "Kundenservice & Telefonkompetenz",
+        emoji: "📞",
+        benefit: "Gesprächsqualität messen und verbessern",
+        platforms: [
+          { name: "SalesFitness.studio", status: "live", use: "Assessment für Vertriebstelefonate" },
+          { name: "DialogFitness.studio", status: "coming_soon", use: "Assessment für Service-Gespräche" },
+        ],
+      },
+      {
+        role: "HR & Personalentwicklung",
+        emoji: "🤝",
+        benefit: "Schwierige Gespräche souverän führen",
+        platforms: [
+          { name: "DialogFitness.studio", status: "coming_soon", use: "Kritikgespräche, Feedback geben/empfangen" },
+        ],
+      },
+      {
+        role: "Führungskräfte",
+        emoji: "👔",
+        benefit: "Reflexion, Resilienz und Leadership stärken",
+        platforms: [
+          { name: "LeadershipFitness.studio", status: "coming_soon", use: "Führungsverhalten reflektieren" },
+          { name: "ResilienzFitness.studio", status: "coming_soon", use: "Stressresistenz aufbauen" },
+          { name: "DialogFitness.studio", status: "coming_soon", use: "Mitarbeitergespräche üben" },
+          { name: "Metakognitionen.at", status: "coming_soon", use: "Entscheidungsqualität verbessern" },
+        ],
+      },
+      {
+        role: "Konfliktparteien",
+        emoji: "⚖️",
+        benefit: "Perspektiven verstehen, Lösungen finden",
+        platforms: [
+          { name: "konfliktloesung.studio", status: "coming_soon", use: "Andere Sichtweisen einnehmen und verstehen" },
+        ],
+      },
+    ],
+  },
+
+  // ============================================
+  // ANWENDUNGSFÄLLE (kompakt)
   // ============================================
   useCases: {
-    sectionLabel: "Anwendungsbereiche",
-    headline: "Vier Kernbereiche der KI-Unterstützung",
-    description: "Unsere Lernsysteme adressieren unterschiedliche Anforderungen – vom Echtzeit-Feedback bis zur tiefgreifenden Reflexion.",
+    sectionLabel: "Anwendungsfälle",
+    headline: "Was kannst du mit den Systemen machen?",
+    description: "Konkrete Einsatzszenarien für verschiedene Herausforderungen.",
     cases: [
       {
-        title: "KI-Feedbacksysteme",
-        description: "Echtzeit-Feedback für Verkaufsgespräche: Gesprächsanalyse, Einwandbehandlung, Abschlusstechnik – messbar und sofort.",
+        title: "Sales-Training",
+        description: "Verkaufsgespräche simulieren: Einwände behandeln, Abschlüsse üben, Pitch verfeinern.",
         platform: "SalesFitness.studio (Live)",
-        emoji: "📊",
-      },
-      {
-        title: "Assessment für Kundenkontakt",
-        description: "Strukturierte Analyse von Telefonaten: Gesprächsqualität messen, Stärken identifizieren, Entwicklungspotenziale aufzeigen.",
-        platform: "SalesFitness & DialogFitness",
-        emoji: "📞",
-      },
-      {
-        title: "Reflexionssysteme für Führungskräfte",
-        description: "KI-gestützte Selbstreflexion: Führungsverhalten analysieren, blinde Flecken erkennen, systematisch weiterentwickeln.",
-        platform: "LeadershipFitness (Coming soon)",
         emoji: "🎯",
       },
       {
-        title: "Konfliktlösung mit KI",
-        description: "Konfliktsituationen simulieren und trainieren: Deeskalation üben, Lösungsstrategien entwickeln, Resilienz aufbauen.",
-        platform: "ResilienzFitness (Coming soon)",
+        title: "Telefon-Assessment",
+        description: "Gesprächsqualität objektiv messen: Kriterien definieren, analysieren, entwickeln.",
+        platform: "SalesFitness & DialogFitness",
+        emoji: "📊",
+      },
+      {
+        title: "Kritik-Training",
+        description: "Feedback geben und empfangen üben – konstruktiv und professionell.",
+        platform: "DialogFitness.studio",
+        emoji: "💬",
+      },
+      {
+        title: "Führungs-Reflexion",
+        description: "Eigenes Führungsverhalten analysieren und gezielt weiterentwickeln.",
+        platform: "LeadershipFitness.studio",
+        emoji: "🎓",
+      },
+      {
+        title: "Konflikt-Simulation",
+        description: "Konfliktsituationen durchspielen und Lösungsstrategien entwickeln.",
+        platform: "konfliktloesung.studio",
         emoji: "🤝",
       },
       {
-        title: "Vertriebstraining",
-        description: "Systematisches Verkaufstraining: Cold Calls, Discovery, Closing – mit KI-Sparringspartner und detailliertem Feedback.",
-        platform: "SalesFitness.studio (Live)",
-        emoji: "💼",
-      },
-      {
-        title: "Metakognition & Denken",
-        description: "Denkprozesse verbessern: Kognitive Verzerrungen erkennen, Entscheidungsqualität steigern, kritisches Denken schärfen.",
-        platform: "Metakognitionen.at (Coming soon)",
+        title: "Denk-Training",
+        description: "Kognitive Verzerrungen erkennen, bessere Entscheidungen treffen.",
+        platform: "Metakognitionen.at",
         emoji: "🧠",
       },
     ],
