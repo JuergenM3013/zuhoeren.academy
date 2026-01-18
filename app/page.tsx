@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import ContactForm from "@/components/ContactForm";
 import { platforms } from "@/content/platforms";
@@ -108,6 +109,7 @@ export default function Page() {
                 tag={platform.category}
                 tagline={platform.tagline}
                 href={platform.website}
+                internalHref={platform.internalUrl}
                 bullets={platform.bullets}
                 ctaLabel={texts.products.ctaLabel}
                 status={platform.status}
@@ -160,14 +162,23 @@ export default function Page() {
                     ))}
                   </div>
                 )}
-                <a
-                  href={platform.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
-                >
-                  {platform.name} {texts.stations.visitLabel}
-                </a>
+                {platform.internalUrl ? (
+                  <Link
+                    href={platform.internalUrl}
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
+                  >
+                    {platform.name} {texts.stations.visitLabel}
+                  </Link>
+                ) : (
+                  <a
+                    href={platform.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
+                  >
+                    {platform.name} {texts.stations.visitLabel}
+                  </a>
+                )}
               </div>
             );
           })}

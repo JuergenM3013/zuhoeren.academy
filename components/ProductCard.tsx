@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ProductCard(props: {
   name: string;
   tag: string;
@@ -5,6 +7,7 @@ export default function ProductCard(props: {
   bullets: string[];
   ctaLabel: string;
   href?: string;
+  internalHref?: string;
   status?: "live" | "coming_soon" | "beta";
   statusLabel?: string;
   tagColor?: string;
@@ -45,7 +48,14 @@ export default function ProductCard(props: {
       </ul>
 
       <div className="mt-auto flex flex-wrap gap-3 pt-6">
-        {props.href && (
+        {props.internalHref ? (
+          <Link
+            href={props.internalHref}
+            className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-3 font-semibold transition hover:bg-white/10"
+          >
+            Mehr erfahren
+          </Link>
+        ) : props.href && (
           <a
             href={props.href}
             target="_blank"

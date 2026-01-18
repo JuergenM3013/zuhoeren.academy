@@ -17,6 +17,7 @@ export type Platform = {
   slug: PlatformSlug;
   name: string;
   website: string;
+  internalUrl?: string; // Link zur internen Unterseite
   category: PlatformCategory;
   status: PlatformStatus;
   statusLabel: string;
@@ -33,6 +34,7 @@ export const platforms: Platform[] = [
     slug: "salesfitness",
     name: "SalesFitness",
     website: "https://salesfitness.studio",
+    internalUrl: "/salesfitness",
     category: "Sales",
     status: "live",
     statusLabel: "Live",
