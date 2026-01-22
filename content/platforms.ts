@@ -1,11 +1,13 @@
-export type PlatformCategory = "Sales" | "Dialog" | "Leadership" | "Resilienz" | "Metakognition";
+export type PlatformCategory = "Sales" | "Dialog" | "Leadership" | "Resilienz" | "Metakognition" | "Assessment" | "Fragetechnik";
 export type PlatformStatus = "live" | "coming_soon" | "beta";
 export type PlatformSlug =
   | "salesfitness"
   | "dialogfitness"
   | "metakognitionen"
   | "resilienzfitness"
-  | "leadershipfitness";
+  | "leadershipfitness"
+  | "questioncraft"
+  | "telefonkompetenz";
 
 export type PlatformSection = {
   title: string;
@@ -71,30 +73,31 @@ export const platforms: Platform[] = [
     category: "Dialog",
     status: "coming_soon",
     statusLabel: "Coming soon",
-    tagline: "Aktives Zuhören trainieren. Besser verstehen.",
+    tagline: "Bessere Gespräche. Stärkere Beziehungen. Messbarer Erfolg.",
     description:
-      "DialogFitness ist eine KI-Trainingsplattform für praxisnahe Gesprächsmodelle mit Echtzeit-Dialogpartnern. Fokus: Struktur, Empathie, klare Fragen und souveräne Reaktionen in herausfordernden Situationen.",
+      "Trainieren Sie Ihre Kommunikationskompetenz mit KI-gestützten Dialogsimulationen – jederzeit, überall und ohne Risiko. Realistische KI-Gesprächspartner reagieren wie echte Menschen, mit Emotionen und Widerstand.",
     bullets: [
-      "Interaktive Szenarien & Dialog-Labs (z. B. Feedback, Konflikt, Kundengespräche)",
-      "Wissenschaftliche Modelle (z. B. SBI/AID/Pendleton) als Trainingsrahmen",
-      "Bewertung über mehrere Dimensionen (Struktur, Emotion, Lösungsorientierung)",
+      "Realistische KI-Personas mit authentischen Reaktionen und Widerstand",
+      "Personalisierte Szenarien basierend auf Ihrer Branche und Rolle",
+      "Wissenschaftlich fundiert: MI, Carl Rogers, GFK, SBI-Feedback",
+      "Sofortiges, konstruktives Feedback zu Empathie und Struktur",
     ],
-    audience: ["Führung", "HR", "Sales", "Kundenservice", "Teams"],
+    audience: ["Führungskräfte", "Medizinisches Personal", "Kundenservice", "Key Account Manager"],
     sections: [
       {
-        title: "Dialog-Labs & Szenarien",
-        lead: "Realistische Gesprächssituationen – üben statt nur lesen.",
-        items: ["Feedbackgespräche", "Kritische Kundensituationen", "Konflikt- & Klärungsgespräche", "Team-Abstimmungen"],
+        title: "5 Trainingsmodule",
+        lead: "Strukturierte Module für alle Gesprächsherausforderungen.",
+        items: ["Feedback-Training: Konstruktives Feedback geben und annehmen", "Schwierige Gespräche: Konflikte, Kritik, emotionale Situationen", "Aktives Zuhören: Zuhörtechniken und Empathie trainieren", "MI-Training: Motivational Interviewing Techniken", "Feedback empfangen: Kritik professionell annehmen"],
       },
       {
-        title: "Modelle & Kriterien",
-        lead: "Trainieren entlang klarer Strukturen – und sehen, was besser wird.",
-        items: ["SBI, AID, Pendleton", "Klarheit, Empathie, Sicherheit", "Lösungs- und Zielorientierung"],
+        title: "Premium: Dialogcoaching",
+        lead: "Maximale Relevanz durch persönliche Anpassung.",
+        items: ["Persönliches Berufsprofil erstellen", "KI-generierte Szenarien aus Ihrer Branche", "Personas Ihrer typischen Gesprächspartner", "Adaptive Schwierigkeitsgrade"],
       },
     ],
     seo: {
-      title: "DialogFitness",
-      description: "KI-Trainingsplattform für Gesprächsführung: Dialogsimulationen, Feedbackmodelle und messbarer Fortschritt für Teams, Führung und Service.",
+      title: "DialogFitness – KI-gestützte Dialogsimulationen",
+      description: "Trainieren Sie Kommunikationskompetenz mit KI-Dialogsimulationen. Realistische Szenarien, sofortiges Feedback, messbarer Fortschritt für Führungskräfte, Medizin und Service.",
     },
   },
   {
@@ -137,30 +140,31 @@ export const platforms: Platform[] = [
     category: "Resilienz",
     status: "coming_soon",
     statusLabel: "Coming soon",
-    tagline: "Resilienz im Arbeitsalltag stärken.",
+    tagline: "Stärken Sie die Widerstandskraft Ihrer Teams – wissenschaftlich fundiert.",
     description:
-      "ResilienzFitness bietet Resilienz-Training mit Modulen, Übungen, KI-Coaching-Tools und Assessments. Fokus: Selbstregulation, mentale Flexibilität, gesunde Routinen – mit klarer Safety-Abgrenzung.",
+      "Die Resilienz-App macht wissenschaftlich fundiertes Resilienz-Training zugänglich – genau dann, wenn es gebraucht wird. 9 Lernmodule, 6 KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für den Arbeitsalltag.",
     bullets: [
-      "Module & Übungen (z. B. Stressregulation, Ressourcen, Routinen)",
-      "Validierte Assessments & Fortschrittslogik",
-      "Safety: klare Grenzen, Hinweise, Eskalationspfade",
+      "9 wissenschaftlich fundierte Lernmodule zu allen Resilienz-Faktoren",
+      "6 KI-gestützte Coaching-Tools: Resilienz-Coach, Emotions-Navigator, Perspektiven-Wechsler",
+      "Persönliches Stimmungsbarometer mit KI-Empfehlungen",
+      "Mikro-Workouts: Atemtechniken & Achtsamkeitsübungen",
     ],
-    audience: ["Teams", "HR", "Leadership", "Gesundheitsprogramme"],
+    audience: ["Führungskräfte", "Medizinisches Personal", "Kundenservice", "Key Account Manager"],
     sections: [
       {
-        title: "Module & Übungen",
-        lead: "Kompakte Einheiten – ideal für den Arbeitsalltag.",
-        items: ["Grundlagen der Resilienz", "Stress & Regulation", "Ressourcenarbeit", "Routinen & Schlaf", "Umgang mit Rückschlägen"],
+        title: "KI-Coaching-Tools",
+        lead: "Persönliche Unterstützung durch spezialisierte KI-Coaches – verfügbar 24/7.",
+        items: ["Resilienz-Coach: Persönliche Begleitung bei Herausforderungen", "Stresstest-Simulator: Sicheres Üben von Stresssituationen", "Emotions-Navigator: Gefühle verstehen und regulieren", "Perspektiven-Wechsler: Neue Sichtweisen entwickeln", "Ressourcen-Finder: Eigene Stärken entdecken"],
       },
       {
-        title: "Assessments & Safety",
-        lead: "Seriös und verantwortungsvoll: messen, begleiten, abgrenzen.",
-        items: ["Selbsteinschätzungen", "Hinweise bei Belastung", "Ressourcen- & Hilfe-Links"],
+        title: "Module & Übungen",
+        lead: "Strukturiertes Wissen zu allen Resilienz-Faktoren.",
+        items: ["Stressbewältigung & Regulation", "Krisenwachstum & Ressourcenarbeit", "Reflexions-Journal mit bewährten Methoden", "Mikro-Workouts für zwischendurch"],
       },
     ],
     seo: {
-      title: "ResilienzFitness",
-      description: "Resilienz-Trainingsplattform mit Übungen, Modulen, KI-Tools und Assessments – für Stressregulation und mentale Stärke im Arbeitsalltag.",
+      title: "ResilienzFitness – KI-gestützte Resilienz-App",
+      description: "Wissenschaftlich fundiertes Resilienz-Training: 9 Module, 6 KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für mentale Stärke im Arbeitsalltag.",
     },
   },
   {
@@ -194,6 +198,76 @@ export const platforms: Platform[] = [
     seo: {
       title: "LeadershipFitness",
       description: "KI-gestützte Leadership-Plattform: Trainingsstationen, Feedback, Transfer-Challenges und messbarer Fortschritt für moderne Führung.",
+    },
+  },
+  {
+    slug: "questioncraft",
+    name: "QuestionCraft.ai",
+    website: "https://questioncraft.ai",
+    category: "Fragetechnik",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
+    tagline: "Die richtigen Fragen öffnen Türen.",
+    description:
+      "Die KI-gestützte Trainingsplattform für Fragetechniken. Lernen Sie die Fragetechniken, die echte Ergebnisse liefern – für Führungskräfte, medizinisches Fachpersonal, Kundenservice und Key Account Manager.",
+    bullets: [
+      "Kompakte Module zu allen wichtigen Fragetechniken",
+      "KI-Training mit sofortigem, detailliertem Feedback",
+      "Interaktive Rollenspiele mit realistischen KI-Personas",
+      "Q-CORE Framework: Die wissenschaftliche Basis für wirksame Fragen",
+      "Gesprächstranskript-Analyse zur Verbesserung Ihrer Fragetechnik",
+    ],
+    audience: ["Führungskräfte", "Medizinisches Personal", "Kundenservice", "Key Account Manager"],
+    sections: [
+      {
+        title: "So funktioniert es",
+        lead: "5 Schritte zu besseren Fragen.",
+        items: ["Lernen: Verstehen Sie die Theorie der Fragetechniken", "Trainieren: Üben Sie mit KI-Feedback zu realistischen Szenarien", "Simulieren: Testen Sie im Rollenspiel mit KI-Personas", "Analysieren: Laden Sie Transkripte hoch zur KI-Analyse", "Sammeln: Bauen Sie Ihr persönliches Fragen-Playbook auf"],
+      },
+      {
+        title: "Q-CORE Framework",
+        lead: "Die wissenschaftliche Basis für wirksame Fragen.",
+        items: ["Zielklarheit: Die Frage hat ein klares Ziel", "Offenheit: Die Frage regt zum Nachdenken an", "Neutralität: Die Frage ist nicht wertend", "Beziehung: Die Frage stärkt die Verbindung", "Tiefe: Die Frage geht unter die Oberfläche"],
+      },
+    ],
+    seo: {
+      title: "QuestionCraft.ai – KI-gestützte Fragetechnik-Plattform",
+      description: "Meistern Sie die Kunst der Gesprächsführung: KI-Training für Fragetechniken, Rollenspiele mit KI-Personas und das Q-CORE Framework für wirksame Fragen.",
+    },
+  },
+  {
+    slug: "telefonkompetenz",
+    name: "Telefonkompetenz",
+    website: "https://telefonkompetenz.ai",
+    category: "Assessment",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
+    tagline: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird.",
+    description:
+      "Das KI-gestützte Assessment für Telefonkompetenz bei der Personalauswahl. Objektiv, effizient, treffsicher. Reduzieren Sie Fehlbesetzungen um bis zu 40% mit realistischen Gesprächssimulationen.",
+    bullets: [
+      "20-minütiges Assessment mit echten Gesprächssituationen",
+      "KI-Analyse: Objektive Bewertung ohne Bias",
+      "Sofort-Reports mit Stärken-Schwächen-Profil",
+      "Flexibles Branding: Ihr Logo, Ihre Farben",
+      "87% weniger Zeitaufwand in der Vorauswahl",
+    ],
+    audience: ["HR-Führungskräfte", "Vertriebsleiter", "Contact-Center-Manager"],
+    sections: [
+      {
+        title: "In 3 Schritten zur Entscheidung",
+        lead: "Schnell, objektiv und fundiert.",
+        items: ["Kandidat erhält Einladung per Link – ohne Login oder App", "Realitätsnahe 20-Min-Simulation mit echten Gesprächssituationen", "KI-Analyse & Report: Bewertung, Stärken-Schwächen-Profil, Empfehlung"],
+      },
+      {
+        title: "Ihre Vorteile",
+        lead: "Messbare Ergebnisse für bessere Entscheidungen.",
+        items: ["40% geringere Fehlbesetzungsquote", "3x schnellere Besetzung offener Stellen", "92% Kandidaten-Zufriedenheit mit dem Assessment", "Standardisierte, dokumentierte Auswahlkriterien"],
+      },
+    ],
+    seo: {
+      title: "Telefonkompetenz – KI-gestütztes Assessment für Personalauswahl",
+      description: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird. KI-Assessment für Telefonkompetenz: Objektiv, effizient, 40% weniger Fehlbesetzungen.",
     },
   },
 ];
