@@ -10,44 +10,30 @@ import {
   MODULES,
   FORMAT,
   FINAL_CTA,
-  PROBLEM,
-  CORE,
 } from "./content";
 import { Hero } from "./sections/Hero";
 import { Section } from "./ui/Section";
 import { Cards } from "./sections/Cards";
 import { Tiles } from "./sections/Tiles";
-import { BulletList } from "./sections/BulletList";
-import { Accordion } from "./sections/Accordion";
-import { InfoCard } from "./sections/InfoCard";
 import { FinalCta } from "./sections/FinalCta";
+import { AnimatedStats } from "./sections/AnimatedStats";
+import { ModuleTimeline } from "./sections/ModuleTimeline";
+import { QuoteCarousel } from "./sections/QuoteCarousel";
+import { ProblemSolution } from "./sections/ProblemSolution";
+import { MedialogStickyCTA } from "./sections/MedialogStickyCTA";
 
 type Variant = "warm" | "pro";
 
 export default function MedialogPage({ variant = "warm" }: { variant?: Variant }) {
   const data = useMemo(() => {
-    if (variant === "pro") {
-      return {
-        hero: HERO.pro,
-        blocks: [
-          { type: "problem" as const, data: PROBLEM.pro },
-          { type: "core" as const, data: CORE.pro },
-          { type: "modules" as const, data: MODULES.pro },
-          { type: "format" as const, data: FORMAT.pro },
-          { type: "final" as const, data: FINAL_CTA.pro },
-        ],
-      };
-    }
     return {
       hero: HERO.warm,
-      blocks: [
-        { type: "why" as const, data: WHY.warm },
-        { type: "audience" as const, data: AUDIENCE.warm },
-        { type: "takeaways" as const, data: TAKEAWAYS.warm },
-        { type: "modules" as const, data: MODULES.warm },
-        { type: "format" as const, data: FORMAT.warm },
-        { type: "final" as const, data: FINAL_CTA.warm },
-      ],
+      why: WHY.warm,
+      audience: AUDIENCE.warm,
+      takeaways: TAKEAWAYS.warm,
+      modules: MODULES.warm,
+      format: FORMAT.warm,
+      finalCta: FINAL_CTA.warm,
     };
   }, [variant]);
 
@@ -56,14 +42,17 @@ export default function MedialogPage({ variant = "warm" }: { variant?: Variant }
       className="min-h-screen"
       style={{
         background: `
-          radial-gradient(1200px 600px at 20% -10%, rgba(132,169,140,.15), transparent 55%),
-          radial-gradient(900px 520px at 95% 0%, rgba(201,162,77,.12), transparent 50%),
+          radial-gradient(1200px 600px at 20% -10%, rgba(132,169,140,.12), transparent 55%),
+          radial-gradient(900px 520px at 95% 0%, rgba(201,162,77,.10), transparent 50%),
           #f7f9fa
         `,
         fontFamily:
           'ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
       }}
     >
+      {/* Sticky CTA */}
+      <MedialogStickyCTA />
+
       {/* Navigation */}
       <header className="sticky top-0 z-50 border-b border-[#e6edf0] bg-[#f7f9fa]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -87,16 +76,16 @@ export default function MedialogPage({ variant = "warm" }: { variant?: Variant }
           </Link>
 
           <nav className="hidden gap-6 md:flex">
-            <a href="#warum" className="text-sm text-[#53636b] hover:text-[#2f3e46]">
+            <a href="#warum" className="text-sm text-[#53636b] transition hover:text-[#2f3e46]">
               Warum
             </a>
-            <a href="#module" className="text-sm text-[#53636b] hover:text-[#2f3e46]">
+            <a href="#module" className="text-sm text-[#53636b] transition hover:text-[#2f3e46]">
               Module
             </a>
-            <a href="#format" className="text-sm text-[#53636b] hover:text-[#2f3e46]">
-              Format
+            <a href="#stimmen" className="text-sm text-[#53636b] transition hover:text-[#2f3e46]">
+              Stimmen
             </a>
-            <a href="#kontakt" className="text-sm text-[#53636b] hover:text-[#2f3e46]">
+            <a href="#kontakt" className="text-sm text-[#53636b] transition hover:text-[#2f3e46]">
               Kontakt
             </a>
           </nav>
@@ -113,71 +102,72 @@ export default function MedialogPage({ variant = "warm" }: { variant?: Variant }
       {/* Hero */}
       <Hero {...data.hero} />
 
-      {/* Content Blocks */}
-      {data.blocks.map((b, idx) => {
-        if (b.type === "why") {
-          return (
-            <Section key={idx} id="warum" title={b.data.headline}>
-              <Cards cards={b.data.cards} columns={3} />
-            </Section>
-          );
-        }
+      {/* Stats */}
+      <Section title="">
+        <AnimatedStats />
+      </Section>
 
-        if (b.type === "audience") {
-          return (
-            <Section key={idx} id="fuer-wen" title={b.data.headline}>
-              <Tiles items={b.data.tiles} />
-            </Section>
-          );
-        }
+      {/* Why - Cards */}
+      <Section id="warum" title={data.why.headline}>
+        <Cards cards={data.why.cards} columns={3} />
+      </Section>
 
-        if (b.type === "takeaways") {
-          return (
-            <Section key={idx} id="takeaways" title={b.data.headline}>
-              <BulletList items={b.data.bullets} />
-            </Section>
-          );
-        }
+      {/* Problem/Solution Toggle */}
+      <Section title="Vorher vs. Nachher">
+        <ProblemSolution />
+      </Section>
 
-        if (b.type === "problem") {
-          return (
-            <Section key={idx} id="problem" title={b.data.headline}>
-              <BulletList items={b.data.bullets} />
-              <p className="mt-6 text-sm italic text-[#53636b]">{b.data.note}</p>
-            </Section>
-          );
-        }
+      {/* Audience */}
+      <Section id="fuer-wen" title={data.audience.headline}>
+        <Tiles items={data.audience.tiles} />
+      </Section>
 
-        if (b.type === "core") {
-          return (
-            <Section key={idx} id="kompetenzen" title={b.data.headline}>
-              <Cards cards={b.data.cards} columns={4} />
-            </Section>
-          );
-        }
+      {/* Modules Timeline */}
+      <Section id="module" title="Die 4 Module im Detail">
+        <ModuleTimeline />
+      </Section>
 
-        if (b.type === "modules") {
-          return (
-            <Section key={idx} id="module" title={b.data.headline}>
-              <Accordion items={b.data.items} />
-            </Section>
-          );
-        }
+      {/* Testimonials */}
+      <Section id="stimmen" title="Stimmen aus der Praxis">
+        <QuoteCarousel />
+      </Section>
 
-        if (b.type === "format") {
-          return (
-            <Section key={idx} id="format" title={b.data.headline}>
-              <InfoCard items={b.data.facts} />
-            </Section>
-          );
-        }
+      {/* Takeaways */}
+      <Section title={data.takeaways.headline}>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {data.takeaways.bullets.map((bullet, idx) => (
+            <div
+              key={idx}
+              className="group flex items-start gap-4 rounded-2xl border border-[#e6edf0] bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all hover:-translate-y-0.5 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]"
+            >
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#84a98c]/10 text-sm font-medium text-[#84a98c] transition-colors group-hover:bg-[#84a98c] group-hover:text-white">
+                {idx + 1}
+              </div>
+              <p className="text-sm leading-relaxed text-[#53636b]">{bullet}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
-        if (b.type === "final") {
-          return <FinalCta key={idx} {...b.data} />;
-        }
+      {/* Format */}
+      <Section id="format" title={data.format.headline}>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {data.format.facts.map((fact, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col items-center rounded-2xl border border-[#e6edf0] bg-white p-6 text-center shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)]"
+            >
+              <div className="mb-3 text-2xl">
+                {["📚", "🏥", "👥", "🎯", "✅"][idx] || "✓"}
+              </div>
+              <p className="text-sm font-medium text-[#2f3e46]">{fact}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
-        return null;
-      })}
+      {/* Final CTA */}
+      <FinalCta {...data.finalCta} />
 
       {/* Footer */}
       <footer className="border-t border-[#e6edf0] bg-white/50 py-8">
