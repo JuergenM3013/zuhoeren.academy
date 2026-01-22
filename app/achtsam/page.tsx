@@ -6,6 +6,10 @@ import {
   PillarsInteractive,
   ScrollJourney,
   StickyCTA,
+  FloatingOrbs,
+  MindfulQuote,
+  WarmDivider,
+  CalmingCard,
 } from "@/components/achtsam/sections";
 
 export const metadata: Metadata = {
@@ -91,7 +95,7 @@ function Divider() {
 export default function AchtsamPage() {
   return (
     <main
-      className="min-h-screen"
+      className="relative min-h-screen"
       style={{
         background: "rgb(248 247 244)",
         color: "rgb(18 20 24)",
@@ -99,6 +103,9 @@ export default function AchtsamPage() {
           'ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
       }}
     >
+      {/* Floating background orbs for warmth */}
+      <FloatingOrbs />
+
       {/* Sticky CTA */}
       <StickyCTA />
 
@@ -181,17 +188,20 @@ export default function AchtsamPage() {
         </div>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          <Card
+          <CalmingCard
+            icon="🧠"
             title="Autopilot"
-            text="Wir sind gedanklich schon beim Nächsten – und verpassen das Wesentliche im Moment."
+            description="Wir sind gedanklich schon beim Nächsten – und verpassen das Wesentliche im Moment."
           />
-          <Card
+          <CalmingCard
+            icon="🔍"
             title="Filter & Bewertungen"
-            text="Erfahrungen, Erwartungen und Wertungen legen sich zwischen uns und das Gesagte."
+            description="Erfahrungen, Erwartungen und Wertungen legen sich zwischen uns und das Gesagte."
           />
-          <Card
+          <CalmingCard
+            icon="💭"
             title="Zu wenig innerer Raum"
-            text="Ohne Präsenz und Selbstregulation wird Zuhören schnell anstrengend – für beide Seiten."
+            description="Ohne Präsenz und Selbstregulation wird Zuhören schnell anstrengend – für beide Seiten."
           />
         </div>
       </Section>
@@ -223,10 +233,22 @@ export default function AchtsamPage() {
         <ScrollJourney />
       </Section>
 
+      {/* MINDFUL QUOTE */}
+      <Section className="pt-0">
+        <div className="mx-auto max-w-2xl">
+          <MindfulQuote />
+        </div>
+      </Section>
+
       {/* PILLARS */}
       <Section className="pt-0">
         <PillarsInteractive />
       </Section>
+
+      {/* WARM DIVIDER */}
+      <Container>
+        <WarmDivider />
+      </Container>
 
       {/* BREATH */}
       <Section>
@@ -243,16 +265,25 @@ export default function AchtsamPage() {
           <div className="lg:col-span-6">
             <div className="grid gap-4 sm:grid-cols-3">
               {[
-                { name: "Box Breathing", desc: "4-4-4-4: Einatmen, Halten, Ausatmen, Halten." },
-                { name: "4-7-8 Atmung", desc: "Beruhigt das Nervensystem in Sekunden." },
-                { name: "Summatmung", desc: "Löst Anspannung und schafft inneren Raum." },
+                { name: "Box Breathing", desc: "4-4-4-4: Einatmen, Halten, Ausatmen, Halten.", icon: "🫁" },
+                { name: "4-7-8 Atmung", desc: "Beruhigt das Nervensystem in Sekunden.", icon: "🌊" },
+                { name: "Summatmung", desc: "Löst Anspannung und schafft inneren Raum.", icon: "🐝" },
               ].map((t) => (
                 <div
                   key={t.name}
-                  className="rounded-3xl border border-[#e2e4e8] bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
+                  className="group relative overflow-hidden rounded-3xl border border-[#e2e4e8]/50 bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(16,98,120,0.1)]"
                 >
-                  <div className="text-sm font-semibold">{t.name}</div>
-                  <p className="mt-2 text-xs leading-relaxed text-[#616974]">{t.desc}</p>
+                  {/* Warm gradient overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#c27a49]/5 to-[#106278]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="relative">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#c27a49]/10 to-[#106278]/10 text-xl transition-transform duration-500 group-hover:scale-110">
+                      {t.icon}
+                    </div>
+                    <div className="text-sm font-semibold">{t.name}</div>
+                    <p className="mt-2 text-xs leading-relaxed text-[#616974]">{t.desc}</p>
+                  </div>
+                  {/* Bottom accent line */}
+                  <div className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-[#c27a49] to-[#106278] transition-all duration-500 group-hover:w-full" />
                 </div>
               ))}
             </div>
@@ -305,6 +336,11 @@ export default function AchtsamPage() {
           ))}
         </div>
       </Section>
+
+      {/* WARM DIVIDER */}
+      <Container>
+        <WarmDivider />
+      </Container>
 
       {/* TRAINERS */}
       <Section>

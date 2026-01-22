@@ -21,6 +21,7 @@ import { ModuleTimeline } from "./sections/ModuleTimeline";
 import { QuoteCarousel } from "./sections/QuoteCarousel";
 import { ProblemSolution } from "./sections/ProblemSolution";
 import { MedialogStickyCTA } from "./sections/MedialogStickyCTA";
+import { TakeawaysGrid } from "./sections/TakeawaysGrid";
 
 type Variant = "warm" | "pro";
 
@@ -134,19 +135,7 @@ export default function MedialogPage({ variant = "warm" }: { variant?: Variant }
 
       {/* Takeaways */}
       <Section title={data.takeaways.headline}>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {data.takeaways.bullets.map((bullet, idx) => (
-            <div
-              key={idx}
-              className="group flex items-start gap-4 rounded-2xl border border-[#e6edf0] bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all hover:-translate-y-0.5 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]"
-            >
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#84a98c]/10 text-sm font-medium text-[#84a98c] transition-colors group-hover:bg-[#84a98c] group-hover:text-white">
-                {idx + 1}
-              </div>
-              <p className="text-sm leading-relaxed text-[#53636b]">{bullet}</p>
-            </div>
-          ))}
-        </div>
+        <TakeawaysGrid />
       </Section>
 
       {/* Format */}
