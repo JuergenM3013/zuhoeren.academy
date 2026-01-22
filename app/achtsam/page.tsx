@@ -1,5 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import {
+  BreathingTimer,
+  ListeningSelfCheck,
+  PillarsInteractive,
+  ScrollJourney,
+  StickyCTA,
+} from "@/components/achtsam/sections";
 
 export const metadata: Metadata = {
   title: "Achtsames Zuhören – Seminar für Präsenz, Klarheit & Verbindung | Zuhörakademie",
@@ -92,6 +99,9 @@ export default function AchtsamPage() {
           'ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
       }}
     >
+      {/* Sticky CTA */}
+      <StickyCTA />
+
       {/* HERO */}
       <div
         style={{
@@ -134,29 +144,39 @@ export default function AchtsamPage() {
               </div>
             </div>
 
-            {/* Right side: visual */}
+            {/* Right side: Breathing Timer */}
             <div className="lg:col-span-5">
-              <div
-                className="flex aspect-[4/3] w-full flex-col justify-end rounded-3xl border border-[#e2e4e8] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
-                style={{
-                  background: "linear-gradient(135deg, rgba(16,98,120,0.15), rgba(194,122,73,0.12))",
-                }}
-              >
-                <div className="text-sm font-medium">Wenn Kommunikation wirkt,</div>
-                <div className="text-sm text-[#616974]">wird Begegnung menschlicher.</div>
-              </div>
+              <BreathingTimer />
             </div>
           </div>
         </Section>
       </div>
 
-      {/* PAIN */}
+      {/* SELF-CHECK */}
       <Section>
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <h2 className="text-2xl font-semibold">Wie gut hören Sie wirklich zu?</h2>
+            <p className="mt-3 text-sm leading-relaxed text-[#616974]">
+              Zuhören scheitert selten am guten Willen – eher am Autopilot, an Bewertungen und daran,
+              dass innerlich zu wenig Raum bleibt, wirklich offen zu sein.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-[#616974]">
+              Machen Sie den kurzen Selbsttest und finden Sie heraus, wo Sie stehen – ganz ohne Wertung.
+            </p>
+          </div>
+          <div className="lg:col-span-7">
+            <ListeningSelfCheck />
+          </div>
+        </div>
+      </Section>
+
+      {/* PAIN */}
+      <Section className="pt-0">
         <div className="flex flex-col gap-3">
           <h2 className="text-2xl font-semibold">Warum wir oft hören – aber nicht zuhören</h2>
           <p className="max-w-3xl text-sm leading-relaxed text-[#616974]">
-            Zuhören scheitert selten am guten Willen – eher am Autopilot, an Bewertungen und daran,
-            dass innerlich zu wenig Raum bleibt, wirklich offen zu sein.
+            Drei typische Hindernisse, die wir alle kennen.
           </p>
         </div>
 
@@ -200,100 +220,12 @@ export default function AchtsamPage() {
 
       {/* JOURNEY */}
       <Section id="seminar">
-        <div className="flex flex-col gap-3">
-          <h2 className="text-2xl font-semibold">Der Weg durch das Seminar</h2>
-          <p className="max-w-3xl text-sm leading-relaxed text-[#616974]">
-            Eine ruhige Dramaturgie: ankommen, wahrnehmen, verstehen, üben – und nachhaltig
-            integrieren.
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-5">
-            <div className="rounded-3xl border border-[#e2e4e8] bg-[#eeeae3] p-7">
-              <div className="text-sm font-semibold">Leitidee</div>
-              <p className="mt-2 text-sm leading-relaxed text-[#616974]">
-                Zuhören ist eine innere Entscheidung – und wird dann wirksam, wenn Körper, Haltung
-                und Beziehung zusammenspielen.
-              </p>
-            </div>
-          </div>
-
-          <div className="lg:col-span-7">
-            <ol className="space-y-4">
-              {[
-                ["Ankommen mit allen Sinnen", "Gegenstandsachtsamkeit: wahrnehmen, erkunden, landen."],
-                ["Zuhören bewusst erleben", "Muster und innere Verhinderer erkennen."],
-                ["Innere Voraussetzungen stärken", "Atem & Selbstregulation als Basis von Präsenz."],
-                [
-                  "Die sieben Säulen des Zuhörens",
-                  "Gemeinsam erarbeiten – Fokus auf Achtsamkeit und Akzeptanz.",
-                ],
-                [
-                  "Selbstmitgefühl & innere Haltung",
-                  "Übungen, die Druck rausnehmen und Mitgefühl kultivieren.",
-                ],
-                [
-                  "Zuhören im Dialog",
-                  "Vom Monolog zur Verbindung: förderliche Dialoge gestalten.",
-                ],
-                ["Integration", "Transfer: Was nehme ich mit? Wo setze ich es konkret um?"],
-              ].map(([t, d], i) => (
-                <li
-                  key={t}
-                  className="rounded-3xl border border-[#e2e4e8] bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className="text-sm font-semibold">
-                        <span className="text-[#106278]">{String(i + 1).padStart(2, "0")}</span> {t}
-                      </div>
-                      <p className="mt-2 text-sm leading-relaxed text-[#616974]">{d}</p>
-                    </div>
-                    <div
-                      className="hidden h-10 w-10 shrink-0 rounded-2xl border border-[#e2e4e8] sm:block"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, rgba(16,98,120,0.14), rgba(194,122,73,0.12))",
-                      }}
-                    />
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </div>
+        <ScrollJourney />
       </Section>
 
       {/* PILLARS */}
       <Section className="pt-0">
-        <div className="rounded-3xl border border-[#e2e4e8] bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.08)] sm:p-10">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold">Die sieben Säulen des Zuhörens</h2>
-            <p className="text-sm text-[#616974]">
-              Sie lernen die Säulen nicht nur – Sie erleben sie.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              "Achtsamkeit",
-              "Akzeptanz",
-              "Präsenz",
-              "Offenheit",
-              "Wertfreiheit",
-              "Selbstregulation",
-              "Beziehung",
-            ].map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-[#e2e4e8] bg-[#eeeae3]/70 px-4 py-3 text-sm"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
+        <PillarsInteractive />
       </Section>
 
       {/* BREATH */}
@@ -310,15 +242,17 @@ export default function AchtsamPage() {
 
           <div className="lg:col-span-6">
             <div className="grid gap-4 sm:grid-cols-3">
-              {["Box Breathing (4-4-4-4)", "4-7-8", "Summen/Bienenatmung"].map((t) => (
+              {[
+                { name: "Box Breathing", desc: "4-4-4-4: Einatmen, Halten, Ausatmen, Halten." },
+                { name: "4-7-8 Atmung", desc: "Beruhigt das Nervensystem in Sekunden." },
+                { name: "Summatmung", desc: "Löst Anspannung und schafft inneren Raum." },
+              ].map((t) => (
                 <div
-                  key={t}
+                  key={t.name}
                   className="rounded-3xl border border-[#e2e4e8] bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.08)]"
                 >
-                  <div className="text-sm font-semibold">{t}</div>
-                  <p className="mt-2 text-xs leading-relaxed text-[#616974]">
-                    Kurz, machbar, wirksam – ideal als Mini-Reset vor oder während Gesprächen.
-                  </p>
+                  <div className="text-sm font-semibold">{t.name}</div>
+                  <p className="mt-2 text-xs leading-relaxed text-[#616974]">{t.desc}</p>
                 </div>
               ))}
             </div>
