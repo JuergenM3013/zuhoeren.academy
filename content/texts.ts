@@ -134,7 +134,7 @@ export const texts = {
     headline: "KI-Lernsysteme für Gesprächsführung, Resilienz und Metakognition",
     subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI messbar machen.",
     description: "Wir entwickeln spezialisierte KI-Plattformen: Von Echtzeit-Feedback im Vertrieb über Assessment im Kundenkontakt bis zu Reflexionssystemen für Führungskräfte.",
-    ctaPrimary: "Lösungen entdecken",
+    ctaPrimary: "Unsere Lösungen",
     ctaSecondary: "So funktioniert's",
     features: [
       "KI-Feedback in Echtzeit",
