@@ -382,7 +382,7 @@ export const texts = {
       },
       {
         q: "Für welche Unternehmen sind die Systeme gedacht?",
-        a: "B2B-Teams (10–500 Personen). Ideal für Vertrieb, Führungskräfte, Kundenservice – überall wo Gesprächsqualität zählt.",
+        a: "Teams, EPUs, Freelancer und Privatpersonen. Ideal für Vertrieb, Führungskräfte, Kundenservice, Coaches – überall wo Gesprächsqualität zählt.",
       },
       {
         q: "Können eigene Szenarien erstellt werden?",
