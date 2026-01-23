@@ -147,7 +147,7 @@ export const texts = {
       "EU-Datenverarbeitung",
     ],
     stats: [
-      { value: "9", label: "Plattformen" },
+      { value: "8", label: "Plattformen" },
       { value: "100+", label: "Szenarien" },
       { value: "B2B", label: "Enterprise-ready" },
       { value: "24/7", label: "Verfügbar" },
@@ -240,7 +240,7 @@ export const texts = {
         emoji: "👔",
         benefit: "Verstehen, was Ihr Team wirklich denkt",
         platforms: [
-          { name: "QuestionCraft.ai", status: "coming_soon", use: "Fragetechniken für Mitarbeitergespräche" },
+          { name: "Fragenkatalog.at", status: "coming_soon", use: "Fragetechniken für Mitarbeitergespräche" },
           { name: "LeadershipFitness.studio", status: "coming_soon", use: "Führungsverhalten reflektieren" },
           { name: "ResilienzFitness.studio", status: "coming_soon", use: "Emotionale Stabilität in Krisen" },
           { name: "DialogFitness.studio", status: "coming_soon", use: "Schwierige Mitarbeitergespräche üben" },
@@ -251,7 +251,7 @@ export const texts = {
         emoji: "🩺",
         benefit: "Patienten verstehen – nicht nur behandeln",
         platforms: [
-          { name: "QuestionCraft.ai", status: "coming_soon", use: "Anamnese-Fragen, Verständnis sicherstellen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", use: "Anamnese-Fragen, Verständnis sicherstellen" },
           { name: "DialogFitness.studio", status: "coming_soon", use: "Schwierige Diagnosen empathisch übermitteln" },
           { name: "ResilienzFitness.studio", status: "coming_soon", use: "Emotionale Distanzierung ohne Empathieverlust" },
         ],
@@ -261,7 +261,7 @@ export const texts = {
         emoji: "📞",
         benefit: "Vom Problemlöser zum Kundenversteher",
         platforms: [
-          { name: "QuestionCraft.ai", status: "coming_soon", use: "Das eigentliche Problem verstehen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", use: "Das eigentliche Problem verstehen" },
           { name: "DialogFitness.studio", status: "coming_soon", use: "Deeskalierende Gesprächsführung trainieren" },
           { name: "ResilienzFitness.studio", status: "coming_soon", use: "Stressregulation nach schwierigen Gesprächen" },
         ],
@@ -272,7 +272,7 @@ export const texts = {
         benefit: "Verkaufen Sie nicht – verstehen Sie",
         platforms: [
           { name: "SalesFitness.studio", status: "live", use: "Cold Calls, Discovery, Closing üben" },
-          { name: "QuestionCraft.ai", status: "coming_soon", use: "Wahre Bedürfnisse entdecken" },
+          { name: "Fragenkatalog.at", status: "coming_soon", use: "Wahre Bedürfnisse entdecken" },
           { name: "DialogFitness.studio", status: "coming_soon", use: "Einwände souverän behandeln" },
         ],
       },
@@ -283,7 +283,7 @@ export const texts = {
         platforms: [
           { name: "Telefonkompetenz", status: "coming_soon", use: "Kandidaten-Assessment für Telefon-Rollen" },
           { name: "DialogFitness.studio", status: "coming_soon", use: "Kritikgespräche, Feedback geben/empfangen" },
-          { name: "QuestionCraft.ai", status: "coming_soon", use: "Bessere Fragen in Interviews stellen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", use: "Bessere Fragen in Interviews stellen" },
         ],
       },
       {
@@ -310,7 +310,7 @@ export const texts = {
       {
         title: "Fragetechnik-Training",
         description: "Die richtigen Fragen stellen lernen: Q-CORE Framework, KI-Feedback, Rollenspiele.",
-        platform: "QuestionCraft.ai",
+        platform: "Fragenkatalog.at",
         emoji: "❓",
       },
       {

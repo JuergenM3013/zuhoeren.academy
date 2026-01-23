@@ -6,10 +6,9 @@ export type PlatformSlug =
   | "metakognitionen"
   | "resilienzfitness"
   | "leadershipfitness"
-  | "questioncraft"
+  | "fragenkatalog"
   | "telefonkompetenz"
-  | "konfliktloesung"
-  | "fragenkatalog";
+  | "konfliktloesung";
 
 export type PlatformSection = {
   title: string;
@@ -215,9 +214,9 @@ export const platforms: Platform[] = [
     },
   },
   {
-    slug: "questioncraft",
-    name: "QuestionCraft.ai",
-    website: "https://questioncraft.ai",
+    slug: "fragenkatalog",
+    name: "Fragenkatalog.at",
+    website: "https://fragenkatalog.at",
     category: "Fragetechnik",
     status: "coming_soon",
     statusLabel: "Coming soon",
@@ -245,7 +244,7 @@ export const platforms: Platform[] = [
       },
     ],
     seo: {
-      title: "QuestionCraft.ai – KI-gestützte Fragetechnik-Plattform",
+      title: "Fragenkatalog.at – KI-gestützte Fragetechnik-Plattform",
       description: "Meistern Sie die Kunst der Gesprächsführung: KI-Training für Fragetechniken, Rollenspiele mit KI-Personas und das Q-CORE Framework für wirksame Fragen.",
     },
   },
@@ -316,40 +315,6 @@ export const platforms: Platform[] = [
     seo: {
       title: "Konfliktlösung.studio – KI-gestütztes Konflikttraining",
       description: "Trainieren Sie Konfliktlösung mit KI: Deeskalation, Mediation und konstruktive Gespräche üben. Realistische Simulationen, sofortiges Feedback.",
-    },
-  },
-  {
-    slug: "fragenkatalog",
-    name: "Fragenkatalog.at",
-    website: "https://fragenkatalog.at",
-    category: "Fragetechnik",
-    status: "coming_soon",
-    statusLabel: "Coming soon",
-    tagline: "Die richtigen Fragen zur richtigen Zeit.",
-    description:
-      "Ihre Bibliothek für wirksame Fragen – kuratiert nach Gesprächssituation, Ziel und Kontext. Finden Sie die perfekte Frage für jedes Gespräch und lernen Sie, wann welche Fragetechnik am besten wirkt.",
-    bullets: [
-      "Kuratierte Fragensammlung nach Situation und Ziel",
-      "Fragetechniken mit Beispielen und Erklärungen",
-      "Filterbar nach Kontext: Führung, Coaching, Verkauf, Medizin",
-      "Persönliches Fragen-Playbook aufbauen",
-    ],
-    audience: ["Führungskräfte", "Coaches", "Medizinisches Personal", "Vertrieb"],
-    sections: [
-      {
-        title: "Fragenkategorien",
-        lead: "Systematisch organisiert für schnellen Zugriff.",
-        items: ["Öffnende Fragen: Gespräche starten und vertiefen", "Klärende Fragen: Verständnis sichern", "Reflexionsfragen: Nachdenken anregen", "Handlungsfragen: Nächste Schritte initiieren"],
-      },
-      {
-        title: "Anwendungsgebiete",
-        lead: "Für jeden Kontext die passenden Fragen.",
-        items: ["Mitarbeitergespräche und Feedback", "Coaching und Beratung", "Patientenkommunikation", "Vertrieb und Kundenberatung"],
-      },
-    ],
-    seo: {
-      title: "Fragenkatalog.at – Kuratierte Fragen für wirksame Gespräche",
-      description: "Ihre Bibliothek für wirksame Fragen: Kuratiert nach Situation, Ziel und Kontext. Finden Sie die perfekte Frage für Führung, Coaching, Medizin und Vertrieb.",
     },
   },
 ];

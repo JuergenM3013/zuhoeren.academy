@@ -60,16 +60,13 @@ export default function Footer() {
                 <span className="text-white/40">Metakognitionen.at</span>
               </li>
               <li>
-                <span className="text-white/40">QuestionCraft.ai</span>
+                <span className="text-white/40">Fragenkatalog.at</span>
               </li>
               <li>
                 <span className="text-white/40">Telefonkompetenz.ai</span>
               </li>
               <li>
                 <span className="text-white/40">Konfliktlösung.studio</span>
-              </li>
-              <li>
-                <span className="text-white/40">Fragenkatalog.at</span>
               </li>
             </ul>
           </div>
