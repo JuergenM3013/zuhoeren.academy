@@ -36,27 +36,41 @@ export async function POST(req: Request) {
 
   const { name, email, company, topic, message } = parsed.data;
 
-  // Beispiel mit Resend HTTP API
+  // Resend HTTP API
+  const fromAddress = env.RESEND_FROM || "zuhoeren.academy <onboarding@resend.dev>";
   const payload = {
-    from: "zuhoeren.academy <onboarding@resend.dev>",
+    from: fromAddress,
     to: [env.CONTACT_TO],
     subject: `Neue Anfrage – ${topic || "Demo/Pilot"}`,
     reply_to: email,
     text: `Name: ${name}\nE-Mail: ${email}\nUnternehmen: ${company || "-"}\nInteresse: ${topic || "-"}\n\nNachricht:\n${message}\n\nIP: ${ip}`,
   };
 
-  const r = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${env.RESEND_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
+  try {
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
 
-  if (!r.ok) {
-    return NextResponse.json({ error: "E-Mail konnte nicht gesendet werden." }, { status: 500 });
+    if (!r.ok) {
+      const errorData = await r.json().catch(() => ({}));
+      console.error("Resend API error:", r.status, errorData);
+      return NextResponse.json(
+        { error: "E-Mail konnte nicht gesendet werden." },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    console.error("Resend fetch error:", err);
+    return NextResponse.json(
+      { error: "E-Mail-Dienst nicht erreichbar." },
+      { status: 500 }
+    );
   }
-
-  return NextResponse.json({ ok: true });
 }

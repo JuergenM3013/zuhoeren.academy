@@ -123,68 +123,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* PLATTFORMEN IM DETAIL */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <p className={`text-sm font-medium ${colors.sections.stations} uppercase tracking-wider mb-2`}>{texts.stations.sectionLabel}</p>
-        <h2 className="text-3xl font-extrabold tracking-tight mb-4">{texts.stations.headline}</h2>
-        <p className={`max-w-2xl leading-relaxed ${colors.ui.textSecondary} mb-10`}>
-          {texts.stations.description}
-        </p>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {platforms.map((platform) => {
-            const catColors = colors.categories[platform.category as keyof typeof colors.categories];
-            return (
-              <div key={platform.slug} className={`rounded-3xl border ${colors.ui.cardBorder} bg-gradient-to-br ${catColors.gradient} to-transparent p-8`}>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium ${catColors.tag}`}>
-                    {platform.name}
-                  </span>
-                  <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
-                    platform.status === "live"
-                      ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-                      : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
-                  }`}>
-                    {platform.statusLabel}
-                  </span>
-                </div>
-                <h3 className="mt-4 text-xl font-extrabold">{platform.tagline}</h3>
-                <p className={`mt-3 ${colors.ui.textSecondary} leading-relaxed text-sm`}>
-                  {platform.description}
-                </p>
-                {platform.sections[0] && (
-                  <div className="mt-6 space-y-3">
-                    <p className="text-xs font-semibold text-white/50 uppercase tracking-wider">{platform.sections[0].title}</p>
-                    {platform.sections[0].items?.slice(0, 3).map((item) => (
-                      <div key={item} className="flex items-start gap-3">
-                        <span className={`mt-1 h-2 w-2 rounded-full ${catColors.dot}`} />
-                        <p className="text-sm text-white/80">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {platform.internalUrl ? (
-                  <Link
-                    href={platform.internalUrl}
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
-                  >
-                    {platform.name} {texts.stations.visitLabel}
-                  </Link>
-                ) : (
-                  <a
-                    href={platform.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
-                  >
-                    {platform.name} {texts.stations.visitLabel}
-                  </a>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
       {/* GYM STANDARDS */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className={`rounded-3xl border ${colors.ui.cardBorder} bg-gradient-to-br from-violet-600/5 to-emerald-600/5 p-8 md:p-12 text-center`}>

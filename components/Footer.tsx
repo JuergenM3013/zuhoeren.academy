@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,10 +16,10 @@ export default function Footer() {
               <span>zuhoeren.academy</span>
             </div>
             <p className="mt-3 text-sm text-white/60 max-w-xs">
-              KI-gestÃ¼tzte Weiterbildung fÃ¼r bessere GesprÃ¤che in Leadership, Sales und HR.
+              KI-Lernsysteme für Gesprächsführung, Resilienz und Metakognition.
             </p>
             <div className="mt-6">
-              <p className="text-sm font-semibold text-white/80">Newsletter: KI + ZuhÃ¶ren im Alltag</p>
+              <p className="text-sm font-semibold text-white/80">Newsletter: KI + Zuhören im Alltag</p>
               <form className="mt-2 flex gap-2">
                 <input
                   type="email"
@@ -36,20 +36,40 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Produkte */}
+          {/* Plattformen */}
           <div>
-            <p className="text-sm font-semibold text-white/80">Produkte</p>
+            <p className="text-sm font-semibold text-white/80">Plattformen</p>
             <ul className="mt-3 space-y-2 text-sm text-white/60">
               <li>
                 <a href="https://salesfitness.studio" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                  Salesfitness.studio
+                  SalesFitness.studio
                 </a>
               </li>
               <li>
-                <span className="text-white/50">Dialogfitness.studio (coming soon)</span>
+                <Link href="/dialogfitness" className="hover:text-white transition">
+                  DialogFitness.studio
+                </Link>
               </li>
               <li>
-                <span className="text-white/50">Leadershipfitness.studio (coming soon)</span>
+                <span className="text-white/40">ResilienzFitness.studio</span>
+              </li>
+              <li>
+                <span className="text-white/40">LeadershipFitness.studio</span>
+              </li>
+              <li>
+                <span className="text-white/40">Metakognitionen.at</span>
+              </li>
+              <li>
+                <span className="text-white/40">QuestionCraft.ai</span>
+              </li>
+              <li>
+                <span className="text-white/40">Telefonkompetenz.ai</span>
+              </li>
+              <li>
+                <span className="text-white/40">Konfliktlösung.studio</span>
+              </li>
+              <li>
+                <span className="text-white/40">Fragenkatalog.at</span>
               </li>
             </ul>
           </div>
@@ -80,7 +100,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 md:flex-row">
           <p className="text-sm text-white/50">
-            Â© {year} zuhoeren.academy
+            © {year} zuhoeren.academy
           </p>
           <a
             href="https://zuhoerakademie.at/"
@@ -88,11 +108,10 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-sm text-white/50 hover:text-white transition"
           >
-            Ein Projekt der ZuhÃ¶rakademie
+            Ein Projekt der Zuhörakademie
           </a>
         </div>
       </div>
     </footer>
   );
 }
-

@@ -194,22 +194,22 @@ export const texts = {
   // ============================================
   trainingPlan: {
     sectionLabel: "So funktioniert es",
-    headline: "Der Lernprozess",
-    description: "Drei Phasen für nachhaltiges Lernen: Szenario wählen, mit KI üben, Feedback analysieren.",
+    headline: "Der Prozess",
+    description: "Drei Phasen für messbare Ergebnisse: Kontext definieren, mit KI arbeiten, Erkenntnisse gewinnen.",
     steps: [
       {
-        title: "Szenario wählen",
-        description: "Wähle dein Lernziel und Szenario. Das System passt sich deinem Kenntnisstand an.",
+        title: "Ziel & Kontext definieren",
+        description: "Wähle dein Ziel – ob Training, Assessment oder Reflexion. Das System passt sich deinem Anwendungsfall an.",
         emoji: "🎯",
       },
       {
-        title: "Mit KI üben",
-        description: "Simuliere Gespräche mit dem KI-Partner. Reagiere, experimentiere, verbessere – in sicherer Umgebung.",
+        title: "Mit KI interagieren",
+        description: "Trainiere Gespräche, absolviere Assessments oder reflektiere mit KI-Unterstützung – sicher und ohne Risiko.",
         emoji: "💬",
       },
       {
-        title: "Feedback analysieren",
-        description: "Erhalte detaillierte Analyse, erkenne Muster und plane gezielt deine Weiterentwicklung.",
+        title: "Erkenntnisse nutzen",
+        description: "Erhalte detaillierte Analysen, Reports oder Feedback – für fundierte Entscheidungen und gezielte Entwicklung.",
         emoji: "📊",
       },
     ],
