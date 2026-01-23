@@ -17,25 +17,23 @@ export default function ProductCard(props: {
 
   return (
     <article className="flex flex-col rounded-3xl border border-white/10 bg-white/5 p-6">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <div className="flex items-center gap-2">
-            <h3 className="text-lg font-extrabold tracking-tight">{props.name}</h3>
-            {props.statusLabel && (
-              <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${
-                isLive
-                  ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-                  : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
-              }`}>
-                {props.statusLabel}
-              </span>
-            )}
-          </div>
-          <p className="mt-2 text-white/70">{props.tagline}</p>
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="text-lg font-extrabold tracking-tight">{props.name}</h3>
+          {props.statusLabel && (
+            <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${
+              isLive
+                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+            }`}>
+              {props.statusLabel}
+            </span>
+          )}
+          <span className={`shrink-0 rounded-full border px-3 py-1 text-xs font-bold ${props.tagColor || "border-white/10 bg-white/5 text-white/80"}`}>
+            {props.tag}
+          </span>
         </div>
-        <span className={`shrink-0 rounded-full border px-3 py-1 text-xs font-bold ${props.tagColor || "border-white/10 bg-white/5 text-white/80"}`}>
-          {props.tag}
-        </span>
+        <p className="text-white/70">{props.tagline}</p>
       </div>
 
       <ul className="mt-4 space-y-2 text-sm leading-relaxed text-white/75">

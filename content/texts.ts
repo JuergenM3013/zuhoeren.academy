@@ -72,6 +72,15 @@ export const colors = {
       border: "border-indigo-500/30",
       bg: "bg-indigo-500/10",
     },
+    Konflikt: {
+      label: "orange",
+      tag: "bg-orange-500/10 border-orange-500/30 text-orange-300",
+      gradient: "from-orange-600/10",
+      dot: "bg-orange-400",
+      text: "text-orange-400",
+      border: "border-orange-500/30",
+      bg: "bg-orange-500/10",
+    },
   },
 
   // Sektionsfarben (Label-Farben)
@@ -138,7 +147,7 @@ export const texts = {
       "EU-Datenverarbeitung",
     ],
     stats: [
-      { value: "7", label: "Plattformen" },
+      { value: "9", label: "Plattformen" },
       { value: "100+", label: "Szenarien" },
       { value: "B2B", label: "Enterprise-ready" },
       { value: "24/7", label: "Verfügbar" },
@@ -152,7 +161,7 @@ export const texts = {
     sectionLabel: "Unsere Lösungen",
     headline: "Spezialisierte KI-Lernsysteme",
     description: "Jede Plattform adressiert einen spezifischen Anwendungsbereich. SalesFitness ist live – weitere Systeme folgen.",
-    ctaLabel: "Mehr erfahren",
+    ctaLabel: "Kontakt",
   },
 
   // ============================================

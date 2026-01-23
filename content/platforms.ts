@@ -1,4 +1,4 @@
-export type PlatformCategory = "Sales" | "Dialog" | "Leadership" | "Resilienz" | "Metakognition" | "Assessment" | "Fragetechnik";
+export type PlatformCategory = "Sales" | "Dialog" | "Leadership" | "Resilienz" | "Metakognition" | "Assessment" | "Fragetechnik" | "Konflikt";
 export type PlatformStatus = "live" | "coming_soon" | "beta";
 export type PlatformSlug =
   | "salesfitness"
@@ -7,7 +7,9 @@ export type PlatformSlug =
   | "resilienzfitness"
   | "leadershipfitness"
   | "questioncraft"
-  | "telefonkompetenz";
+  | "telefonkompetenz"
+  | "konfliktloesung"
+  | "fragenkatalog";
 
 export type PlatformSection = {
   title: string;
@@ -81,6 +83,7 @@ export const platforms: Platform[] = [
     slug: "dialogfitness",
     name: "DialogFitness",
     website: "https://dialogfitness.studio",
+    internalUrl: "/dialogfitness",
     category: "Dialog",
     status: "coming_soon",
     statusLabel: "Coming soon",
@@ -279,6 +282,74 @@ export const platforms: Platform[] = [
     seo: {
       title: "Telefonkompetenz – KI-gestütztes Assessment für Personalauswahl",
       description: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird. KI-Assessment für Telefonkompetenz: Objektiv, effizient, 40% weniger Fehlbesetzungen.",
+    },
+  },
+  {
+    slug: "konfliktloesung",
+    name: "Konfliktlösung.studio",
+    website: "https://konfliktloesung.studio",
+    category: "Konflikt",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
+    tagline: "Konflikte lösen, bevor sie eskalieren.",
+    description:
+      "KI-gestütztes Training für konstruktive Konfliktlösung. Simulieren Sie schwierige Gespräche, üben Sie Deeskalation und entwickeln Sie nachhaltige Lösungsstrategien – in sicherer Umgebung.",
+    bullets: [
+      "Realistische Konfliktsimulationen mit KI-Gesprächspartnern",
+      "Deeskalationstechniken trainieren und anwenden",
+      "Mediation und Verhandlung in simulierter Praxis üben",
+      "Sofortiges Feedback zu Kommunikationsmuster und Wirkung",
+    ],
+    audience: ["Führungskräfte", "HR", "Mediatoren", "Teamleiter"],
+    sections: [
+      {
+        title: "Konfliktarten trainieren",
+        lead: "Von Sachkonflikten bis zu Beziehungskonflikten – für jede Situation vorbereitet.",
+        items: ["Sachkonflikte: Ressourcen, Prozesse, Entscheidungen", "Beziehungskonflikte: Teamdynamik, Kommunikation", "Wertekonflikte: Unterschiedliche Perspektiven integrieren", "Rollenkonflikte: Erwartungen klären und aushandeln"],
+      },
+      {
+        title: "Methoden & Techniken",
+        lead: "Wissenschaftlich fundierte Ansätze für nachhaltige Lösungen.",
+        items: ["Harvard-Methode: Interessen statt Positionen", "Gewaltfreie Kommunikation (GFK)", "Aktives Zuhören und Spiegeln", "BATNA-Analyse für Verhandlungen"],
+      },
+    ],
+    seo: {
+      title: "Konfliktlösung.studio – KI-gestütztes Konflikttraining",
+      description: "Trainieren Sie Konfliktlösung mit KI: Deeskalation, Mediation und konstruktive Gespräche üben. Realistische Simulationen, sofortiges Feedback.",
+    },
+  },
+  {
+    slug: "fragenkatalog",
+    name: "Fragenkatalog.at",
+    website: "https://fragenkatalog.at",
+    category: "Fragetechnik",
+    status: "coming_soon",
+    statusLabel: "Coming soon",
+    tagline: "Die richtigen Fragen zur richtigen Zeit.",
+    description:
+      "Ihre Bibliothek für wirksame Fragen – kuratiert nach Gesprächssituation, Ziel und Kontext. Finden Sie die perfekte Frage für jedes Gespräch und lernen Sie, wann welche Fragetechnik am besten wirkt.",
+    bullets: [
+      "Kuratierte Fragensammlung nach Situation und Ziel",
+      "Fragetechniken mit Beispielen und Erklärungen",
+      "Filterbar nach Kontext: Führung, Coaching, Verkauf, Medizin",
+      "Persönliches Fragen-Playbook aufbauen",
+    ],
+    audience: ["Führungskräfte", "Coaches", "Medizinisches Personal", "Vertrieb"],
+    sections: [
+      {
+        title: "Fragenkategorien",
+        lead: "Systematisch organisiert für schnellen Zugriff.",
+        items: ["Öffnende Fragen: Gespräche starten und vertiefen", "Klärende Fragen: Verständnis sichern", "Reflexionsfragen: Nachdenken anregen", "Handlungsfragen: Nächste Schritte initiieren"],
+      },
+      {
+        title: "Anwendungsgebiete",
+        lead: "Für jeden Kontext die passenden Fragen.",
+        items: ["Mitarbeitergespräche und Feedback", "Coaching und Beratung", "Patientenkommunikation", "Vertrieb und Kundenberatung"],
+      },
+    ],
+    seo: {
+      title: "Fragenkatalog.at – Kuratierte Fragen für wirksame Gespräche",
+      description: "Ihre Bibliothek für wirksame Fragen: Kuratiert nach Situation, Ziel und Kontext. Finden Sie die perfekte Frage für Führung, Coaching, Medizin und Vertrieb.",
     },
   },
 ];
