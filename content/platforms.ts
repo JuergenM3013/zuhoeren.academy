@@ -117,6 +117,7 @@ export const platforms: Platform[] = [
     slug: "metakognitionen",
     name: "Metakognitionen.at",
     website: "https://metakognitionen.at",
+    internalUrl: "/metakognitionen",
     category: "Metakognition",
     status: "coming_soon",
     statusLabel: "Coming soon",
