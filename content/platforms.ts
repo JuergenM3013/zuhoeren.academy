@@ -151,6 +151,7 @@ export const platforms: Platform[] = [
     slug: "resilienzfitness",
     name: "ResilienzFitness",
     website: "https://resilienzfitness.studio",
+    internalUrl: "/resilienz",
     category: "Resilienz",
     status: "coming_soon",
     statusLabel: "Coming soon",
