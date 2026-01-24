@@ -350,15 +350,6 @@ export default function Page() {
               </p>
             </div>
 
-            <div className={`mt-8 rounded-xl border ${colors.categories.Sales.border} ${colors.categories.Sales.bg} p-4`}>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xl">{texts.contact.probeAbo.emoji}</span>
-                <p className="text-sm font-semibold text-violet-300">{texts.contact.probeAbo.title}</p>
-              </div>
-              <p className={`text-sm leading-relaxed ${colors.ui.textSecondary}`}>
-                {texts.contact.probeAbo.description}
-              </p>
-            </div>
           </div>
 
           <ContactForm />

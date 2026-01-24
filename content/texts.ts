@@ -420,11 +420,6 @@ export const texts = {
     description: "Teste ein Lernsystem mit deinem Team. Wir begleiten dich von der Demo bis zur Auswertung.",
     email: "hallo@zuhoeren.academy",
     phone: "+43 664 397 8684",
-    probeAbo: {
-      emoji: "🚀",
-      title: "Pilot-Angebot",
-      description: "2–4 Wochen Pilotphase: System kennenlernen, mit echtem Team testen, Ergebnisse auswerten.",
-    },
   },
 
   // ============================================
