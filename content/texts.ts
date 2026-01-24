@@ -406,7 +406,7 @@ export const texts = {
       },
       {
         q: "Was kostet die Nutzung?",
-        a: "Abhängig von Teamgröße und gewählten Modulen. Kontaktiere uns für ein individuelles Angebot.",
+        a: "Abhängig von Teamgröße und Umfang. Kontaktieren Sie uns für ein individuelles Angebot.",
       },
     ],
   },
