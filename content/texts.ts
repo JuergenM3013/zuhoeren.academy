@@ -382,7 +382,7 @@ export const texts = {
       },
       {
         q: "Für welche Unternehmen sind die Systeme gedacht?",
-        a: "Teams, EPUs, Freelancer und Privatpersonen. Ideal für Vertrieb, Führungskräfte, Kundenservice, Coaches – überall wo Gesprächsqualität zählt.",
+        a: "Teams, EPUs, Freelancer und Privatpersonen. Ideal für Vertrieb, Führungskräfte, Kundenservice aller Branchen, Regionen und Unternehmensgrößen – überall wo Menschen in Kontakt sind.",
       },
       {
         q: "Können eigene Szenarien erstellt werden?",
