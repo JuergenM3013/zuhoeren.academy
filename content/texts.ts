@@ -402,7 +402,7 @@ export const texts = {
       },
       {
         q: "Wie starte ich am besten?",
-        a: "Mit einem Pilotprojekt: Demo ansehen, 2–4 Wochen mit einem Team testen, dann entscheiden.",
+        a: "Mit der Plattform, die dich aktuell am besten unterstützt.",
       },
       {
         q: "Was kostet die Nutzung?",
