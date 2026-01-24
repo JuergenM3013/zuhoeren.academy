@@ -131,7 +131,7 @@ export const texts = {
   // ============================================
   hero: {
     pill: "KI-gestützte Lernsysteme",
-    headline: "KI-Lernsysteme für Gesprächsführung, Resilienz und Metakognition",
+    headline: "KI-Lernsysteme für Gesprächsführung, Vertrieb, Resilienz und Metakognition",
     subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI messbar machen.",
     description: "Wir entwickeln spezialisierte KI-Plattformen: Von Echtzeit-Feedback im Vertrieb über Assessment im Kundenkontakt bis zu Reflexionssystemen für Führungskräfte.",
     ctaPrimary: "Unsere Lösungen",
@@ -308,6 +308,30 @@ export const texts = {
     description: "Konkrete Einsatzszenarien für verschiedene Herausforderungen.",
     cases: [
       {
+        title: "Sales-Training",
+        description: "Verkaufsgespräche simulieren: Einwände behandeln, Abschlüsse üben, Pitch verfeinern.",
+        platform: "SalesFitness.studio (Live)",
+        emoji: "🎯",
+      },
+      {
+        title: "Dialog-Training",
+        description: "Schwierige Gespräche üben: Feedback, Konflikte, emotionale Situationen meistern.",
+        platform: "DialogFitness.studio",
+        emoji: "💬",
+      },
+      {
+        title: "Denk-Training",
+        description: "Kognitive Verzerrungen erkennen, bessere Entscheidungen treffen.",
+        platform: "Metakognitionen.at",
+        emoji: "🧠",
+      },
+      {
+        title: "Resilienz-Training",
+        description: "Mentale Stärke aufbauen: KI-Coaching, Stresstest-Simulator, Mikro-Workouts.",
+        platform: "ResilienzFitness.studio",
+        emoji: "💪",
+      },
+      {
         title: "Fragetechnik-Training",
         description: "Die richtigen Fragen stellen lernen: Q-CORE Framework, KI-Feedback, Rollenspiele.",
         platform: "Fragenkatalog.at",
@@ -320,34 +344,10 @@ export const texts = {
         emoji: "📋",
       },
       {
-        title: "Sales-Training",
-        description: "Verkaufsgespräche simulieren: Einwände behandeln, Abschlüsse üben, Pitch verfeinern.",
-        platform: "SalesFitness.studio (Live)",
-        emoji: "🎯",
-      },
-      {
-        title: "Resilienz-Training",
-        description: "Mentale Stärke aufbauen: KI-Coaching, Stresstest-Simulator, Mikro-Workouts.",
-        platform: "ResilienzFitness.studio",
-        emoji: "💪",
-      },
-      {
-        title: "Dialog-Training",
-        description: "Schwierige Gespräche üben: Feedback, Konflikte, emotionale Situationen meistern.",
-        platform: "DialogFitness.studio",
-        emoji: "💬",
-      },
-      {
         title: "Führungs-Reflexion",
         description: "Eigenes Führungsverhalten analysieren und gezielt weiterentwickeln.",
         platform: "LeadershipFitness.studio",
         emoji: "🎓",
-      },
-      {
-        title: "Denk-Training",
-        description: "Kognitive Verzerrungen erkennen, bessere Entscheidungen treffen.",
-        platform: "Metakognitionen.at",
-        emoji: "🧠",
       },
     ],
   },
@@ -358,7 +358,7 @@ export const texts = {
   about: {
     sectionLabel: "Der Gründer",
     headline: "KI als Lernsystem – nicht als Ersatz",
-    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback und zeigt Muster auf. Die eigentliche Arbeit – das Anwenden im echten Gespräch – machst du selbst.",
+    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback, ist dein Sparringspartner im Denken und zeigt versteckte Muster auf. Die wesentliche Arbeit – das Anwenden im echten Gespräch, Labs und Übungen – machst du selbst.",
     founder: {
       name: "Jürgen Melmuka",
       role: "Gründer & Entwickler",
@@ -386,7 +386,7 @@ export const texts = {
       },
       {
         q: "Können eigene Szenarien erstellt werden?",
-        a: "Ja – individuelle Szenarien und Playbook-Abgleich sind Kernfunktionen. Details klären wir im Pilotprojekt.",
+        a: "Ja – individuelle Szenarien sind Kernfunktionen aller Plattformen.",
       },
       {
         q: "Wie funktioniert das Assessment?",

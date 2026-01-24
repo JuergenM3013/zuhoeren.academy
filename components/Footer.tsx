@@ -16,7 +16,7 @@ export default function Footer() {
               <span>zuhoeren.academy</span>
             </div>
             <p className="mt-3 text-sm text-white/60 max-w-xs">
-              KI-Lernsysteme für Gesprächsführung, Resilienz und Metakognition.
+              KI-Lernsysteme für Gesprächsführung, Vertrieb, Resilienz und Metakognition.
             </p>
             <div className="mt-6">
               <p className="text-sm font-semibold text-white/80">Newsletter: KI + Zuhören im Alltag</p>
@@ -83,6 +83,11 @@ export default function Footer() {
               <li>
                 <Link href="/datenschutz" className="hover:text-white transition">
                   Datenschutz
+                </Link>
+              </li>
+              <li>
+                <Link href="/agb" className="hover:text-white transition">
+                  AGB
                 </Link>
               </li>
               <li>
