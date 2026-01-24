@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum",
+  title: "Impressum | zuhoeren.academy",
   description: "Impressum von zuhoeren.academy – rechtliche Informationen und Kontaktdaten.",
 };
 
@@ -12,13 +12,12 @@ export default function ImpressumPage() {
 
       <section className="mt-8 space-y-6 leading-relaxed text-white/80">
         <div>
-          <h2 className="font-bold text-white">Angaben gemäß § 5 ECG / § 25 MedienG</h2>
+          <h2 className="font-bold text-white">zuhoeren.academy – FlexCo in Gründung</h2>
           <p className="mt-2">
-            {/* TODO: Echte Firmendaten einfügen */}
-            zuhoeren.academy<br />
-            [zuhoeren.academy / Gerd Jürgen Melmuka]<br />
-            [Blindengasse 46/5]<br />
-            [1080 Wien]<br />
+            <strong>Inhaber (bis Eintragung der FlexCo):</strong><br />
+            Jürgen Melmuka<br />
+            Blindengasse 46/5<br />
+            1080 Wien<br />
             Österreich
           </p>
         </div>
@@ -26,36 +25,60 @@ export default function ImpressumPage() {
         <div>
           <h2 className="font-bold text-white">Kontakt</h2>
           <p className="mt-2">
-            Telefon: <a href="tel:+436643978684" className="underline hover:text-white">+43 664 397 8684</a><br />
-            E-Mail: <a href="mailto:hallo@zuhoeren.academy" className="underline hover:text-white">hallo@zuhoeren.academy</a>
+            Telefon: <a href="tel:+436643978684" className="underline hover:text-white">+43 664 397 86 84</a><br />
+            E-Mail: <a href="mailto:juergen@zuhoeren.academy" className="underline hover:text-white">juergen@zuhoeren.academy</a><br />
+            Website: <a href="https://www.zuhoeren.academy" className="underline hover:text-white">https://www.zuhoeren.academy</a>
           </p>
         </div>
 
         <div>
           <h2 className="font-bold text-white">Unternehmensgegenstand</h2>
           <p className="mt-2">
-            KI-gestützte Weiterbildung für Leadership, Sales und Dialogführung.
-                      </p>
+            Unternehmensberatung, Training und Coaching mit Schwerpunkt Zuhören, Kommunikation und Persönlichkeitsentwicklung.
+          </p>
         </div>
 
         <div>
-          <h2 className="font-bold text-white">UID-Nummer</h2>
-          <p className="mt-2">[UID-Nummer einfügen]</p>
+          <h2 className="font-bold text-white">Unternehmensform</h2>
+          <p className="mt-2">
+            zuhoeren.academy – FlexCo in Gründung.<br />
+            Bis zur Eintragung im Firmenbuch: Einzelunternehmen Jürgen Melmuka.
+          </p>
         </div>
 
         <div>
-          <h2 className="font-bold text-white">Firmenbuchnummer</h2>
-          <p className="mt-2">[Firmenbuchnummer einfügen, falls vorhanden]</p>
+          <h2 className="font-bold text-white">Aufsichts-/Gewerbebehörde</h2>
+          <p className="mt-2">
+            Zuständige Behörde: Magistratisches Bezirksamt für den 8. Bezirk, Wien<br />
+            Mitglied der Wirtschaftskammer Wien, Fachgruppe Unternehmensberatung
+          </p>
         </div>
 
         <div>
-          <h2 className="font-bold text-white">Aufsichtsbehörde</h2>
-          <p className="mt-2">[Zuständige Behörde einfügen, falls erforderlich]</p>
+          <h2 className="font-bold text-white">Umsatzsteuer-ID</h2>
+          <p className="mt-2">UID-Nr.: ATU62752211 (vorläufig)</p>
         </div>
 
         <div>
-          <h2 className="font-bold text-white">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
-          <p className="mt-2">[Falls anwendbar, ansonsten entfernen]</p>
+          <h2 className="font-bold text-white">Firmenbuch</h2>
+          <p className="mt-2">Wird nach Eintragung der FlexCo ergänzt.</p>
+        </div>
+
+        <div>
+          <h2 className="font-bold text-white">Medieninhaber und inhaltlich Verantwortlicher</h2>
+          <p className="mt-2">
+            Jürgen Melmuka<br />
+            Blindengasse 46/5<br />
+            1080 Wien<br />
+            Österreich
+          </p>
+        </div>
+
+        <div>
+          <h2 className="font-bold text-white">Anwendbares Recht</h2>
+          <p className="mt-2">
+            Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts.
+          </p>
         </div>
 
         <div>
