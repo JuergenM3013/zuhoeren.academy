@@ -253,7 +253,7 @@ export const platforms: Platform[] = [
   {
     slug: "telefonkompetenz",
     name: "Telefonkompetenz",
-    website: "https://telefonkompetenz.ai",
+    website: "https://telefonkompetenz.at",
     category: "Assessment",
     status: "coming_soon",
     statusLabel: "Coming soon",
