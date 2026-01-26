@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import ContactForm from "@/components/ContactForm";
 import { platforms } from "@/content/platforms";
@@ -272,9 +273,13 @@ export default function Page() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-4">
-              <div className="h-14 w-14 rounded-full bg-gradient-to-br from-violet-500 to-emerald-500 flex items-center justify-center text-2xl">
-                {texts.about.founder.emoji}
-              </div>
+              <Image
+                src="/Juergen_240425_©NicoleViktorik_03.jpg"
+                alt={texts.about.founder.name}
+                width={56}
+                height={56}
+                className="h-14 w-14 rounded-full object-cover"
+              />
               <div>
                 <p className={`font-bold ${colors.ui.textPrimary}`}>{texts.about.founder.name}</p>
                 <p className={`text-sm ${colors.ui.textMuted}`}>{texts.about.founder.role}</p>
