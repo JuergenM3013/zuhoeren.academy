@@ -84,8 +84,8 @@ export const platforms: Platform[] = [
     website: "https://dialogfitness.studio",
     internalUrl: "/dialogfitness",
     category: "Dialog",
-    status: "coming_soon",
-    statusLabel: "Coming soon",
+    status: "live",
+    statusLabel: "Live",
     tagline: "Bessere Gespräche. Stärkere Beziehungen. Messbarer Erfolg.",
     description:
       "Trainieren Sie Ihre Kommunikationskompetenz mit KI-gestützten Dialogsimulationen – jederzeit, überall und ohne Risiko. Realistische KI-Gesprächspartner reagieren wie echte Menschen, mit Emotionen und Widerstand.",
@@ -120,7 +120,7 @@ export const platforms: Platform[] = [
     internalUrl: "/metakognitionen",
     category: "Metakognition",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Q1/26",
     tagline: "Besser denken, besser entscheiden.",
     description:
       "Metakognitionen.at ist eine Lernplattform, die metakognitive Kompetenzen stärkt: Reflexion, Denkfehler vermeiden und Entscheidungen verbessern – mit interaktiven KI-Labs und strukturierten Modulen.",
@@ -154,7 +154,7 @@ export const platforms: Platform[] = [
     internalUrl: "/resilienz",
     category: "Resilienz",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Q1/26",
     tagline: "Stärken Sie die Widerstandskraft Ihrer Teams – wissenschaftlich fundiert.",
     description:
       "Die Resilienz-App macht wissenschaftlich fundiertes Resilienz-Training zugänglich – genau dann, wenn es gebraucht wird. 9 Lernmodule, 6 KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für den Arbeitsalltag.",
@@ -188,7 +188,7 @@ export const platforms: Platform[] = [
     website: "https://leadershipfitness.studio",
     category: "Leadership",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Q2/26",
     tagline: "Leadership als Skill trainieren.",
     description:
       "LeadershipFitness fokussiert auf moderne Führungskompetenzen: System 1/2, Emotionale Intelligenz, psychologische Sicherheit und praxistaugliche Gesprächs- & Entscheidungsroutinen – personalisiert und messbar.",
@@ -221,7 +221,7 @@ export const platforms: Platform[] = [
     website: "https://fragenkatalog.at",
     category: "Fragetechnik",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Q2/26",
     tagline: "Die richtigen Fragen öffnen Türen.",
     description:
       "Die KI-gestützte Trainingsplattform für Fragetechniken. Lernen Sie die Fragetechniken, die echte Ergebnisse liefern – für Führungskräfte, medizinisches Fachpersonal, Kundenservice und Key Account Manager.",
@@ -256,7 +256,7 @@ export const platforms: Platform[] = [
     website: "https://telefonkompetenz.at",
     category: "Assessment",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Feb 2026",
     tagline: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird.",
     description:
       "Das KI-gestützte Assessment für Telefonkompetenz bei der Personalauswahl. Objektiv, effizient, treffsicher. Reduzieren Sie Fehlbesetzungen um bis zu 40% mit realistischen Gesprächssimulationen.",
@@ -291,7 +291,7 @@ export const platforms: Platform[] = [
     website: "https://konfliktloesung.studio",
     category: "Konflikt",
     status: "coming_soon",
-    statusLabel: "Coming soon",
+    statusLabel: "Q1/26",
     tagline: "Konflikte lösen, bevor sie eskalieren.",
     description:
       "KI-gestütztes Training für konstruktive Konfliktlösung. Simulieren Sie schwierige Gespräche, üben Sie Deeskalation und entwickeln Sie nachhaltige Lösungsstrategien – in sicherer Umgebung.",
