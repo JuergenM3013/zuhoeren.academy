@@ -240,10 +240,12 @@ export const texts = {
         emoji: "👔",
         benefit: "Verstehen, was Ihr Team wirklich denkt",
         platforms: [
-          { name: "Fragenkatalog.at", status: "coming_soon", use: "Fragetechniken für Mitarbeitergespräche" },
-          { name: "LeadershipFitness.studio", status: "coming_soon", use: "Führungsverhalten reflektieren" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", use: "Emotionale Stabilität in Krisen" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Schwierige Mitarbeitergespräche üben" },
+          { name: "DialogFitness.studio", status: "live", use: "Schwierige Mitarbeitergespräche üben" },
+          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Q1/26", use: "Bessere Entscheidungen durch Reflexion" },
+          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Konflikte konstruktiv lösen" },
+          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Emotionale Stabilität in Krisen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Fragetechniken für Mitarbeitergespräche" },
+          { name: "LeadershipFitness.studio", status: "coming_soon", statusLabel: "Q2/26", use: "Führungsverhalten reflektieren" },
         ],
       },
       {
@@ -251,9 +253,9 @@ export const texts = {
         emoji: "🩺",
         benefit: "Patienten verstehen – nicht nur behandeln",
         platforms: [
-          { name: "Fragenkatalog.at", status: "coming_soon", use: "Anamnese-Fragen, Verständnis sicherstellen" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Schwierige Diagnosen empathisch übermitteln" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", use: "Emotionale Distanzierung ohne Empathieverlust" },
+          { name: "DialogFitness.studio", status: "live", use: "Schwierige Diagnosen empathisch übermitteln" },
+          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Emotionale Distanzierung ohne Empathieverlust" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Anamnese-Fragen, Verständnis sicherstellen" },
         ],
       },
       {
@@ -261,9 +263,9 @@ export const texts = {
         emoji: "📞",
         benefit: "Vom Problemlöser zum Kundenversteher",
         platforms: [
-          { name: "Fragenkatalog.at", status: "coming_soon", use: "Das eigentliche Problem verstehen" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Deeskalierende Gesprächsführung trainieren" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", use: "Stressregulation nach schwierigen Gesprächen" },
+          { name: "DialogFitness.studio", status: "live", use: "Deeskalierende Gesprächsführung trainieren" },
+          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Stressregulation nach schwierigen Gesprächen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Das eigentliche Problem verstehen" },
         ],
       },
       {
@@ -272,8 +274,8 @@ export const texts = {
         benefit: "Verkaufen Sie nicht – verstehen Sie",
         platforms: [
           { name: "SalesFitness.studio", status: "live", use: "Cold Calls, Discovery, Closing üben" },
-          { name: "Fragenkatalog.at", status: "coming_soon", use: "Wahre Bedürfnisse entdecken" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Einwände souverän behandeln" },
+          { name: "DialogFitness.studio", status: "live", use: "Einwände souverän behandeln" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Wahre Bedürfnisse entdecken" },
         ],
       },
       {
@@ -281,19 +283,11 @@ export const texts = {
         emoji: "🤝",
         benefit: "Die richtigen Mitarbeiter finden und entwickeln",
         platforms: [
-          { name: "Telefonkompetenz", status: "coming_soon", use: "Kandidaten-Assessment für Telefon-Rollen" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Kritikgespräche, Feedback geben/empfangen" },
-          { name: "Fragenkatalog.at", status: "coming_soon", use: "Bessere Fragen in Interviews stellen" },
-        ],
-      },
-      {
-        role: "Contact Center Manager",
-        emoji: "🎧",
-        benefit: "Teams aufbauen, die Kunden zu Fans machen",
-        platforms: [
-          { name: "Telefonkompetenz", status: "coming_soon", use: "Assessment bei der Personalauswahl" },
-          { name: "DialogFitness.studio", status: "coming_soon", use: "Service-Qualität systematisch trainieren" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", use: "Team-Resilienz stärken" },
+          { name: "DialogFitness.studio", status: "live", use: "Kritikgespräche, Feedback geben/empfangen" },
+          { name: "Telefonkompetenz.at", status: "coming_soon", statusLabel: "Feb 2026", use: "Kandidaten-Assessment für Telefon-Rollen" },
+          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Q1/26", use: "Reflexion und Entscheidungsfindung" },
+          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Konflikte im Team moderieren" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Bessere Fragen in Interviews stellen" },
         ],
       },
     ],
@@ -416,8 +410,8 @@ export const texts = {
   // ============================================
   contact: {
     sectionLabel: "Kontakt",
-    headline: "Pilotprojekt starten",
-    description: "Teste ein Lernsystem mit deinem Team. Wir begleiten dich von der Demo bis zur Auswertung.",
+    headline: "Projekt starten",
+    description: "Wir begleiten dich von der Demo bis zur Auswertung.",
     email: "hallo@zuhoeren.academy",
     phone: "+43 664 397 8684",
   },

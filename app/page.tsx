@@ -222,7 +222,7 @@ export default function Page() {
                               ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
                               : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
                           }`}>
-                            {platform.status === "live" ? "Live" : "Coming soon"}
+                            {platform.status === "live" ? "Live" : (platform.statusLabel || "Coming soon")}
                           </span>
                         </div>
                         <p className={`text-xs ${colors.ui.textMuted}`}>{platform.use}</p>
