@@ -34,7 +34,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="rounded-3xl border border-white/10 bg-white/5 p-6">
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2 [&>label]:mt-0">
         <Field label="Name" name="name" required />
         <Field label="E-Mail" name="email" type="email" required />
       </div>
