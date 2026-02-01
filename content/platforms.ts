@@ -184,19 +184,17 @@ export const platforms: Platform[] = [
   },
   {
     slug: "konfliktloesung",
-    name: "Konfliktlösung.studio",
+    name: "Konfliktstudio",
     website: "https://konfliktloesung.studio",
     category: "Konflikt",
     status: "coming_soon",
     statusLabel: "Q1/26",
     tagline: "Konflikte lösen, bevor sie eskalieren.",
     description:
-      "KI-gestütztes Training für konstruktive Konfliktlösung. Simulieren Sie schwierige Gespräche, üben Sie Deeskalation und entwickeln Sie nachhaltige Lösungsstrategien – in sicherer Umgebung.",
+      "KI-gestützte Konfliktmediation: Zwei Parteien bearbeiten Konflikte asynchron mit Unterstützung einer neutralen KI. Distanz schafft Ruhe und Deeskalation.",
     bullets: [
-      "Realistische Konfliktsimulationen mit KI-Gesprächspartnern",
-      "Deeskalationstechniken trainieren und anwenden",
-      "Mediation und Verhandlung in simulierter Praxis üben",
-      "Sofortiges Feedback zu Kommunikationsmuster und Wirkung",
+      "Geschützter Raum: Jede Partei hat einen privaten Bereich, ohne direkte Konfrontation",
+      "Trainingsbereich: Übungsmodule für Kommunikationstechniken",
     ],
     audience: ["Führungskräfte", "HR", "Mediatoren", "Teamleiter"],
     sections: [
