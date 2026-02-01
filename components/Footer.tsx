@@ -24,7 +24,7 @@ export default function Footer() {
               KI-Lernsysteme für Gesprächsführung, Vertrieb, Resilienz und Metakognition.
             </p>
             <div className="mt-6">
-              <p className="text-sm font-semibold text-white/80">Newsletter: KI + Zuhören im Alltag</p>
+              <p className="text-sm font-semibold text-white/80">bei zuhoeren.academy informiert bleiben</p>
               <form className="mt-2 flex gap-2">
                 <input
                   type="email"
@@ -62,7 +62,9 @@ export default function Footer() {
                 <span className="text-white/40">LeadershipFitness.studio</span>
               </li>
               <li>
-                <span className="text-white/40">Metakognitionen.at</span>
+                <a href="https://metakognitionen.at" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  Metakognitionen.at
+                </a>
               </li>
               <li>
                 <span className="text-white/40">Fragenkatalog.at</span>
