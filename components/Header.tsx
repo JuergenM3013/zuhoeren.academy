@@ -22,9 +22,9 @@ export default function Header() {
           <Image
             src="/zuhoeren.academy.png"
             alt="zuhoeren.academy"
-            width={36}
-            height={36}
-            className="h-9 w-9 rounded-xl"
+            width={44}
+            height={44}
+            className="h-11 w-11 rounded-xl"
           />
           <span className="hidden sm:inline">zuhoeren.academy</span>
         </Link>

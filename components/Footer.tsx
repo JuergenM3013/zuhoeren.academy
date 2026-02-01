@@ -14,9 +14,9 @@ export default function Footer() {
               <Image
                 src="/zuhoeren.academy.png"
                 alt="zuhoeren.academy"
-                width={32}
-                height={32}
-                className="h-8 w-8 rounded-lg"
+                width={40}
+                height={40}
+                className="h-10 w-10 rounded-lg"
               />
               <span>zuhoeren.academy</span>
             </div>
@@ -51,9 +51,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/dialogfitness" className="hover:text-white transition">
+                <a href="https://dialogfitness.studio" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
                   DialogFitness.studio
-                </Link>
+                </a>
               </li>
               <li>
                 <span className="text-white/40">ResilienzFitness.studio</span>
@@ -68,7 +68,9 @@ export default function Footer() {
                 <span className="text-white/40">Fragenkatalog.at</span>
               </li>
               <li>
-                <span className="text-white/40">Telefonkompetenz.at</span>
+                <a href="https://telefonkompetenz.at" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  Telefonkompetenz.at
+                </a>
               </li>
               <li>
                 <span className="text-white/40">Konfliktlösung.studio</span>
