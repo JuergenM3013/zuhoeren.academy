@@ -183,6 +183,40 @@ export const platforms: Platform[] = [
     },
   },
   {
+    slug: "konfliktloesung",
+    name: "Konfliktlösung.studio",
+    website: "https://konfliktloesung.studio",
+    category: "Konflikt",
+    status: "coming_soon",
+    statusLabel: "Q1/26",
+    tagline: "Konflikte lösen, bevor sie eskalieren.",
+    description:
+      "KI-gestütztes Training für konstruktive Konfliktlösung. Simulieren Sie schwierige Gespräche, üben Sie Deeskalation und entwickeln Sie nachhaltige Lösungsstrategien – in sicherer Umgebung.",
+    bullets: [
+      "Realistische Konfliktsimulationen mit KI-Gesprächspartnern",
+      "Deeskalationstechniken trainieren und anwenden",
+      "Mediation und Verhandlung in simulierter Praxis üben",
+      "Sofortiges Feedback zu Kommunikationsmuster und Wirkung",
+    ],
+    audience: ["Führungskräfte", "HR", "Mediatoren", "Teamleiter"],
+    sections: [
+      {
+        title: "Konfliktarten trainieren",
+        lead: "Von Sachkonflikten bis zu Beziehungskonflikten – für jede Situation vorbereitet.",
+        items: ["Sachkonflikte: Ressourcen, Prozesse, Entscheidungen", "Beziehungskonflikte: Teamdynamik, Kommunikation", "Wertekonflikte: Unterschiedliche Perspektiven integrieren", "Rollenkonflikte: Erwartungen klären und aushandeln"],
+      },
+      {
+        title: "Methoden & Techniken",
+        lead: "Wissenschaftlich fundierte Ansätze für nachhaltige Lösungen.",
+        items: ["Harvard-Methode: Interessen statt Positionen", "Gewaltfreie Kommunikation (GFK)", "Aktives Zuhören und Spiegeln", "BATNA-Analyse für Verhandlungen"],
+      },
+    ],
+    seo: {
+      title: "Konfliktlösung.studio – KI-gestütztes Konflikttraining",
+      description: "Trainieren Sie Konfliktlösung mit KI: Deeskalation, Mediation und konstruktive Gespräche üben. Realistische Simulationen, sofortiges Feedback.",
+    },
+  },
+  {
     slug: "leadershipfitness",
     name: "LeadershipFitness",
     website: "https://leadershipfitness.studio",
@@ -257,7 +291,7 @@ export const platforms: Platform[] = [
     category: "Assessment",
     status: "coming_soon",
     statusLabel: "Feb 2026",
-    tagline: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird.",
+    tagline: "Erkennen Sie in unter 20 Minuten, wer Ihre Kunden begeistern wird.",
     description:
       "Das KI-gestützte Assessment für Telefonkompetenz bei der Personalauswahl. Objektiv, effizient, treffsicher. Reduzieren Sie Fehlbesetzungen um bis zu 40% mit realistischen Gesprächssimulationen.",
     bullets: [
@@ -265,7 +299,7 @@ export const platforms: Platform[] = [
       "KI-Analyse: Objektive Bewertung ohne Bias",
       "Sofort-Reports mit Stärken-Schwächen-Profil",
       "Flexibles Branding: Ihr Logo, Ihre Farben",
-      "87% weniger Zeitaufwand in der Vorauswahl",
+      "Weniger Zeitaufwand in der Vorauswahl und mehr Klarheit in der Auswahl",
     ],
     audience: ["HR-Führungskräfte", "Vertriebsleiter", "Contact-Center-Manager"],
     sections: [
@@ -283,40 +317,6 @@ export const platforms: Platform[] = [
     seo: {
       title: "Telefonkompetenz – KI-gestütztes Assessment für Personalauswahl",
       description: "Erkennen Sie in 20 Minuten, wer Ihre Kunden begeistern wird. KI-Assessment für Telefonkompetenz: Objektiv, effizient, 40% weniger Fehlbesetzungen.",
-    },
-  },
-  {
-    slug: "konfliktloesung",
-    name: "Konfliktlösung.studio",
-    website: "https://konfliktloesung.studio",
-    category: "Konflikt",
-    status: "coming_soon",
-    statusLabel: "Q1/26",
-    tagline: "Konflikte lösen, bevor sie eskalieren.",
-    description:
-      "KI-gestütztes Training für konstruktive Konfliktlösung. Simulieren Sie schwierige Gespräche, üben Sie Deeskalation und entwickeln Sie nachhaltige Lösungsstrategien – in sicherer Umgebung.",
-    bullets: [
-      "Realistische Konfliktsimulationen mit KI-Gesprächspartnern",
-      "Deeskalationstechniken trainieren und anwenden",
-      "Mediation und Verhandlung in simulierter Praxis üben",
-      "Sofortiges Feedback zu Kommunikationsmuster und Wirkung",
-    ],
-    audience: ["Führungskräfte", "HR", "Mediatoren", "Teamleiter"],
-    sections: [
-      {
-        title: "Konfliktarten trainieren",
-        lead: "Von Sachkonflikten bis zu Beziehungskonflikten – für jede Situation vorbereitet.",
-        items: ["Sachkonflikte: Ressourcen, Prozesse, Entscheidungen", "Beziehungskonflikte: Teamdynamik, Kommunikation", "Wertekonflikte: Unterschiedliche Perspektiven integrieren", "Rollenkonflikte: Erwartungen klären und aushandeln"],
-      },
-      {
-        title: "Methoden & Techniken",
-        lead: "Wissenschaftlich fundierte Ansätze für nachhaltige Lösungen.",
-        items: ["Harvard-Methode: Interessen statt Positionen", "Gewaltfreie Kommunikation (GFK)", "Aktives Zuhören und Spiegeln", "BATNA-Analyse für Verhandlungen"],
-      },
-    ],
-    seo: {
-      title: "Konfliktlösung.studio – KI-gestütztes Konflikttraining",
-      description: "Trainieren Sie Konfliktlösung mit KI: Deeskalation, Mediation und konstruktive Gespräche üben. Realistische Simulationen, sofortiges Feedback.",
     },
   },
 ];
