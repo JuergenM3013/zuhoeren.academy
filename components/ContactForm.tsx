@@ -41,7 +41,7 @@ export default function ContactForm() {
 
       <Field label="Unternehmen (optional)" name="company" />
       <Field label="Interesse an" name="topic" placeholder="z. B. Salesfitness.studio, Dialogfitness.studio, Pilot" />
-      <Field label="Nachricht" name="message" textarea required placeholder="Ziel, Teamgröße, Use Case, gewünschter Startzeitpunkt…" />
+      <Field label="Nachricht (optional)" name="message" textarea placeholder="Ziel, Teamgröße, Use Case, gewünschter Startzeitpunkt…" />
 
       {/* Honeypot (Bots) */}
       <input

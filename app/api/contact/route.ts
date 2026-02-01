@@ -8,7 +8,7 @@ const schema = z.object({
   email: z.string().email(),
   company: z.string().optional().or(z.literal("")),
   topic: z.string().optional().or(z.literal("")),
-  message: z.string().min(10),
+  message: z.string().optional().or(z.literal("")),
   website: z.string().optional().or(z.literal("")), // honeypot
 });
 
@@ -24,9 +24,12 @@ export async function POST(req: Request) {
   }
 
   const body = await req.json().catch(() => null);
+  console.log("Received contact form data:", JSON.stringify(body, null, 2));
   const parsed = schema.safeParse(body);
   if (!parsed.success) {
-    return NextResponse.json({ error: "Bitte Eingaben prüfen." }, { status: 400 });
+    const fieldErrors = parsed.error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
+    console.error("Validation error:", fieldErrors);
+    return NextResponse.json({ error: `Bitte Eingaben prüfen: ${fieldErrors}` }, { status: 400 });
   }
 
   // Honeypot: wenn befüllt => Bot
@@ -58,9 +61,10 @@ export async function POST(req: Request) {
 
     if (!r.ok) {
       const errorData = await r.json().catch(() => ({}));
-      console.error("Resend API error:", r.status, errorData);
+      console.error("Resend API error:", r.status, JSON.stringify(errorData, null, 2));
+      console.error("Payload was:", JSON.stringify({ ...payload, from: fromAddress }, null, 2));
       return NextResponse.json(
-        { error: "E-Mail konnte nicht gesendet werden." },
+        { error: `E-Mail konnte nicht gesendet werden: ${errorData?.message || r.status}` },
         { status: 500 }
       );
     }

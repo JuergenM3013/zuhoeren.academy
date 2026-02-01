@@ -76,6 +76,25 @@ export default function Footer() {
                 <span className="text-white/40">Konfliktlösung.studio</span>
               </li>
             </ul>
+
+            <p className="mt-6 text-sm font-semibold text-white/80">Ressourcen</p>
+            <ul className="mt-3 space-y-2 text-sm text-white/60">
+              <li>
+                <a href="https://www.aktivzuhoeren.at" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  aktivzuhoeren.at
+                </a>
+              </li>
+              <li>
+                <a href="https://www.denkfallen.at" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  denkfallen.at
+                </a>
+              </li>
+              <li>
+                <a href="https://www.erfolgsfaktorzuhoeren.at" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+                  erfolgsfaktorzuhoeren.at
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Rechtliches */}
