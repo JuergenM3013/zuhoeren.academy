@@ -132,7 +132,7 @@ export const texts = {
   hero: {
     pill: "KI-gestützte Lernsysteme",
     headline: "KI-Lernsysteme für Gesprächsführung, Vertrieb, Resilienz und Metakognition",
-    subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI messbar machen.",
+    subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI Kompetenzen erweitern.",
     description: "Wir entwickeln spezialisierte KI-Plattformen: Von Echtzeit-Feedback im Vertrieb über Assessment im Kundenkontakt bis zu Reflexionssystemen für Führungskräfte.",
     ctaPrimary: "Unsere Lösungen",
     ctaSecondary: "So funktioniert's",
