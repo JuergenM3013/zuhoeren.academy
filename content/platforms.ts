@@ -157,10 +157,10 @@ export const platforms: Platform[] = [
     statusLabel: "Q1/26",
     tagline: "Stärken Sie die Widerstandskraft Ihrer Teams – wissenschaftlich fundiert.",
     description:
-      "Die Resilienz-App macht wissenschaftlich fundiertes Resilienz-Training zugänglich – genau dann, wenn es gebraucht wird. 9 Lernmodule, 6 KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für den Arbeitsalltag.",
+      "Die Resilienz-App macht wissenschaftlich fundiertes Resilienz-Training zugänglich – genau dann, wenn es gebraucht wird. Lernmodule, KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für den Arbeitsalltag.",
     bullets: [
-      "9 wissenschaftlich fundierte Lernmodule zu allen Resilienz-Faktoren",
-      "6 KI-gestützte Coaching-Tools: Resilienz-Coach, Emotions-Navigator, Perspektiven-Wechsler",
+      "Wissenschaftlich fundierte Lernmodule zu allen Resilienz-Faktoren",
+      "KI-gestützte Coaching-Tools: Resilienz-Coach, Emotions-Navigator, Perspektiven-Wechsler",
       "Persönliches Stimmungsbarometer mit KI-Empfehlungen",
       "Mikro-Workouts: Atemtechniken & Achtsamkeitsübungen",
     ],
