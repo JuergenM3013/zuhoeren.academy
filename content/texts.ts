@@ -352,7 +352,7 @@ export const texts = {
   about: {
     sectionLabel: "Der Gründer",
     headline: "KI als Lernsystem – nicht als Ersatz",
-    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback, ist dein Sparringspartner im Denken und zeigt versteckte Muster auf. Die wesentliche Arbeit – das Anwenden im echten Gespräch, Labs und Übungen – machst du selbst.",
+    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback, ist dein neutraler Sparringspartner im Denken und zeigt deine versteckten Muster auf. Du steigerst Schritt für Schritt deine Kompetenzen, unsere Lernsysteme passen sich deinen Entwicklungsschritten an. So ist die KI dein idealer Begleiter für deine Kompetenzsteigerung.",
     founder: {
       name: "Jürgen Melmuka",
       role: "Gründer & Entwickler",
