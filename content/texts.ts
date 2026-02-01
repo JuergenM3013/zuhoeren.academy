@@ -195,7 +195,7 @@ export const texts = {
   trainingPlan: {
     sectionLabel: "So funktioniert es",
     headline: "Der Prozess",
-    description: "Drei Phasen für messbare Ergebnisse: Kontext definieren, mit KI arbeiten, Erkenntnisse gewinnen.",
+    description: "Phasen für messbare Ergebnisse: Kontext definieren, mit KI arbeiten, Erkenntnisse gewinnen.",
     steps: [
       {
         title: "Ziel & Kontext definieren",
