@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -18,9 +19,13 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-3 font-bold tracking-tight">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-emerald-500 shadow-lg">
-            <span className="text-lg font-black">Z</span>
-          </span>
+          <Image
+            src="/zuhoeren.academy.png"
+            alt="zuhoeren.academy"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-xl"
+          />
           <span className="hidden sm:inline">zuhoeren.academy</span>
         </Link>
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -10,9 +11,13 @@ export default function Footer() {
           {/* Brand + Newsletter */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 font-bold">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-600 to-emerald-500">
-                <span className="text-sm font-black">Z</span>
-              </span>
+              <Image
+                src="/zuhoeren.academy.png"
+                alt="zuhoeren.academy"
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-lg"
+              />
               <span>zuhoeren.academy</span>
             </div>
             <p className="mt-3 text-sm text-white/60 max-w-xs">
@@ -63,7 +68,7 @@ export default function Footer() {
                 <span className="text-white/40">Fragenkatalog.at</span>
               </li>
               <li>
-                <span className="text-white/40">Telefonkompetenz.ai</span>
+                <span className="text-white/40">Telefonkompetenz.at</span>
               </li>
               <li>
                 <span className="text-white/40">Konfliktlösung.studio</span>
