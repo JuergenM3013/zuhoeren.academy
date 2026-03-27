@@ -38,14 +38,18 @@ export default function Page() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#produkte" className={`rounded-xl ${colors.ui.ctaPrimary} px-5 py-3 font-semibold transition inline-flex items-center gap-2`}>
+            <a href="#kontakt" className={`rounded-xl ${colors.ui.ctaPrimary} px-5 py-3 font-semibold transition inline-flex items-center gap-2`}>
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               {texts.hero.ctaPrimary}
             </a>
-            <a href="#wie" className={`rounded-xl ${colors.ui.ctaSecondary} px-5 py-3 font-semibold transition`}>
+            <a href="#produkte" className={`rounded-xl ${colors.ui.ctaSecondary} px-5 py-3 font-semibold transition`}>
               {texts.hero.ctaSecondary}
+            </a>
+            <a href="#wie" className={`rounded-xl ${colors.ui.ctaSecondary} px-5 py-3 font-semibold transition`}>
+              {texts.hero.ctaTertiary}
             </a>
           </div>
 
@@ -271,37 +275,51 @@ export default function Page() {
           <p className={`mt-4 max-w-3xl leading-relaxed ${colors.ui.textSecondary}`}>
             {texts.about.description}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-6">
+          <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-start">
             <div className="flex items-center gap-4">
               <Image
                 src="/Juergen_240425_©NicoleViktorik_03.jpg"
                 alt={texts.about.founder.name}
-                width={56}
-                height={56}
-                className="h-14 w-14 rounded-full object-cover"
+                width={80}
+                height={80}
+                className="h-20 w-20 rounded-full object-cover"
               />
               <div>
-                <p className={`font-bold ${colors.ui.textPrimary}`}>{texts.about.founder.name}</p>
+                <p className={`font-bold text-lg ${colors.ui.textPrimary}`}>{texts.about.founder.name}</p>
                 <p className={`text-sm ${colors.ui.textMuted}`}>{texts.about.founder.role}</p>
+                <div className="mt-2 flex gap-3">
+                  <a
+                    href={texts.about.founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`rounded-lg border ${colors.ui.cardBorder} ${colors.ui.cardBg} px-3 py-1.5 text-xs font-medium ${colors.ui.cardHover} transition`}
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    href={texts.about.founder.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`rounded-lg border ${colors.ui.cardBorder} ${colors.ui.cardBg} px-3 py-1.5 text-xs font-medium ${colors.ui.cardHover} transition`}
+                  >
+                    Zuhörakademie
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="flex gap-3">
-              <a
-                href={texts.about.founder.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`rounded-lg border ${colors.ui.cardBorder} ${colors.ui.cardBg} px-4 py-2 text-sm font-medium ${colors.ui.cardHover} transition`}
-              >
-                LinkedIn
-              </a>
-              <a
-                href={texts.about.founder.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`rounded-lg border ${colors.ui.cardBorder} ${colors.ui.cardBg} px-4 py-2 text-sm font-medium ${colors.ui.cardHover} transition`}
-              >
-                Zuhörakademie
-              </a>
+            <div className="grid gap-3 sm:grid-cols-3 md:flex-1">
+              <div className={`rounded-xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-4 text-center`}>
+                <div className="text-xl font-extrabold">2.000+</div>
+                <div className={`text-xs ${colors.ui.textMuted}`}>Seminartage</div>
+              </div>
+              <div className={`rounded-xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-4 text-center`}>
+                <div className="text-xl font-extrabold">20+</div>
+                <div className={`text-xs ${colors.ui.textMuted}`}>Jahre Erfahrung</div>
+              </div>
+              <div className={`rounded-xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-4 text-center`}>
+                <div className="text-xl font-extrabold">B2B</div>
+                <div className={`text-xs ${colors.ui.textMuted}`}>Energie, Banken, Konzerne</div>
+              </div>
             </div>
           </div>
         </div>
@@ -327,6 +345,100 @@ export default function Page() {
             </details>
           ))}
         </div>
+        </div>
+      </section>
+
+      {/* FÜR ENERGIEDIENSTLEISTER */}
+      <section id="energie" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 opacity-50">
+          <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-amber-600/5 via-transparent to-violet-600/5" />
+        </div>
+        <div className="relative mx-auto max-w-6xl px-6 py-16">
+          <p className={`text-sm font-medium text-amber-400 uppercase tracking-wider mb-2`}>Branchenlösung</p>
+          <h2 className="text-3xl font-extrabold tracking-tight">Ihr Team spricht täglich mit Hunderten Kunden.</h2>
+          <p className="mt-1 text-2xl font-bold text-amber-400">Was dann passiert, entscheidet das Zuhören.</p>
+          <p className={`mt-4 max-w-3xl leading-relaxed ${colors.ui.textSecondary}`}>
+            Preisgespräche mit frustrierten Kunden. Beschwerden zu Störungen und Verzögerungen. Eskalationen, die niemand will. Wie Ihr Kundenservice-Team in diesen Momenten kommuniziert, entscheidet über Kundenzufriedenheit, Teambelastung und den Ruf Ihres Unternehmens.
+          </p>
+
+          {/* 3 Wege */}
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className={`rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6`}>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-xs font-bold text-amber-300">Empfohlen</span>
+              </div>
+              <h3 className="font-bold">Seminar + KI-Studios</h3>
+              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
+                Inhouse-Training (1–2 Tage) als Grundlage. DialogFitness.studio und ResilienzFitness.studio sichern den Transfer im Alltag – KI-gestützt und messbar.
+              </p>
+              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Praxisnahe Techniken für Ihren Alltag</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> 50+ KI-Dialogszenarien</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Resilienz-Coaching für Ihr Team</li>
+              </ul>
+            </div>
+            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
+              <div className="text-2xl mb-3">🎓</div>
+              <h3 className="font-bold">Seminar</h3>
+              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
+                Fokussiertes Präsenzseminar – kompakt, praxisnah, seit 25 Jahren in der Branche erprobt. Spätere Ergänzung durch KI-Studios jederzeit möglich.
+              </p>
+              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> 1–2 Tage, max. 12 Teilnehmer</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Direkt auf Ihren Kundenservice zugeschnitten</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Sofort anwendbare Techniken</li>
+              </ul>
+            </div>
+            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
+              <div className="text-2xl mb-3">💻</div>
+              <h3 className="font-bold">KI-Studios</h3>
+              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
+                DialogFitness.studio und ResilienzFitness.studio – auch ohne vorheriges Seminar buchbar. KI-gestütztes Training, 24/7 verfügbar.
+              </p>
+              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Stundenkontingente flexibel buchbar</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Messbare Fortschritte für HR & Leitung</li>
+                <li className="flex gap-2"><span className="text-amber-400">·</span> Auch als BGM-Angebot nutzbar</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Testimonial + Referenz */}
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
+              <p className="text-sm italic leading-relaxed text-white/80">
+                &bdquo;Die Seminare für unseren Kundenservice haben uns gezeigt, wie wichtig und bereichernd richtiges und gutes Zuhören für die tägliche Arbeit ist.&ldquo;
+              </p>
+              <p className={`mt-3 text-xs font-semibold ${colors.ui.textMuted}`}>
+                Reinhard Hilber – Leiter Kundenservice, Innsbrucker Kommunalbetriebe
+              </p>
+            </div>
+            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6 flex flex-col justify-between`}>
+              <div>
+                <p className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ihr Trainer</p>
+                <p className={`text-sm leading-relaxed ${colors.ui.textSecondary}`}>
+                  <span className="font-bold text-white">Jürgen Melmuka</span> – seit 1999, rund 2.000 Seminartage, Referenzen aus der Energiebranche. Autor von &bdquo;Kernkompetenz Zuhören&ldquo; (Gabal Verlag, 2025).
+                </p>
+              </div>
+              <a
+                href="https://zuhoerakademie.at/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 text-xs font-semibold text-amber-400 hover:text-white transition"
+              >
+                → Mehr auf zuhoerakademie.at
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="#kontakt" className="rounded-xl bg-amber-600 hover:bg-amber-500 px-5 py-3 font-semibold transition">
+              Branchenpaket anfragen
+            </a>
+            <a href="https://zuhoerakademie.at/" target="_blank" rel="noopener noreferrer" className={`rounded-xl ${colors.ui.ctaSecondary} px-5 py-3 font-semibold transition`}>
+              Zuhörakademie besuchen
+            </a>
+          </div>
         </div>
       </section>
 

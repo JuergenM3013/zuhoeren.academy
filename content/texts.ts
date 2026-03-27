@@ -134,8 +134,9 @@ export const texts = {
     headline: "KI-Lernsysteme für Gesprächsführung, Vertrieb, Resilienz und Metakognition",
     subheadline: "Feedback. Assessment. Reflexion. Konfliktlösung. – Mit KI Kompetenzen erweitern.",
     description: "Wir entwickeln spezialisierte KI-Plattformen: Von Echtzeit-Feedback im Vertrieb über Assessment im Kundenkontakt bis zu Reflexionssystemen für Führungskräfte.",
-    ctaPrimary: "Unsere Lösungen",
-    ctaSecondary: "So funktioniert's",
+    ctaPrimary: "Kostenlos testen",
+    ctaSecondary: "Unsere Lösungen",
+    ctaTertiary: "So funktioniert's",
     features: [
       "KI-Feedback in Echtzeit",
       "Assessment & Analyse",
@@ -147,9 +148,9 @@ export const texts = {
       "EU-Datenverarbeitung",
     ],
     stats: [
-      { value: "8", label: "Plattformen" },
+      { value: "3", label: "Plattformen live" },
       { value: "100+", label: "Szenarien" },
-      { value: "B2B", label: "Enterprise-ready" },
+      { value: "2.000+", label: "Seminartage Erfahrung" },
       { value: "24/7", label: "Verfügbar" },
     ],
   },
@@ -332,6 +333,12 @@ export const texts = {
         emoji: "❓",
       },
       {
+        title: "Energiedienstleister",
+        description: "Kundenservice und Vertrieb in der Energiebranche: Beratungsgespräche, Beschwerdemanagement und Kundenbindung trainieren.",
+        platform: "DialogFitness.studio + SalesFitness.studio",
+        emoji: "⚡",
+      },
+      {
         title: "Bewerber-Assessment",
         description: "Telefonkompetenz in 20 Min. objektiv testen: KI-Analyse, Stärken-Schwächen-Profil.",
         platform: "Telefonkompetenz",
@@ -351,11 +358,11 @@ export const texts = {
   // ============================================
   about: {
     sectionLabel: "Der Gründer",
-    headline: "KI als Lernsystem – nicht als Ersatz",
-    description: "Unsere Systeme unterstützen beim Lernen, Reflektieren und Entwickeln. Die KI analysiert, gibt Feedback, ist dein neutraler Sparringspartner im Denken und zeigt deine versteckten Muster auf. Du steigerst Schritt für Schritt deine Kompetenzen, unsere Lernsysteme passen sich deinen Entwicklungsschritten an. So ist die KI dein idealer Begleiter für deine Kompetenzsteigerung.",
+    headline: "2.000+ Seminartage. Jetzt mit KI.",
+    description: "Hinter zuhoeren.academy steht Jürgen Melmuka – Trainer, Coach und Entwickler mit über 2.000 Seminartagen in Vertrieb, Führung und Gesprächsführung. Die Erfahrung aus tausenden Trainings mit Unternehmen wie Energieversorgern, Banken und Konzernen fließt direkt in die KI-Systeme ein. Die KI analysiert, gibt Feedback und zeigt versteckte Muster auf. Du steigerst Schritt für Schritt deine Kompetenzen – begleitet von Systemen, die auf echter Trainingserfahrung basieren.",
     founder: {
       name: "Jürgen Melmuka",
-      role: "Gründer & Entwickler",
+      role: "Trainer, Coach & Entwickler · 2.000+ Seminartage",
       emoji: "🎓",
       linkedin: "https://www.linkedin.com/in/juergenmelmuka/",
       website: "https://zuhoerakademie.at/",
@@ -395,12 +402,12 @@ export const texts = {
         a: "100%. Alle Daten bleiben in der EU. Wir bieten AVVs und erfüllen Enterprise-Sicherheitsanforderungen.",
       },
       {
-        q: "Wie starte ich am besten?",
-        a: "Mit der Plattform, die dich aktuell am besten unterstützt.",
+        q: "Kann ich die Plattformen kostenlos testen?",
+        a: "Ja – wir bieten eine kostenlose Testphase an. Einfach Demo anfragen und unverbindlich ausprobieren.",
       },
       {
         q: "Was kostet die Nutzung?",
-        a: "Abhängig von Teamgröße und Umfang. Kontaktieren Sie uns für ein individuelles Angebot.",
+        a: "Einzellizenzen starten ab 29 €/Monat. Für Teams und Unternehmen erstellen wir individuelle Angebote je nach Plattform, Teamgröße und Laufzeit. Kontaktieren Sie uns für ein unverbindliches Angebot.",
       },
     ],
   },
