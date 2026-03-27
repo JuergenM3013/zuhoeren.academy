@@ -348,96 +348,24 @@ export default function Page() {
         </div>
       </section>
 
-      {/* FÜR ENERGIEDIENSTLEISTER */}
-      <section id="energie" className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 opacity-50">
-          <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br from-amber-600/5 via-transparent to-violet-600/5" />
-        </div>
-        <div className="relative mx-auto max-w-6xl px-6 py-16">
-          <p className={`text-sm font-medium text-amber-400 uppercase tracking-wider mb-2`}>Branchenlösung</p>
-          <h2 className="text-3xl font-extrabold tracking-tight">Ihr Team spricht täglich mit Hunderten Kunden.</h2>
-          <p className="mt-1 text-2xl font-bold text-amber-400">Was dann passiert, entscheidet das Zuhören.</p>
-          <p className={`mt-4 max-w-3xl leading-relaxed ${colors.ui.textSecondary}`}>
-            Preisgespräche mit frustrierten Kunden. Beschwerden zu Störungen und Verzögerungen. Eskalationen, die niemand will. Wie Ihr Kundenservice-Team in diesen Momenten kommuniziert, entscheidet über Kundenzufriedenheit, Teambelastung und den Ruf Ihres Unternehmens.
-          </p>
-
-          {/* 3 Wege */}
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className={`rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6`}>
-              <div className="flex items-center gap-2 mb-3">
-                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-xs font-bold text-amber-300">Empfohlen</span>
-              </div>
-              <h3 className="font-bold">Seminar + KI-Studios</h3>
-              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
-                Inhouse-Training (1–2 Tage) als Grundlage. DialogFitness.studio und ResilienzFitness.studio sichern den Transfer im Alltag – KI-gestützt und messbar.
-              </p>
-              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Praxisnahe Techniken für Ihren Alltag</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> 50+ KI-Dialogszenarien</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Resilienz-Coaching für Ihr Team</li>
-              </ul>
-            </div>
-            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
-              <div className="text-2xl mb-3">🎓</div>
-              <h3 className="font-bold">Seminar</h3>
-              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
-                Fokussiertes Präsenzseminar – kompakt, praxisnah, seit 25 Jahren in der Branche erprobt. Spätere Ergänzung durch KI-Studios jederzeit möglich.
-              </p>
-              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> 1–2 Tage, max. 12 Teilnehmer</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Direkt auf Ihren Kundenservice zugeschnitten</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Sofort anwendbare Techniken</li>
-              </ul>
-            </div>
-            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
-              <div className="text-2xl mb-3">💻</div>
-              <h3 className="font-bold">KI-Studios</h3>
-              <p className={`mt-2 text-sm leading-relaxed ${colors.ui.textSecondary}`}>
-                DialogFitness.studio und ResilienzFitness.studio – auch ohne vorheriges Seminar buchbar. KI-gestütztes Training, 24/7 verfügbar.
-              </p>
-              <ul className={`mt-3 space-y-1.5 text-sm ${colors.ui.textSecondary}`}>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Stundenkontingente flexibel buchbar</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Messbare Fortschritte für HR & Leitung</li>
-                <li className="flex gap-2"><span className="text-amber-400">·</span> Auch als BGM-Angebot nutzbar</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Testimonial + Referenz */}
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6`}>
-              <p className="text-sm italic leading-relaxed text-white/80">
-                &bdquo;Die Seminare für unseren Kundenservice haben uns gezeigt, wie wichtig und bereichernd richtiges und gutes Zuhören für die tägliche Arbeit ist.&ldquo;
-              </p>
-              <p className={`mt-3 text-xs font-semibold ${colors.ui.textMuted}`}>
-                Reinhard Hilber – Leiter Kundenservice, Innsbrucker Kommunalbetriebe
+      {/* FÜR ENERGIEDIENSTLEISTER – Teaser */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-3xl border border-amber-500/20 bg-gradient-to-br from-amber-600/5 to-violet-600/5 p-8 md:p-12">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-sm font-medium text-amber-400 uppercase tracking-wider mb-2">Für Energiedienstleister</p>
+              <h2 className="text-2xl font-extrabold tracking-tight md:text-3xl">
+                Ihr Team spricht täglich mit Hunderten Kunden. Was dann passiert, entscheidet das Zuhören.
+              </h2>
+              <p className={`mt-3 leading-relaxed ${colors.ui.textSecondary}`}>
+                Seminar & KI-Lernstudios für Kundenservice in der Energiebranche. 2.000+ Seminartage Erfahrung, Referenzen aus der Branche.
               </p>
             </div>
-            <div className={`rounded-2xl border ${colors.ui.cardBorder} ${colors.ui.cardBg} p-6 flex flex-col justify-between`}>
-              <div>
-                <p className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ihr Trainer</p>
-                <p className={`text-sm leading-relaxed ${colors.ui.textSecondary}`}>
-                  <span className="font-bold text-white">Jürgen Melmuka</span> – seit 1999, rund 2.000 Seminartage, Referenzen aus der Energiebranche. Autor von &bdquo;Kernkompetenz Zuhören&ldquo; (Gabal Verlag, 2025).
-                </p>
-              </div>
-              <a
-                href="https://zuhoerakademie.at/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 text-xs font-semibold text-amber-400 hover:text-white transition"
-              >
-                → Mehr auf zuhoerakademie.at
-              </a>
+            <div className="shrink-0">
+              <Link href="/energie" className="rounded-xl bg-amber-600 hover:bg-amber-500 px-6 py-3 font-semibold transition inline-block">
+                Mehr erfahren →
+              </Link>
             </div>
-          </div>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#kontakt" className="rounded-xl bg-amber-600 hover:bg-amber-500 px-5 py-3 font-semibold transition">
-              Branchenpaket anfragen
-            </a>
-            <a href="https://zuhoerakademie.at/" target="_blank" rel="noopener noreferrer" className={`rounded-xl ${colors.ui.ctaSecondary} px-5 py-3 font-semibold transition`}>
-              Zuhörakademie besuchen
-            </a>
           </div>
         </div>
       </section>
