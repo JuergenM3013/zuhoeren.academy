@@ -120,7 +120,7 @@ export const platforms: Platform[] = [
     internalUrl: "/metakognitionen",
     category: "Metakognition",
     status: "coming_soon",
-    statusLabel: "Q1/26",
+    statusLabel: "Coming soon",
     tagline: "Besser denken, besser entscheiden.",
     description:
       "Metakognitionen.at ist eine Lernplattform, die metakognitive Kompetenzen stärkt: Reflexion, Denkfehler vermeiden und Entscheidungen verbessern – mit interaktiven KI-Labs und strukturierten Modulen.",
@@ -153,8 +153,8 @@ export const platforms: Platform[] = [
     website: "https://resilienzfitness.studio",
     internalUrl: "/resilienz",
     category: "Resilienz",
-    status: "coming_soon",
-    statusLabel: "Q1/26",
+    status: "live",
+    statusLabel: "Live",
     tagline: "Stärken Sie die Widerstandskraft Ihrer Teams – wissenschaftlich fundiert.",
     description:
       "Die Resilienz-App macht wissenschaftlich fundiertes Resilienz-Training zugänglich – genau dann, wenn es gebraucht wird. Lernmodule, KI-Coaching-Tools, Stimmungsbarometer und Mikro-Workouts für den Arbeitsalltag.",
@@ -188,7 +188,7 @@ export const platforms: Platform[] = [
     website: "https://konfliktloesung.studio",
     category: "Konflikt",
     status: "coming_soon",
-    statusLabel: "Q1/26",
+    statusLabel: "Coming soon",
     tagline: "Konflikte lösen, bevor sie eskalieren.",
     description:
       "KI-gestützte Konfliktmediation: Zwei Parteien bearbeiten Konflikte asynchron mit Unterstützung einer neutralen KI. Distanz schafft Ruhe und Deeskalation.",
@@ -220,7 +220,7 @@ export const platforms: Platform[] = [
     website: "https://leadershipfitness.studio",
     category: "Leadership",
     status: "coming_soon",
-    statusLabel: "Q2/26",
+    statusLabel: "Coming soon",
     tagline: "Leadership als Skill trainieren.",
     description:
       "LeadershipFitness fokussiert auf moderne Führungskompetenzen: System 1/2, Emotionale Intelligenz, psychologische Sicherheit und praxistaugliche Gesprächs- & Entscheidungsroutinen – personalisiert und messbar.",
@@ -253,7 +253,7 @@ export const platforms: Platform[] = [
     website: "https://fragenkatalog.at",
     category: "Fragetechnik",
     status: "coming_soon",
-    statusLabel: "Q2/26",
+    statusLabel: "Coming soon",
     tagline: "Die richtigen Fragen öffnen Türen.",
     description:
       "Die KI-gestützte Trainingsplattform für Fragetechniken. Lernen Sie die Fragetechniken, die echte Ergebnisse liefern – für Führungskräfte, medizinisches Fachpersonal, Kundenservice und Key Account Manager.",
@@ -288,7 +288,7 @@ export const platforms: Platform[] = [
     website: "https://telefonkompetenz.at",
     category: "Assessment",
     status: "coming_soon",
-    statusLabel: "Feb 2026",
+    statusLabel: "Coming soon",
     tagline: "Erkennen Sie in unter 20 Minuten, wer Ihre Kunden begeistern wird.",
     description:
       "Das KI-gestützte Assessment für Telefonkompetenz bei der Personalauswahl. Objektiv, effizient, treffsicher. Reduzieren Sie Fehlbesetzungen um bis zu 40% mit realistischen Gesprächssimulationen.",

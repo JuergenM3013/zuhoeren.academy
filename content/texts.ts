@@ -242,11 +242,11 @@ export const texts = {
         benefit: "Verstehen, was Ihr Team wirklich denkt",
         platforms: [
           { name: "DialogFitness.studio", status: "live", use: "Schwierige Mitarbeitergespräche üben" },
-          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Q1/26", use: "Bessere Entscheidungen durch Reflexion" },
-          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Konflikte konstruktiv lösen" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Emotionale Stabilität in Krisen" },
-          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Fragetechniken für Mitarbeitergespräche" },
-          { name: "LeadershipFitness.studio", status: "coming_soon", statusLabel: "Q2/26", use: "Führungsverhalten reflektieren" },
+          { name: "ResilienzFitness.studio", status: "live", use: "Emotionale Stabilität in Krisen" },
+          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Coming soon", use: "Bessere Entscheidungen durch Reflexion" },
+          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Coming soon", use: "Konflikte konstruktiv lösen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Coming soon", use: "Fragetechniken für Mitarbeitergespräche" },
+          { name: "LeadershipFitness.studio", status: "coming_soon", statusLabel: "Coming soon", use: "Führungsverhalten reflektieren" },
         ],
       },
       {
@@ -255,8 +255,8 @@ export const texts = {
         benefit: "Patienten verstehen – nicht nur behandeln",
         platforms: [
           { name: "DialogFitness.studio", status: "live", use: "Schwierige Diagnosen empathisch übermitteln" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Emotionale Distanzierung ohne Empathieverlust" },
-          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Anamnese-Fragen, Verständnis sicherstellen" },
+          { name: "ResilienzFitness.studio", status: "live", use: "Emotionale Distanzierung ohne Empathieverlust" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Coming soon", use: "Anamnese-Fragen, Verständnis sicherstellen" },
         ],
       },
       {
@@ -265,8 +265,8 @@ export const texts = {
         benefit: "Vom Problemlöser zum Kundenversteher",
         platforms: [
           { name: "DialogFitness.studio", status: "live", use: "Deeskalierende Gesprächsführung trainieren" },
-          { name: "ResilienzFitness.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Stressregulation nach schwierigen Gesprächen" },
-          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Das eigentliche Problem verstehen" },
+          { name: "ResilienzFitness.studio", status: "live", use: "Stressregulation nach schwierigen Gesprächen" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Coming soon", use: "Das eigentliche Problem verstehen" },
         ],
       },
       {
@@ -276,7 +276,7 @@ export const texts = {
         platforms: [
           { name: "SalesFitness.studio", status: "live", use: "Cold Calls, Discovery, Closing üben" },
           { name: "DialogFitness.studio", status: "live", use: "Einwände souverän behandeln" },
-          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Wahre Bedürfnisse entdecken" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Coming soon", use: "Wahre Bedürfnisse entdecken" },
         ],
       },
       {
@@ -285,10 +285,10 @@ export const texts = {
         benefit: "Die richtigen Mitarbeiter finden und entwickeln",
         platforms: [
           { name: "DialogFitness.studio", status: "live", use: "Kritikgespräche, Feedback geben/empfangen" },
-          { name: "Telefonkompetenz.at", status: "coming_soon", statusLabel: "Feb 2026", use: "Kandidaten-Assessment für Telefon-Rollen" },
-          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Q1/26", use: "Reflexion und Entscheidungsfindung" },
-          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Q1/26", use: "Konflikte im Team moderieren" },
-          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Q2/26", use: "Bessere Fragen in Interviews stellen" },
+          { name: "Telefonkompetenz.at", status: "coming_soon", statusLabel: "Coming soon", use: "Kandidaten-Assessment für Telefon-Rollen" },
+          { name: "Metakognitionen.at", status: "coming_soon", statusLabel: "Coming soon", use: "Reflexion und Entscheidungsfindung" },
+          { name: "Konfliktloesung.studio", status: "coming_soon", statusLabel: "Coming soon", use: "Konflikte im Team moderieren" },
+          { name: "Fragenkatalog.at", status: "coming_soon", statusLabel: "Coming soon", use: "Bessere Fragen in Interviews stellen" },
         ],
       },
     ],

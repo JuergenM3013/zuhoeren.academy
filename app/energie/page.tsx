@@ -107,91 +107,88 @@ export default function EnergiePage() {
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {/* Weg 1 */}
+            {/* Weg 1 – KI-Studios */}
             <div className="rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6">
               <div className="flex items-center gap-2 mb-4">
                 <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-xs font-bold text-amber-300">Empfohlen</span>
                 <span className="text-xs text-white/50">Weg 1</span>
               </div>
-              <h3 className="font-bold text-lg">Seminar + KI-Studios</h3>
-              <p className="mt-2 text-sm text-white/60 italic">Grundlage & nachhaltiger Transfer</p>
+              <h3 className="font-bold text-lg">KI-Lernstudios</h3>
+              <p className="mt-2 text-sm text-white/60 italic">Sofort starten – jederzeit trainieren, 24/7 verfügbar</p>
               <div className="mt-4 space-y-4">
-                <div className="rounded-xl bg-amber-500/10 p-3">
-                  <p className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Seminar</p>
+                <div className="rounded-xl bg-emerald-500/10 p-3">
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider">DialogFitness Studio</p>
+                    <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-bold text-emerald-300">Live</span>
+                  </div>
                   <ul className="space-y-1 text-sm text-white/70">
-                    <li className="flex gap-2"><span className="text-amber-400">·</span> Inhouse-Training, 1–2 Tage</li>
-                    <li className="flex gap-2"><span className="text-amber-400">·</span> Techniken für Ihren Gesprächsalltag</li>
-                    <li className="flex gap-2"><span className="text-amber-400">·</span> Praxisnahes Training</li>
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> 50+ realistische Szenarien mit KI-Feedback</li>
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Beschwerden, Deeskalation, Beratung</li>
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Messbare Fortschritte, Team-Dashboard</li>
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Stundenkontingente flexibel buchbar</li>
                   </ul>
                 </div>
-                <div className="rounded-xl bg-white/5 p-3">
-                  <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">DialogFitness Studio</p>
-                  <ul className="space-y-1 text-sm text-white/70">
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> 50+ realistische Dialoge</li>
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> KI-Feedback zu jedem Gespräch</li>
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Messbare Fortschritte für HR</li>
-                  </ul>
-                </div>
-                <div className="rounded-xl bg-white/5 p-3">
-                  <p className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-1">ResilienzFitness Studio</p>
+                <div className="rounded-xl bg-rose-500/10 p-3">
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="text-xs font-bold text-rose-400 uppercase tracking-wider">ResilienzFitness Studio</p>
+                    <span className="rounded-full bg-rose-500/20 px-2 py-0.5 text-[10px] font-bold text-rose-300">Live</span>
+                  </div>
                   <ul className="space-y-1 text-sm text-white/70">
                     <li className="flex gap-2"><span className="text-rose-400">·</span> Tägliche Resilienz-Praxis (2–10 Min.)</li>
-                    <li className="flex gap-2"><span className="text-rose-400">·</span> Stressbarometer & Analyse</li>
+                    <li className="flex gap-2"><span className="text-rose-400">·</span> Stressbarometer & persönliche Analyse</li>
                     <li className="flex gap-2"><span className="text-rose-400">·</span> KI-Coach für schwierige Situationen</li>
+                    <li className="flex gap-2"><span className="text-rose-400">·</span> Auch als BGM-Angebot buchbar</li>
+                  </ul>
+                </div>
+                <div className="rounded-xl bg-violet-500/5 border border-violet-500/10 p-3">
+                  <p className="text-xs font-bold text-violet-400 uppercase tracking-wider mb-1">Kombination beider Studios</p>
+                  <p className="text-sm text-white/70">Gesprächskompetenz trifft mentale Stärke – zwei Lernwelten, ein Anbieter, ein Ansprechpartner.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Weg 2 – Kombi */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs text-white/50">Weg 2</span>
+              </div>
+              <h3 className="font-bold text-lg">KI-Studios + Seminar</h3>
+              <p className="mt-2 text-sm text-white/60 italic">Maximaler Transfer durch Kombination</p>
+              <div className="mt-4 space-y-4">
+                <div className="rounded-xl bg-white/5 p-3">
+                  <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">KI-Studios (dauerhaft)</p>
+                  <ul className="space-y-1 text-sm text-white/70">
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> DialogFitness + ResilienzFitness</li>
+                    <li className="flex gap-2"><span className="text-emerald-400">·</span> KI-Feedback sichert den Alltags-Transfer</li>
+                  </ul>
+                </div>
+                <div className="rounded-xl bg-amber-500/5 p-3">
+                  <p className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Seminar (optional)</p>
+                  <ul className="space-y-1 text-sm text-white/70">
+                    <li className="flex gap-2"><span className="text-amber-400">·</span> Inhouse-Training, 1–2 Tage</li>
+                    <li className="flex gap-2"><span className="text-amber-400">·</span> Praxisnahe Techniken als Grundlage</li>
                   </ul>
                 </div>
               </div>
               <p className="mt-4 text-xs text-white/50 leading-relaxed">
-                Die Impulse kommen aus dem Seminar – die Studios sichern den Transfer im Alltag. Attraktive Kombipakete auf Anfrage.
+                Attraktive Kombipakete auf Anfrage.
               </p>
             </div>
 
-            {/* Weg 2 */}
+            {/* Weg 3 – Seminar */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs text-white/50">Weg 2</span>
+                <span className="text-xs text-white/50">Weg 3</span>
               </div>
               <h3 className="font-bold text-lg">Seminar</h3>
               <p className="mt-2 text-sm text-white/60 italic">Fokussiert, erprobt, praxisnah</p>
               <div className="mt-4 rounded-xl bg-amber-500/5 p-3">
                 <ul className="space-y-2 text-sm text-white/70">
-                  <li className="flex gap-2"><span className="text-amber-400">·</span> Anwendbare Techniken für Ihren Gesprächsalltag</li>
                   <li className="flex gap-2"><span className="text-amber-400">·</span> Flexibel gestaltbar: 1–2 Tage, Präsenz</li>
-                  <li className="flex gap-2"><span className="text-amber-400">·</span> Seminarinhalte jahrelang in der Branche erprobt</li>
-                  <li className="flex gap-2"><span className="text-amber-400">·</span> Mehr als 25 Jahre Erfahrung in Kundenkommunikation</li>
-                  <li className="flex gap-2"><span className="text-amber-400">·</span> Spätere Ergänzung durch die Lernstudios jederzeit möglich</li>
+                  <li className="flex gap-2"><span className="text-amber-400">·</span> Jahrelang in der Energiebranche erprobt</li>
+                  <li className="flex gap-2"><span className="text-amber-400">·</span> Max. 12 Teilnehmer:innen</li>
+                  <li className="flex gap-2"><span className="text-amber-400">·</span> Ergänzung durch KI-Studios jederzeit möglich</li>
                 </ul>
-              </div>
-            </div>
-
-            {/* Weg 3 */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs text-white/50">Weg 3</span>
-              </div>
-              <h3 className="font-bold text-lg">KI-Studios</h3>
-              <p className="mt-2 text-sm text-white/60 italic">Auch ohne vorheriges Seminar buchbar</p>
-              <div className="mt-4 space-y-4">
-                <div className="rounded-xl bg-white/5 p-3">
-                  <p className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">DialogFitness Studio</p>
-                  <ul className="space-y-1 text-sm text-white/70">
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> 50+ realistische Szenarien mit KI-Feedback</li>
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Messbare Fortschritte, Team-Dashboard</li>
-                    <li className="flex gap-2"><span className="text-emerald-400">·</span> Stundenkontingente flexibel buchbar</li>
-                  </ul>
-                </div>
-                <div className="rounded-xl bg-white/5 p-3">
-                  <p className="text-xs font-bold text-rose-400 uppercase tracking-wider mb-1">ResilienzFitness Studio</p>
-                  <ul className="space-y-1 text-sm text-white/70">
-                    <li className="flex gap-2"><span className="text-rose-400">·</span> Tägliche Praxis, 2–10 Minuten</li>
-                    <li className="flex gap-2"><span className="text-rose-400">·</span> KI-Coach & persönliche Analyse</li>
-                    <li className="flex gap-2"><span className="text-rose-400">·</span> Auch als BGM-Angebot buchbar</li>
-                  </ul>
-                </div>
-                <div className="rounded-xl bg-violet-500/5 border border-violet-500/10 p-3">
-                  <p className="text-xs font-bold text-violet-400 uppercase tracking-wider mb-1">Kombination</p>
-                  <p className="text-sm text-white/70">Gesprächskompetenz trifft mentale Stärke – zwei Lernwelten, ein Anbieter.</p>
-                </div>
               </div>
             </div>
           </div>
